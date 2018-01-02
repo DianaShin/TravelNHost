@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeIndex from './home_index';
+import {withRouter} from 'react-router';
 
 class Home extends React.Component {
   render() {
