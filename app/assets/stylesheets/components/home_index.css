@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+.whitespace-small {
+  display: block;
+  height: 50px;
+  background-color:  white;
+}
+
+.destinations-index {
+  width: 85%;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  height: 500px;
+  display: block;
+  position: relative;
+  left: 60px;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-content: space-between;*/
+  /*align-items: stretch;*/
+}
+
+ul.destinations-row {
+  margin-bottom: -78px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  width: 600px;
+}
+
+img.destination {
+ height: 225px;
+ margin-left: 6px;
+
+}
+
+img.destination:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
+/*
+p.destination:hover {
+  color: white;
+  font-weight: bold;
+}*/
