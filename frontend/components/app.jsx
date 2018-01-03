@@ -8,7 +8,7 @@ import HomeContainer from './home/home_container';
 const App = () => (
   <div>
     <Route path= '' component={HeaderContainer} />
-    <Route path='/home' component={HomeContainer}/>
+    <Route path='' component={HomeContainer}/>
     <Route path="/login" component={SessionFormContainer} />
     <Route path="/signup" component={SessionFormContainer} />
   </div>
