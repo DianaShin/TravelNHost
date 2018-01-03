@@ -44,14 +44,18 @@ img.destination:hover {
   filter: brightness(50%);
   cursor: pointer;
 }
-/*
-p.destination:hover {
-  color: white;
-  font-weight: bold;
-}*/
 
+.parent:hover .destination-name {
+  opacity: 1;
+}
 
-#destinations-index li:hover p {
-  color: white;
+p.destination-name {
+  position: relative;
+  top: 45px;
+  left: 5px;
+  text-align: left;
   font-weight: bold;
+  text-transform: uppercase;
+  z-index: 50;
+  opacity: 0;
 }

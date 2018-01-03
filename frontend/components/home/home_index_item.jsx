@@ -11,9 +11,9 @@ class HomeIndexItem extends React.Component {
 
   render(){
     return (
-      <li onClick={this.handleClick} id={this.props.destination}>
-        <img class="destination" src={this.props.src} />
-        <p class="destination">{this.props.destination}</p>
+      <li onClick={this.handleClick} id={this.props.destination} className='parent'>
+        <p className="destination-name">{this.props.destination}</p>
+        <img className="destination" src={this.props.src} />
       </li>
     );
   }

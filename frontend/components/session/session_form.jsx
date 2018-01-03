@@ -26,7 +26,7 @@ class SessionForm extends React.Component {
       username: '',
       password: ''
     });
-    this.props.processForm({'user': user});
+    this.props.processForm(user);
   }
 
   handleChange(type){

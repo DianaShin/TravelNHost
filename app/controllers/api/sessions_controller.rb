@@ -1,6 +1,7 @@
 class Api::SessionsController < ApplicationController
   def create
-    @user = User.find_by_credentials(user_params[:username], user_params[:password])
+    @user = User.find_by_credentials(params[:user][:username],
+      params[:user][:password])
     if @user
       login!(@user)
       render 'api/users/show.json.jbuilder', user: @user
@@ -10,15 +11,15 @@ class Api::SessionsController < ApplicationController
   end
 
   def destroy
-    if logout
-      render json: {}
+    @user = current_user
+    if @user
+      logout
+      render "api/users/show"
+    # if logout
+    #   render json: {}
     else
       render json: ["No one is logged in"], status: 404
     end
   end
 
-  private
-  def user_params
-    params.require(:user).permit(:username, :password)
-  end
 end
