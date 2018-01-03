@@ -10,12 +10,12 @@
 
 .destinations-index {
   width: 85%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   font-family: 'Raleway', sans-serif;
   height: 500px;
   display: block;
-  /*position: relative;
-  right: 20px;*/
+  position: relative;
+  left: 75px;
   align-items: center;
   /*display: flex;*/
   /*flex-direction: column;*/
