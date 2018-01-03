@@ -14,11 +14,14 @@ class Header extends React.Component {
             <h1 class="brand-name">TRAVEL N HOST</h1>
           </div>
           <ul class="header-nav-buttons-list">
-             <li class='header-nav-demo-button'>DEMO
+             <li class='header-nav-demo-button'>
+               <button class='header-nav-demo-button'> DEMO</button>
              </li>
-             <li class='header-nav-buttons-list-item'>SIGN UP
+             <li class='header-nav-buttons-list-item'>
+               <button class='header-nav-buttons-list-item'>SIGN UP</button>
              </li>
-             <li class='header-nav-buttons-list-item'>LOG IN
+             <li class='header-nav-buttons-list-item'>
+               <button class='header-nav-buttons-list-item'>LOG IN </button>
             </li>
           </ul>
         </nav>

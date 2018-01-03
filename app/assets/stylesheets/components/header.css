@@ -63,22 +63,42 @@ ul .header-nav-buttons-list {
   display: inline-block;
   border: white 2px solid;
   font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
   border-radius: 5px;
   margin-right: 10px;
-  padding: 2px;
+  padding-left: 10px;
   list-style: none;
   background: white;
   color: #20b2aa;
+  cursor: pointer;
+}
+
+.header-nav-demo-button:hover {
+  filter: opacity(0.75);
 }
 
 .header-nav-buttons-list-item {
   display: inline-block;
   border: white 2px solid;
   font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
   border-radius: 5px;
-  padding: 2px;
+  padding-left: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   margin-right: 10px;
   list-style: none;
   background: #20b2aa;
   color: white;
+  cursor: pointer;
+}
+
+button.header-nav-buttons-list-item {
+  border: none;
+}
+.header-nav-buttons-list-item:hover {
+  filter: opacity(0.75);
 }
