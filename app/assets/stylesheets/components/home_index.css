@@ -14,8 +14,8 @@
   font-family: 'Raleway', sans-serif;
   height: 500px;
   display: block;
-  position: relative;
-  left: 20px;
+  /*position: relative;
+  left: 20px;*/
   /*display: flex;*/
   /*flex-direction: column;*/
   /*align-content: space-between;*/
