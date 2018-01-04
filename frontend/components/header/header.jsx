@@ -51,39 +51,32 @@ class Header extends React.Component {
                       openModal={this.handleOpenModal}/>
                   </Modal>
                 </Route>
-
-                 <Route path='/login'>
-                   <Modal
-                     isOpen={true}
-                     onRequestClose={this.handleCloseModal}
-                     contentLabel='sessionModal'
-                     className="modal"
-                     overlayClassName="modalOverlay"
-                     shouldCloseOnOverlayClick={false}
-                     >
-                     <SessionFormContainer
-                       formType={"login"}
-                       closeModal={this.handleCloseModal}
-                       openModal={this.handleOpenModal}/>
-                   </Modal>
-                 </Route>
-
-                 <Route path='/'>
-                   <Modal
-                     isOpen={false}
-                     onRequestClose={this.handleCloseModal}
-                     contentLabel='sessionModal'
-                     className="modal"
-                     overlayClassName="modalOverlay"
-                     shouldCloseOnOverlayClick={false}
-                     />
-
-                 </Route>
-
-
-               </Switch>
-
-
+                <Route path='/login'>
+                  <Modal
+                    isOpen={true}
+                    onRequestClose={this.handleCloseModal}
+                    contentLabel='sessionModal'
+                    className="modal"
+                    overlayClassName="modalOverlay"
+                    shouldCloseOnOverlayClick={false}
+                    >
+                    <SessionFormContainer
+                      formType={"login"}
+                      closeModal={this.handleCloseModal}
+                      openModal={this.handleOpenModal}/>
+                  </Modal>
+                </Route>
+                <Route path='/'>
+                  <Modal
+                   isOpen={false}
+                   onRequestClose={this.handleCloseModal}
+                   contentLabel='sessionModal'
+                   className="modal"
+                   overlayClassName="modalOverlay"
+                   shouldCloseOnOverlayClick={false}
+                   />
+                </Route>
+              </Switch>
             </li>
           </ul>
         </nav>
