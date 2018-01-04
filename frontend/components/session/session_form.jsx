@@ -57,14 +57,17 @@ class SessionForm extends React.Component {
 
    return (
      <form onSubmit = {this.handleSubmit}>
-         <img className="x-box"
-						src='http://res.cloudinary.com/ayoung0131/image/upload/v1515036419/x-icon_zdcj8l.svg'
-						width="20"
-						height="20"
-						onClick={this.props.closeModal}/>
+       <div className="modal-header">
+         <div className="space-holder-for-modal-header"></div>
          <h1>
            Welcome to TravelNHost!
          </h1>
+         <img className="x-box"
+           src='http://res.cloudinary.com/ayoung0131/image/upload/v1515036419/x-icon_zdcj8l.svg'
+           width="20"
+           height="20"
+           onClick={this.props.closeModal}/>
+       </div>
          <h2>{title}</h2>
 
        {errors}
