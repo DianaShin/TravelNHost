@@ -21,13 +21,16 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
+    // this.setState({
+    //   username: '',
+    //   password: ''
+    // });
+    this.props.processForm(user).then(
+     () => this.props.closeModal()
+   )
+   .then(() => this.props.history.push("/"));
+ }
 
-    this.setState({
-      username: '',
-      password: ''
-    });
-    this.props.processForm(user);
-  }
 
   handleChange(type){
     return (e) => {
@@ -40,30 +43,40 @@ class SessionForm extends React.Component {
     let linkTo;
     switch (this.props.formType) {
       case('login'):
-        title = 'Log In';
-        linkTo = <Link to='/signup'> Sign Up</Link>;
+        title = 'Login';
+        linkTo = <Link to='/login'> Login</Link>;
         break;
       case ('signup'):
         title = 'Sign Up';
-        linkTo = <Link to='/login'> Log In</Link>;
+        linkTo = <Link to='/signup'> Sign up</Link>;
     }
     let errors = '';
     if (this.props.errors.length !== 0){
       errors = <h3> {this.props.errors[0]}</h3>;
     }
+
    return (
      <form onSubmit = {this.handleSubmit}>
-       <h1> {title}</h1>
+         <img className="x-box"
+						src='http://res.cloudinary.com/ayoung0131/image/upload/v1515036419/x-icon_zdcj8l.svg'
+						width="20"
+						height="20"
+						onClick={this.props.closeModal}/>
+         <h1>
+           Welcome to TravelNHost!
+         </h1>
+         <h2>{title}</h2>
+
        {errors}
        {linkTo}
           <br />
        <input onChange = {this.handleChange('username')}
           placeholder='username' value={this.state.username}/>
           <br />
-       <input onChange = {this.handleChange('password')}
+       <input type="password" onChange = {this.handleChange('password')}
          placeholder='password' value={this.state.password}/>
          <br />
-      <input type='submit' value="Submit" />
+      <input type='submit' value={this.props.formType} />
      </form>
    );
   }

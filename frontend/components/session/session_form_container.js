@@ -7,7 +7,7 @@ const mapStateToProps = (state, ownProps) => {
   return ({
     loggedIn: Boolean(state.session.currentUser),
     errors: state.errors.session,
-    formType: ownProps.location.pathname.slice(1)
+    //so, now formType will come from UI slice of state
   });
 };
 
