@@ -4,6 +4,7 @@ import configureStore from './store/store';
 import Root from './components/root';
 //testing
 import {login, logout, signup } from './actions/session_actions';
+import {fetchDestination, fetchDestinations } from './actions/destination_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.logout = logout;
   window.signup = signup;
+  window.fetchDestination = fetchDestinations;
+  window.fetchDestinations = fetchDestination;
 
 
   if (window.currentUser){
