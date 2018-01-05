@@ -7,7 +7,7 @@ end
 json.hosts do
   @destination.users.each do |user|
       json.set! user.id do
-        json.extract! user, :id, :username
+        json.extract! user, :id, :username, :first_name, :last_name
       end
   end
 end

@@ -11,8 +11,8 @@
 # t.float :lat, null: false
 # t.float :long, null: false
 
-Destination.delete_all
-User.delete_all
+Destination.destroy_all
+User.destroy_all
 
 Istanbul = Destination.create!(
   name: 'Istanbul',
@@ -134,28 +134,22 @@ Stockhom = Destination.create!(
 )
 
 
-####
-
-User.create!(
-  username: 'guest',
-  password: 'password'
-)
-
 
 ##### Need to figure out whether to just update User model or create a new Host model
 
+## need to add image_url later
 Mehmet = User.create!(
   username: 'mehmet',
   password: 'Istanbul',
   destination_id: Istanbul.id,
   first_name: 'Mehmet',
   last_name: 'Gunsur',
-  isHost: true,
-  hostRating: 0,
-  imageUrl:
-  gender: 'male',
-  age: 38,
-  about: "Come visit! I can teach you all about Ottoman history and show you around the world's most beautiful city."
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 38,
+  # about: "Come visit! I can teach you all about Ottoman history and show you around the world's most beautiful city."
 )
 
 Mustafa = User.create!(
@@ -164,12 +158,12 @@ Mustafa = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Mustafa',
   last_name: 'Akkaya',
-  isHost: true,
-  hostRating: 0,
-  imageUrl:
-  gender: 'male',
-  age: 28,
-  about: "I'm an engineer by day, and a musician by night. If you stay with me, we can hop around the hottest music venues in the city."
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 28,
+  # about: "I'm an engineer by day, and a musician by night. If you stay with me, we can hop around the hottest music venues in the city."
 )
 
 Nilufer = User.create!(
@@ -178,12 +172,12 @@ Nilufer = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Nilufer',
   last_name: 'Karagul',
-  isHost: true,
-  hostRating: 0,
-  imageUrl:
-  gender: 'female',
-  age: 26,
-  about: "I'm a student at Bogazici University, and would love to make friends from around the world."
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'female',
+  # age: 26,
+  # about: "I'm a student at Bogazici University, and would love to make friends from around the world."
 )
 
 Nejla = User.create!(
@@ -192,12 +186,12 @@ Nejla = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Nejla',
   last_name: 'Kahveci',
-  isHost: true,
-  hostRating: 0,
-  imageUrl:
-  gender: 'female',
-  age: 26,
-  about: "I'm a student at Bogazici University, and would love to make friends from around the world."
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'female',
+  # age: 26,
+  # about: "I'm a student at Bogazici University, and would love to make friends from around the world."
 )
 
 Burak = User.create!(
@@ -206,12 +200,12 @@ Burak = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Burak',
   last_name: 'Gulluoglu',
-  isHost: true,
-  hostRating: 0,
-  imageUrl:
-  gender: 'male',
-  age: 22,
-  about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 22,
+  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
 )
 
 Aylin = User.create!(
@@ -220,12 +214,12 @@ Aylin = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Aylin',
   last_name: 'Adalet',
-  isHost: true,
-  hostRating: 0,
-  imageUrl:
-  gender: 'female',
-  age: 26,
-  about: "I'm a student at Bogazici University, and would love to make friends from around the world."
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'female',
+  # age: 26,
+  # about: "I'm a student at Bogazici University, and would love to make friends from around the world."
 )
 
 ###
@@ -236,12 +230,12 @@ Omar = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Omar',
   last_name: 'Sharif',
-  isHost: true,
-  hostRating: 0,
-  imageUrl:
-  gender: 'male',
-  age: 26,
-  about: "Petra is Jordan's greatest treasure. Come check it out. You'll feel like Indiana Jones."
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 26,
+  # about: "Petra is Jordan's greatest treasure. Come check it out. You'll feel like Indiana Jones."
 )
 
 Mohammad = User.create!(
@@ -250,12 +244,12 @@ Mohammad = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Mohammad',
   last_name: 'Ahmad',
-  isHost: true,
-  hostRating: 0,
-  imageUrl:
-  gender: 'male',
-  age: 23,
-  about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 23,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Wael = User.create!(
@@ -264,10 +258,10 @@ Wael = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Wael',
   last_name: 'Shaker',
-  isHost: true,
-  hostRating: 0,
-  imageUrl:
-  gender: 'male',
-  age: 25,
-  about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )

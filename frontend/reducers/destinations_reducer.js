@@ -7,7 +7,7 @@ const destinationsReducer = (state = {}, action) => {
     case RECEIVE_DESTINATIONS:
       return action.destinations;
     case RECEIVE_DESTINATION:
-      return merge({}, state, { [action.destination.id]: action.destination });
+     return merge({}, state, { [action.destination.id]: action.destination });
     default:
       return state;
   }
