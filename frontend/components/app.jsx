@@ -10,6 +10,8 @@ const App = () => (
   <div>
       <Route path="" component={HeaderContainer}/>
       <Route exact path="/" component={HomeContainer}/>
+      <Route exact path="/signup" component={HomeContainer}/>
+      <Route exact path="/login" component={HomeContainer}/>
       <Route path='/destinations/:destination' component={DestinationShow}/>
   </div>
 );
