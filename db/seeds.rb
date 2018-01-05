@@ -249,7 +249,7 @@ Mohammad = User.create!(
   # imageUrl:
   # gender: 'male',
   # age: 23,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life when you visit Petra."
 )
 
 Wael = User.create!(

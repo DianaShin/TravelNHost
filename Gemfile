@@ -30,7 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'figaro'
 gem "paperclip"
-gem 'aws-sdk', '>= 2.0'
+gem 'aws-sdk', '< 3.0'
 
 
 
