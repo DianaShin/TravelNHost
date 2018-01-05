@@ -8,7 +8,7 @@ class HomeIndexItem extends React.Component {
   }
 
   handleClick() {
-    this.props.router.push(`/destinations/${this.props.key}`);
+     return this.props.history.push(`/destinations/${this.props.destination}`);
   }
 
   render() {
@@ -21,4 +21,4 @@ class HomeIndexItem extends React.Component {
   }
 }
 
-export default HomeIndexItem;
+export default withRouter(HomeIndexItem);

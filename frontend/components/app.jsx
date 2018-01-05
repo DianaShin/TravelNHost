@@ -8,9 +8,9 @@ import DestinationShow from './destinations/destination_show';
 
 const App = () => (
   <div>
-    <Route path="" component={HeaderContainer}/>
-    <Route path="" component={HomeContainer}/>
-    <Route path='/destinations/:destinationId' component={DestinationShow}/>
+      <Route path="" component={HeaderContainer}/>
+      <Route exact path="/" component={HomeContainer}/>
+      <Route path='/destinations/:destination' component={DestinationShow}/>
   </div>
 );
 

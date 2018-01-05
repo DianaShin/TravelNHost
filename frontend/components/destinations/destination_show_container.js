@@ -4,7 +4,9 @@ import { receiveDestination } from '../../actions/destination_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return ({
-    destination: state.destinations[ownProps.params.destinationId]
+    destination: state.entities.destinations[ownProps.match.params.destinationId],
+    lat: state.entities.destinations.lat,
+    long: state.entities.destinations.long
   });
 };
 
