@@ -10,10 +10,11 @@ export const receiveDestinations = (destinations) => {
   };
 };
 
-export const receiveDestination = (destination) => {
+export const receiveDestination = (data) => {
   return {
     type: RECEIVE_DESTINATION,
-    destination
+    destination: data.destination,
+    hosts: data.hosts
   };
 };
 

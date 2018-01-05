@@ -2,17 +2,17 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import SessionFormContainer from './session/session_form_container';
 import HeaderContainer from './header/header_container';
-import HomeContainer from './home/home_container';
-import DestinationShow from './destinations/destination_show';
+import Home from './home/home';
+import DestinationShow from './destinations/destination_show_container';
 
 
 const App = () => (
   <div>
       <Route path="" component={HeaderContainer}/>
-      <Route exact path="/" component={HomeContainer}/>
-      <Route exact path="/signup" component={HomeContainer}/>
-      <Route exact path="/login" component={HomeContainer}/>
-      <Route path='/destinations/:destination' component={DestinationShow}/>
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/signup" component={Home}/>
+      <Route exact path="/login" component={Home}/>
+      <Route path='/destinations/:destinationId' component={DestinationShow}/>
   </div>
 );
 

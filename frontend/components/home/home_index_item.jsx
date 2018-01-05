@@ -8,17 +8,25 @@ class HomeIndexItem extends React.Component {
   }
 
   handleClick() {
-     return this.props.history.push(`/destinations/${this.props.destination}`);
+     return this.props.history.push(`/destinations/${this.props.destination.id}`);
   }
 
   render() {
+    let name;
+    //later add
+    // let image_url;
+    if (this.props.destination) {
+      name = this.props.destination.name;
+    }
     return (
       <li onClick={this.handleClick} id={this.props.key} className='parent'>
-        <p className="destination-name">{this.props.destination}</p>
-        <img className="destination" src={this.props.src} />
+        <p>{name}</p>
       </li>
     );
   }
 }
 
 export default withRouter(HomeIndexItem);
+
+  // <p className="destination-name">{name}</p>
+// <img className="destination" src={this.props.src} />

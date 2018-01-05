@@ -1,18 +1,19 @@
 import { connect } from 'react-redux';
 import DestinationShow from './destination_show';
-import { receiveDestination } from '../../actions/destination_actions';
+import { fetchDestination } from '../../actions/destination_actions';
 
 const mapStateToProps = (state, ownProps) => {
+  // debugger
   return ({
     destination: state.entities.destinations[ownProps.match.params.destinationId],
-    lat: state.entities.destinations.lat,
-    long: state.entities.destinations.long
+    // lat: state.entities.destinations.lat, // this is no longer necessary because I am getting destination as an object
+    // long: state.entities.destinations.long
   });
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    receiveDestination: (id) => dispatch(receiveDestination(id))
+    fetchDestination: (id) => dispatch(fetchDestination(id))
   };
 };
 

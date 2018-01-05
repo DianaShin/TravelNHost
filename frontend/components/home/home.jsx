@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeIndex from './home_index';
+import HomeIndex from './home_index_container';
 
 class Home extends React.Component {
   render() {
