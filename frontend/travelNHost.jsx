@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.logout = logout;
   window.signup = signup;
-  window.fetchDestination = fetchDestinations;
-  window.fetchDestinations = fetchDestination;
+  window.fetchDestinations = fetchDestinations;
+  window.fetchDestination = fetchDestination;
 
 
   if (window.currentUser){

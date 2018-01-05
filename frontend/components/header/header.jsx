@@ -68,13 +68,13 @@ class Header extends React.Component {
                 </Route>
                 <Route path='/'>
                   <Modal
-                   isOpen={false}
-                   onRequestClose={this.handleCloseModal}
-                   contentLabel='sessionModal'
-                   className="modal"
-                   overlayClassName="modalOverlay"
-                   shouldCloseOnOverlayClick={false}
-                   />
+                    isOpen={false}
+                    onRequestClose={this.handleCloseModal}
+                    contentLabel='sessionModal'
+                    className="modal"
+                    overlayClassName="modalOverlay"
+                    shouldCloseOnOverlayClick={false}
+                    />
                 </Route>
               </Switch>
             </li>

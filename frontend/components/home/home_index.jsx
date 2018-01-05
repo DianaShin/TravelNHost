@@ -28,7 +28,7 @@ class HomeIndex extends React.Component {
           <div class="destinations-index">
           <ul class="destinations-row-1 destinations-row">
               {Object.keys(favoriteDestinations).slice(0, 3).map((destination, idx) => (
-             <HomeIndexItem destination={destination} key={idx} src={favoriteDestinations[destination]}/>
+             <HomeIndexItem destination={destination} key={idx+1} src={favoriteDestinations[destination]}/>
            ))}
           </ul>
           <ul class="destinations-row-2 destinations-row">
