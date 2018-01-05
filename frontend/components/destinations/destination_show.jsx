@@ -10,7 +10,8 @@ class DestinationShow extends React.Component {
     // debugger
     return (
       <div>
-        <h1>{this.props.match.params.destination}</h1>
+        <h1 className="destination-show">{this.props.match.params.destination}</h1>
+        <p className="destination-show">{this.props.match.params.destination}</p>
         <DestinationMap destination={this.props.destination} lat={this.props.lat} long={this.props.long}/>
       </div>
 
