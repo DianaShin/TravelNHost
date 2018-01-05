@@ -23,7 +23,9 @@ class Header extends React.Component {
       <div>
         <nav>
           <div class="header-left">
+            <Link to="/">
             <img className="logo" src="http://res.cloudinary.com/ayoung0131/image/upload/v1514944664/backpackicon_htgwjb.svg" />
+            </Link>
             <h1 class="brand-name">TRAVEL N HOST</h1>
           </div>
           <ul class="header-nav-buttons-list">
