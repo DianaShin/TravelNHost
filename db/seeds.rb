@@ -18,124 +18,138 @@ Istanbul = Destination.create!(
   name: 'Istanbul',
   country: 'Turkey',
   lat: 41.0442095,
-  long: 28.9679681
+  long: 28.9679681,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Istanbul4.jpg"
 )
 
 Cappadocia = Destination.create!(
   name: 'Cappadocia',
   country: 'Turkey',
   lat: 38.6418462,
-  long: 33.7107975
+  long: 33.7107975,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/cappadocia.jpg"
 )
 
 Dubrovnik = Destination.create!(
   name: 'Dubrovnik',
   country: 'Croatia',
   lat: 42.645815,
-  long: 18.0590277
+  long: 18.0590277,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/dubrovnik.jpg"
 )
 
 Chefchaouen = Destination.create!(
   name: 'Chefchaouen',
   country: 'Morocco',
   lat: 35.1710529,
-  long: -6.3915866
+  long: -6.3915866,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Chefchaouen-Morocco-2.jpg"
 )
 
 Mostar = Destination.create!(
   name: 'Mostar',
   country: 'Bosnia and Herzegovina',
   lat: 43.3396111,
-  long: 17.786221
+  long: 17.786221,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/mostar.jpg"
 )
 
 Granada = Destination.create!(
   name: 'Granada',
   country: 'Spain',
   lat: 37.1810095,
-  long: -3.6262913
+  long: -3.6262913,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/granada.jpg"
 )
 
 Barcelona = Destination.create!(
   name: 'Barcelona',
   country: 'Spain',
   lat: 41.3948976,
-  long: 2.0787276
+  long: 2.0787276,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Barcelona_cropped2.jpg"
 )
 
 Cairo = Destination.create!(
   name: 'Cairo',
   country: 'Egypt',
   lat: 30.0596185,
-  long: 31.1884238
+  long: 31.1884238,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/pyramids.jpg"
 )
 
 Petra = Destination.create!(
   name: 'Petra',
   country: 'Jordan',
   lat: 30.328459,
-  long: 35.4421735
+  long: 35.4421735,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Petra_camel.jpg"
 )
 
 Sarajevo = Destination.create!(
   name: 'Sarajevo',
   country: 'Bosnia and Herzegovina',
   lat: 43.8938852,
-  long: 18.2429066
+  long: 18.2429066,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/sarajevo3.jpg"
 )
 
 Marrakesh = Destination.create!(
   name: 'Marrakesh',
   country: 'Morocco',
   lat: 31.6347485,
-  long: -8.0778936
+  long: -8.0778936,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Marrakech-shop-souk-xlarge.jpg"
 )
 
 Prague = Destination.create!(
   name: 'Prague',
   country: 'Czech Republic',
   lat: 50.0598058,
-  long: 14.32554
+  long: 14.32554,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Prague1.jpg"
 )
 
 London = Destination.create!(
   name: 'London',
   country: 'United Kingdom',
   lat: 51.5287352,
-  long: -0.3817816
+  long: -0.3817816,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/big-ben-at-night-01.jpg"
 )
 
 Venice = Destination.create!(
   name: 'Venice',
   country: 'Italy',
   lat: 45.4546252,
-  long: 11.9716646
+  long: 11.9716646,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/venice9.jpg"
 )
 
 Copenhagen = Destination.create!(
   name: 'Copenhagen',
   country: 'Denmark',
   lat: 55.6713812,
-  long: 12.4537409
+  long: 12.4537409,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/copenhagen_cropped3.jpg"
 )
 
 Amsterdam = Destination.create!(
   name: 'Amsterdam',
   country: 'Netherlands',
   lat: 52.354775,
-  long: 4.7585395
+  long: 4.7585395,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/amsterdam2.jpg"
 )
 
 Stockhom = Destination.create!(
   name: 'Stockholm',
   country: 'Sweden',
   lat: 59.326242,
-  long: 17.8419701
+  long: 17.8419701,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/stockholm_final_cover2.jpg"
 )
 
-
-
-##### Need to figure out whether to just update User model or create a new Host model
 
 ## need to add image_url later
 Mehmet = User.create!(

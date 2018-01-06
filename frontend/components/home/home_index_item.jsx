@@ -18,9 +18,14 @@ class HomeIndexItem extends React.Component {
     if (this.props.destination) {
       name = this.props.destination.name;
     }
+    let image_url;
+    if (this.props.destination) {
+      image_url = this.props.destination.image_url;
+    }
     return (
       <li onClick={this.handleClick} id={this.props.key} className='parent'>
-        <p>{name}</p>
+        <p className="destination-name">{name}</p>
+       <img className="destination" src={image_url} />
       </li>
     );
   }

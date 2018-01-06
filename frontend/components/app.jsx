@@ -18,8 +18,4 @@ const App = () => (
 
 export default App;
 
-// <Switch>
-//   <Route path="/login" component={SessionFormContainer} />
-//   <Route path="/signup" component={SessionFormContainer} />
-//
-// </Switch>
+    // <Route path='/destinations/:destinationId' component={DestinationShow}/>
