@@ -26,7 +26,7 @@ class DestinationMap extends React.Component {
       const mapOptions = {
         center: { lat, lng }, // this is Istanbul
         // center: { lat: `${lat}`, long: `${long}`},
-        zoom: 13
+        zoom: 11
       };
       // debugger
       // wrap the mapDOMNode in a Google Map

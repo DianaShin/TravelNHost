@@ -41,14 +41,18 @@ class SessionForm extends React.Component {
   render() {
     let title;
     let linkTo;
+    let switchModalMessage;
+    let switchModalButton;
     switch (this.props.formType) {
       case('login'):
-        title = 'Login';
-        linkTo = <Link to='/login'> Login</Link>;
+        title = 'LOGIN';
+        switchModalMessage = "Don't have an account?";
+        switchModalButton = "Join";
         break;
       case ('signup'):
-        title = 'Sign Up';
-        linkTo = <Link to='/signup'> Sign up</Link>;
+        title = 'SIGNUP';
+        switchModalMessage = "Already have an account?";
+        switchModalButton = "Login";
     }
     let errors = '';
     if (this.props.errors.length !== 0){
@@ -59,7 +63,7 @@ class SessionForm extends React.Component {
      <form onSubmit = {this.handleSubmit}>
        <div className="modal-header">
          <div className="space-holder-for-modal-header"></div>
-         <h1>
+         <h1 className="modal-title">
            Welcome to TravelNHost!
          </h1>
          <img className="x-box"
@@ -68,18 +72,21 @@ class SessionForm extends React.Component {
            height="20"
            onClick={this.props.closeModal}/>
        </div>
-         <h2>{title}</h2>
+         <h2 className="modal-subtitle">PLEASE {title}</h2>
+         <div className="modal-line-break"></div>
 
        {errors}
-       {linkTo}
+
           <br />
-       <input onChange = {this.handleChange('username')}
+       <input onChange = {this.handleChange('username')} className="input"
           placeholder='username' value={this.state.username}/>
           <br />
-       <input type="password" onChange = {this.handleChange('password')}
+       <input type="password" onChange = {this.handleChange('password')} className="input"
          placeholder='password' value={this.state.password}/>
          <br />
-      <input type='submit' value={this.props.formType} />
+      <input type='submit' value={this.props.formType} className="submit-button"/>
+      <p className="switchModalMessage">{switchModalMessage}</p>
+      <input type='submit' value={switchModalButton} className="switchModalButton" />
      </form>
    );
   }
