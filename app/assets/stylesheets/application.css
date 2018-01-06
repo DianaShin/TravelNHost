@@ -20,7 +20,7 @@
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 5px;
-  z-index: 1000;
+  z-index: auto;
   box-shadow: 10px 10px 8px #888888;
   margin-left: 50px;
   position: relative;

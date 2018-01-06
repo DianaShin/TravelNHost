@@ -27,7 +27,8 @@ nav {
 }
 
 div .header-left {
-  float: right;
+  /*float: right;*/
+  float: left;
 }
 
 .header-left .logo {
@@ -53,6 +54,7 @@ div .header-left {
   margin-left: 5px;
   position: relative;
   bottom: 25px;
+  font-size: 38px;
 }
 
 ul .header-nav-buttons-list {
@@ -110,4 +112,9 @@ button.header-nav-buttons-list-item {
 }
 .header-nav-buttons-list-item:hover {
   filter: opacity(0.75);
+}
+
+.header-nav-buttons-list-item.dashboard {
+  padding-top: 2px;
+  padding-bottom: 1px;
 }
