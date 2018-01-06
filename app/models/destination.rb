@@ -1,5 +1,5 @@
 class Destination < ApplicationRecord
-  validates :name, :country, :lat, :long, :image_url, presence: true
+  validates :name, :country, :lat, :long, :image_url, :hero_url, presence: true
   has_many :users
 
   has_attached_file :image

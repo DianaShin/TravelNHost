@@ -19,7 +19,8 @@ Istanbul = Destination.create!(
   country: 'Turkey',
   lat: 41.0442095,
   long: 28.9679681,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Istanbul4.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Istanbul4.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/IstanbulHero2.png"
 )
 
 Cappadocia = Destination.create!(
@@ -27,7 +28,8 @@ Cappadocia = Destination.create!(
   country: 'Turkey',
   lat: 38.6418462,
   long: 33.7107975,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/cappadocia.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/cappadocia.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/CappadociaHero2.png"
 )
 
 Dubrovnik = Destination.create!(
@@ -35,15 +37,17 @@ Dubrovnik = Destination.create!(
   country: 'Croatia',
   lat: 42.645815,
   long: 18.0590277,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/dubrovnik.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/dubrovnik.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/DubrovnikHero-01.png"
 )
 
 Chefchaouen = Destination.create!(
   name: 'Chefchaouen',
   country: 'Morocco',
-  lat: 35.1710529,
-  long: -6.3915866,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Chefchaouen-Morocco-2.jpg"
+  lat: 35.1672641,
+  long: -5.2729123,
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Chefchaouen-Morocco-2.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/chefchaouenHero-01.png"
 )
 
 Mostar = Destination.create!(
@@ -51,7 +55,8 @@ Mostar = Destination.create!(
   country: 'Bosnia and Herzegovina',
   lat: 43.3396111,
   long: 17.786221,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/mostar.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/mostar.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/MostarHero-01.png"
 )
 
 Granada = Destination.create!(
@@ -59,7 +64,8 @@ Granada = Destination.create!(
   country: 'Spain',
   lat: 37.1810095,
   long: -3.6262913,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/granada.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/granada.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/GranadaHero-01.png"
 )
 
 Barcelona = Destination.create!(
@@ -67,7 +73,8 @@ Barcelona = Destination.create!(
   country: 'Spain',
   lat: 41.3948976,
   long: 2.0787276,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Barcelona_cropped2.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Barcelona_cropped2.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/BarcelonaHero-01.png"
 )
 
 Cairo = Destination.create!(
@@ -75,7 +82,8 @@ Cairo = Destination.create!(
   country: 'Egypt',
   lat: 30.0596185,
   long: 31.1884238,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/pyramids.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/pyramids.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/CairoHero-01.png"
 )
 
 Petra = Destination.create!(
@@ -83,7 +91,8 @@ Petra = Destination.create!(
   country: 'Jordan',
   lat: 30.328459,
   long: 35.4421735,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Petra_camel.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Petra_camel.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/petra-01.png"
 )
 
 Sarajevo = Destination.create!(
@@ -91,7 +100,8 @@ Sarajevo = Destination.create!(
   country: 'Bosnia and Herzegovina',
   lat: 43.8938852,
   long: 18.2429066,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/sarajevo3.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/sarajevo4.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/sarajevo-01.png"
 )
 
 Marrakesh = Destination.create!(
@@ -99,7 +109,8 @@ Marrakesh = Destination.create!(
   country: 'Morocco',
   lat: 31.6347485,
   long: -8.0778936,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Marrakech-shop-souk-xlarge.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Marrakech-shop-souk-xlarge.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/marrakesh-01.png"
 )
 
 Prague = Destination.create!(
@@ -107,7 +118,8 @@ Prague = Destination.create!(
   country: 'Czech Republic',
   lat: 50.0598058,
   long: 14.32554,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Prague1.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/Prague1.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/PragueHero-01.png"
 )
 
 London = Destination.create!(
@@ -115,7 +127,8 @@ London = Destination.create!(
   country: 'United Kingdom',
   lat: 51.5287352,
   long: -0.3817816,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/big-ben-at-night-01.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/big-ben-at-night-01.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/London-01.png"
 )
 
 Venice = Destination.create!(
@@ -123,7 +136,8 @@ Venice = Destination.create!(
   country: 'Italy',
   lat: 45.4546252,
   long: 11.9716646,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/venice9.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/venice9.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/VeniceHero-01.png"
 )
 
 Copenhagen = Destination.create!(
@@ -131,7 +145,8 @@ Copenhagen = Destination.create!(
   country: 'Denmark',
   lat: 55.6713812,
   long: 12.4537409,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/copenhagen_cropped3.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/copenhagen_cropped3.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/CopenhagenHero-01.png"
 )
 
 Amsterdam = Destination.create!(
@@ -139,7 +154,8 @@ Amsterdam = Destination.create!(
   country: 'Netherlands',
   lat: 52.354775,
   long: 4.7585395,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/amsterdam2.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/amsterdam2.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/AmsterdamHero-01.png"
 )
 
 Stockhom = Destination.create!(
@@ -147,7 +163,8 @@ Stockhom = Destination.create!(
   country: 'Sweden',
   lat: 59.326242,
   long: 17.8419701,
-  image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/stockholm_final_cover2.jpg"
+  image_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/stockholm_final_cover2.jpg",
+  hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/stockholm_final_cover2.jpg"
 )
 
 
@@ -241,7 +258,7 @@ Aylin = User.create!(
 Omar = User.create!(
   username: 'omar',
   password: 'petra1',
-  destination_id: Istanbul.id,
+  destination_id: Petra.id,
   first_name: 'Omar',
   last_name: 'Sharif',
   # isHost: true,
@@ -255,7 +272,7 @@ Omar = User.create!(
 Mohammad = User.create!(
   username: 'mohammad',
   password: 'petra1',
-  destination_id: Istanbul.id,
+  destination_id: Petra.id,
   first_name: 'Mohammad',
   last_name: 'Ahmad',
   # isHost: true,
@@ -269,7 +286,7 @@ Mohammad = User.create!(
 Wael = User.create!(
   username: 'wael',
   password: 'petra1',
-  destination_id: Istanbul.id,
+  destination_id: Petra.id,
   first_name: 'Wael',
   last_name: 'Shaker',
   # isHost: true,

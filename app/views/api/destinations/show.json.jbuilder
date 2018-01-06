@@ -1,7 +1,7 @@
 # json.partial! '/api/destinations/destination', destination: @destination
 
 json.destination do
-  json.extract! @destination, :id, :long, :lat, :user_ids, :name, :country, :image_url
+  json.extract! @destination, :id, :long, :lat, :user_ids, :name, :country, :hero_url
 end
 
 json.hosts do

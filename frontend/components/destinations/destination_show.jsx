@@ -7,14 +7,14 @@ class DestinationShow extends React.Component {
   }
 
   render() {
-    let lat, long, name, country, image_url;
+    let lat, long, name, country, hero_url;
 
     if (this.props.destination) {
       lat = this.props.destination.lat;
       long = this.props.destination.long;
       name = this.props.destination.name;
       country = this.props.destination.country;
-      image_url = this.props.destination.image_url;
+      hero_url = this.props.destination.hero_url;
     }
     // debugger
     return (
@@ -22,7 +22,8 @@ class DestinationShow extends React.Component {
         <h1 className="destination-show-name">{name}</h1>
         <h1 className="destination-show-country">{country}</h1>
         <DestinationMap destination={this.props.destination} lat={lat} long={long}/>
-        <img src={image_url} className="destination-cover-image"/>
+        <img src={hero_url} className="destination-cover-image"/>
+        <div className="hosts-index">I'm a div</div>
       </div>
 
     );
