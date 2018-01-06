@@ -7,19 +7,49 @@ class HomeIndex extends React.Component {
   }
 
   render(){
+    let destinations = this.props.destinations.map(destination => {
+      return <HomeIndexItem key={destination.id} destination={destination} />;
+    });
+
     return (
-      <div>
-        {this.props.destinations.map(destination => {
-          return <HomeIndexItem key={destination.id} destination={destination} />;
-        })}
+      <div className="destinations-index">
+        <ul className="destinations-row-1 destinations-row">
+          {destinations.slice(0,3)}
+        </ul>
+        <ul className="destinations-row-2 destinations-row">
+          {destinations.slice(3, 7)}
+        </ul>
+        <ul className="destinations-row-3 destinations-row">
+            {destinations.slice(7, 10)}
+        </ul>
+        <ul className="destinations-row-4 destinations-row">
+          {destinations.slice(10, 14)}
+        </ul>
+        <ul className="destinations-row-5 destinations-row">
+          {destinations.slice(14, 17)}
+        </ul>
 
       </div>
     );
-
   }
+
+
 }
 
 export default HomeIndex;
+
+
+// render(){
+//   return (
+//     <div>
+//       {this.props.destinations.map(destination => {
+//         return <HomeIndexItem key={destination.id} destination={destination} />;
+//       })}
+//
+//     </div>
+//   );
+// }
+
 
 
 
