@@ -27,7 +27,7 @@ Cappadocia = Destination.create!(
   name: 'Cappadocia',
   country: 'Turkey',
   lat: 38.6418462,
-  long: 33.7107975,
+  long: 34.691322,
   image_url: "https://s3.amazonaws.com/travelnhost/homeIndexPhotos/cappadocia.jpg",
   hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/CappadociaHero2.png"
 )
@@ -174,7 +174,9 @@ Mehmet = User.create!(
   password: 'Istanbul',
   destination_id: Istanbul.id,
   first_name: 'Mehmet',
-  last_name: 'Gunsur',
+  last_name: 'Akkaya',
+  lat: 41.0678203,
+  lng: 29.0310582
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -188,7 +190,9 @@ Mustafa = User.create!(
   password: 'Istanbul',
   destination_id: Istanbul.id,
   first_name: 'Mustafa',
-  last_name: 'Akkaya',
+  last_name: 'Gunsur',
+  lat: 41.0557022,
+  lng: 29.0043005
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -203,6 +207,8 @@ Nilufer = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Nilufer',
   last_name: 'Karagul',
+  lat: 40.9787062,
+  lng: 28.9432452
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -217,6 +223,8 @@ Nejla = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Nejla',
   last_name: 'Kahveci',
+  lat: 41.0368836,
+  lng: 28.9806566
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -231,6 +239,8 @@ Burak = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Burak',
   last_name: 'Gulluoglu',
+  lat: 41.0322513,
+  lng: 29.0231618
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -245,6 +255,8 @@ Aylin = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Aylin',
   last_name: 'Adalet',
+  lat: 40.9944503,
+  lng: 29.0182612
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -261,6 +273,8 @@ Omar = User.create!(
   destination_id: Petra.id,
   first_name: 'Omar',
   last_name: 'Sharif',
+  lat: 30.3210225,
+  lng: 35.460611
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -275,6 +289,8 @@ Mohammad = User.create!(
   destination_id: Petra.id,
   first_name: 'Mohammad',
   last_name: 'Ahmad',
+  lat: 30.2849946,
+  lng: 35.1650836
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -289,6 +305,8 @@ Wael = User.create!(
   destination_id: Petra.id,
   first_name: 'Wael',
   last_name: 'Shaker',
+  lat: 30.3015954,
+  lng: 35.4536424
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -296,3 +314,298 @@ Wael = User.create!(
   # age: 25,
   # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
+
+
+## Cappadocia
+Guney = User.create!(
+  username: 'guney',
+  password: 'Cappadocia',
+  destination_id: Cappadocia.id,
+  first_name: 'Guney',
+  last_name: 'Gulluoglu',
+  lat: 38.6418462,
+  lng: 34.691322
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 22,
+  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+)
+
+Kuzey = User.create!(
+  username: 'kuzey',
+  password: 'Cappadocia',
+  destination_id: Cappadocia.id,
+  first_name: 'Guney',
+  last_name: 'Simitci',
+  lat: 38.6418462,
+  lng: 34.691322
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 22,
+  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+)
+
+Semra = User.create!(
+  username: 'semra',
+  password: 'Cappadocia',
+  destination_id: Cappadocia.id,
+  first_name: 'Guney',
+  last_name: 'Simitci',
+  lat: 38.6118462,
+  lng: 34.7275425
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 22,
+  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+)
+
+##Dubrovnik
+Dario = User.create!(
+  username: 'dario',
+  password: 'Dubrovnik',
+  destination_id: Dubrovnik.id,
+  first_name: 'Dario',
+  last_name: 'Rajcevic',
+  lat: 42.645815,
+  lng: 18.0589419
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 22,
+  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+)
+
+Vlado = User.create!(
+  username: 'vlado',
+  password: 'Dubrovnik',
+  destination_id: Dubrovnik.id,
+  first_name: 'Vlado',
+  last_name: 'Bozic',
+  lat: 42.645815,
+  lng: 18.0589419
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 22,
+  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+)
+
+Nina = User.create!(
+  username: 'nina',
+  password: 'Dubrovnik',
+  destination_id: Dubrovnik.id,
+  first_name: 'Dario',
+  last_name: 'Skaro',
+  lat: 42.645815,
+  lng: 18.0589419
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 22,
+  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+)
+
+##Chefchaouen
+Wafa = User.create!(
+  username: 'wafa',
+  password: 'chefchaouen',
+  destination_id: Chefchaouen.id,
+  first_name: 'Wafa',
+  last_name: 'AlAdwan',
+  lat: 35.1710528,
+  lng: -5.3060858
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Saafa = User.create!(
+  username: 'saafa',
+  password: 'chefchaouen',
+  destination_id: Chefchaouen.id,
+  first_name: 'Safaa',
+  last_name: 'Sukkar',
+  lat: 35.1707196,
+  lng: -5.3261917
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Abdu = User.create!(
+  username: 'abdu',
+  password: 'chefchaouen',
+  destination_id: Chefchaouen.id,
+  first_name: 'Abdu',
+  last_name: 'AlMajnun',
+  lat: 35.1707196,
+  lng: -5.2999275
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+##Mostar
+Atila = User.create!(
+  username: 'atila',
+  password: 'Mostar1',
+  destination_id: Mostar.id,
+  first_name: 'Atila',
+  last_name: 'Alikalfic',
+  lat: 43.3465866,
+  lng: 17.8028507
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Adel = User.create!(
+  username: 'adel',
+  password: 'Mostar1',
+  destination_id: Mostar.id,
+  first_name: 'Adel',
+  last_name: 'Hajdarovic',
+  lat: 43.3434344,
+  lng: 17.8039236
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Emil = User.create!(
+  username: 'emil',
+  password: 'Mostar1',
+  destination_id: Mostar.id,
+  first_name: 'Emil',
+  last_name: 'Alikalfic',
+  lat: 43.3384737,
+  lng: 17.8032987
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Selma = User.create!(
+  username: 'selma',
+  password: 'Mostar1',
+  destination_id: Mostar.id,
+  first_name: 'Selma',
+  last_name: 'Sosic',
+  lat: 43.3452251,
+  lng: 17.812276
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Isabelle = User.create!(
+  username: 'isabelle',
+  password: 'Granada',
+  destination_id: Granada.id,
+  first_name: 'Isabelle',
+  last_name: 'Caballes',
+  lat: 37.2015731,
+  lng: -3.615026
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Juan = User.create!(
+  username: 'juan',
+  password: 'Granada',
+  destination_id: Granada.id,
+  first_name: 'Juan',
+  last_name: 'Sanchez',
+  lat: 37.1985479,
+  lng: -3.639123
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Marco = User.create!(
+  username: 'marco',
+  password: 'Granada',
+  destination_id: Granada.id,
+  first_name: 'Marco',
+  last_name: 'Fernandez',
+  lat: 37.1810095,
+  lng: -3.6263771
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Maria = User.create!(
+  username: 'maria',
+  password: 'Barcelona',
+  destination_id: Barcelona.id,
+  first_name: 'Maria',
+  last_name: 'Fernandez',
+  lat: 41.4140178,
+  lng: -2.1466198
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Sergio = User.create!(
+  username: 'maria',
+  password: 'Barcelona',
+  destination_id: Barcelona.id,
+  first_name: 'Maria',
+  last_name: 'Polanco',
+  lat: 41.3838863,
+  lng: -2.1433583
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+##Cario

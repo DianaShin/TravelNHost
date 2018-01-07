@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180106201104) do
+ActiveRecord::Schema.define(version: 20180107153941) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 20180106201104) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
-    t.string "image_url", null: false
-    t.string "hero_url", null: false
+    t.string "image_url"
+    t.string "hero_url"
   end
 
   create_table "users", force: :cascade do |t|
@@ -43,6 +43,8 @@ ActiveRecord::Schema.define(version: 20180106201104) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
+    t.float "lat", null: false
+    t.float "lng", null: false 
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
   end
