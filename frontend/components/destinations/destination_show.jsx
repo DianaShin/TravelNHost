@@ -1,5 +1,6 @@
 import React from 'react';
 import DestinationMap from './destination_map';
+// import HostsIndex from '../hosts/hosts_index_container';
 
 class DestinationShow extends React.Component {
   componentDidMount() {
@@ -23,7 +24,8 @@ class DestinationShow extends React.Component {
         <h1 className="destination-show-country">{country}</h1>
         <DestinationMap destination={this.props.destination} lat={lat} long={long}/>
         <img src={hero_url} className="destination-cover-image"/>
-        <div className="hosts-index">I'm a div</div>
+        <div className="hosts-index">I'm a div
+        </div>
       </div>
 
     );
