@@ -11,10 +11,15 @@ class Header extends React.Component {
     super(props);
 
     this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.demo = this.demo.bind(this);
   }
 
-  handleCloseModal(formType){
+  handleCloseModal(){
       return this.props.history.push('/');
+  }
+
+  demo(){
+    return this.props.history.push('/login')
   }
 
   render() {
@@ -30,7 +35,7 @@ class Header extends React.Component {
             </div>
             <ul class="header-nav-buttons-list">
               <li class='header-nav-demo-button'>
-                <button class='header-nav-demo-button'>DEMO</button>
+                <button class='header-nav-demo-button' onClick={this.demo}>DEMO</button>
               </li>
               <li class='header-nav-buttons-list-item'>
                 <Link to='/signup' class='header-nav-buttons-list-link'>SIGN UP</Link>
@@ -104,6 +109,7 @@ class Header extends React.Component {
                   </li>
               </ul>
           </nav>
+          <div class="whitespace"> </div>
         </div>
       );
     }

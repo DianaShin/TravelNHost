@@ -26,7 +26,7 @@ nav {
   background-color:  white;
 }
 
-div .header-left {
+div.header-left {
   /*float: right;*/
   float: left;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 class SessionForm extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       username: '',
@@ -10,6 +10,7 @@ class SessionForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.demoUserLogin = this.demoUserLogin.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
@@ -21,21 +22,29 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    // this.setState({
-    //   username: '',
-    //   password: ''
-    // });
     this.props.processForm(user).then(
-     () => this.props.closeModal()
+    () => this.props.closeModal()
    )
    .then(() => this.props.history.push("/"));
  }
 
 
-  handleChange(type){
+  handleChange(type) {
     return (e) => {
       this.setState({[type]: e.target.value});
     };
+  }
+
+  demoUserLogin(e) {
+    e.preventDefault();
+
+    const demoUser = {
+      username: 'mustafa',
+      password: 'Istanbul'
+    };
+    this.setState(demoUser, () => {
+      this.props.processForm(demoUser);
+    });
   }
 
   render() {
@@ -43,6 +52,7 @@ class SessionForm extends React.Component {
     let linkTo;
     let switchModalMessage;
     let switchModalButton;
+    let guestLogin = "DEMO";
     switch (this.props.formType) {
       case('login'):
         title = 'LOGIN';
@@ -82,9 +92,11 @@ class SessionForm extends React.Component {
           placeholder='username' value={this.state.username}/>
           <br />
        <input type="password" onChange = {this.handleChange('password')} className="input"
-         placeholder='password' value={this.state.password}/>
-         <br />
+        placeholder='password' value={this.state.password}/>
+        <br />
       <input type='submit' value={this.props.formType} className="submit-button"/>
+      <br />
+      <input type='submit' value={guestLogin} onClick={this.demoUserLogin} className="guest-button"/>
       <p className="switchModalMessage">{switchModalMessage}</p>
       <input type='submit' value={switchModalButton} className="switchModalButton" />
      </form>

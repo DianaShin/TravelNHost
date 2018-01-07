@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeIndex from './home_index_container';
+// import SearchContainer from '../search/search_container';
 
 class Home extends React.Component {
   render() {
@@ -43,4 +44,5 @@ class Home extends React.Component {
   }
 }
 
+// <SearchContainer text="Explore Places Around the World" />
 export default Home;
