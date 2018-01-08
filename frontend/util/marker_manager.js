@@ -5,12 +5,15 @@ export default class MarkerManager {
   }
 
   updateMarkers(hosts) {
+    let image = 'https://s3.amazonaws.com/travelnhost/icons/Pindrop3.png';
     Object.keys(hosts).forEach( (key) => {
       let latLng = { lat: hosts[key].lat, lng: hosts[key].lng};
       new google.maps.Marker({
         position: latLng,
         map: this.map,
-        title: hosts[key].first_name
+        animation: google.maps.Animation.DROP,
+        title: hosts[key].first_name,
+        icon: image
       });
     });
   }

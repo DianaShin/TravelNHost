@@ -5,6 +5,7 @@ import MarkerManager from '../../util/marker_manager';
 class DestinationMap extends React.Component {
   constructor(props){
     super(props);
+  
     // this._handleInfoClick = this._handleInfoClick.bind(this);
   }
 
@@ -38,6 +39,8 @@ class DestinationMap extends React.Component {
       this.MarkerManager = new MarkerManager(this.map);
       this.MarkerManager.updateMarkers(newProps.hosts);
       // this.map.addListener('bounds_changed', this.handleMapChange);
+
+
     }
   }
 
