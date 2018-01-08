@@ -1,5 +1,5 @@
 import React from 'react';
-import DestinationMap from './destination_map';
+import DestinationMap from './destination_map_container';
 // import HostsIndex from '../hosts/hosts_index_container';
 
 class DestinationShow extends React.Component {
@@ -33,6 +33,7 @@ class DestinationShow extends React.Component {
 }
 
 export default DestinationShow;
+
 
 
 // <p className="destination-show">{this.props.match.params.destination.name}</p>

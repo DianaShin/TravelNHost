@@ -158,7 +158,7 @@ Amsterdam = Destination.create!(
   hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/AmsterdamHero-01.png"
 )
 
-Stockhom = Destination.create!(
+Stockholm = Destination.create!(
   name: 'Stockholm',
   country: 'Sweden',
   lat: 59.326242,
@@ -255,7 +255,7 @@ Aylin = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Aylin',
   last_name: 'Adalet',
-  lat: 40.9944503,
+  lat: 41.0001384,
   lng: 29.0182612
   # isHost: true,
   # hostRating: 0,
@@ -306,8 +306,8 @@ Semra = User.create!(
   destination_id: Cappadocia.id,
   first_name: 'Guney',
   last_name: 'Kestaneci',
-  lat: 38.6118462,
-  lng: 34.7275425
+  lat: 38.6516835,
+  lng: 34.8187001
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -323,8 +323,8 @@ Dario = User.create!(
   destination_id: Dubrovnik.id,
   first_name: 'Dario',
   last_name: 'Rajcevic',
-  lat: 42.645815,
-  lng: 18.0589419
+  lat: 42.6512758,
+  lng: 18.0773955
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -339,8 +339,8 @@ Vlado = User.create!(
   destination_id: Dubrovnik.id,
   first_name: 'Vlado',
   last_name: 'Bozic',
-  lat: 42.645815,
-  lng: 18.0589419
+  lat: 42.6512758,
+  lng: 18.0773955
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -355,8 +355,8 @@ Nina = User.create!(
   destination_id: Dubrovnik.id,
   first_name: 'Dario',
   last_name: 'Skaro',
-  lat: 42.645815,
-  lng: 18.0589419
+  lat: 42.6512758,
+  lng: 18.0773955
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -421,7 +421,7 @@ Atila = User.create!(
   destination_id: Mostar.id,
   first_name: 'Atila',
   last_name: 'Alikalfic',
-  lat: 43.3465866,
+  lat: 43.3365866,
   lng: 17.8028507
   # isHost: true,
   # hostRating: 0,
@@ -453,8 +453,8 @@ Emil = User.create!(
   destination_id: Mostar.id,
   first_name: 'Emil',
   last_name: 'Alikalfic',
-  lat: 43.3384737,
-  lng: 17.8032987
+  lat: 43.3578675,
+  lng: 17.7893968
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -527,14 +527,14 @@ Marco = User.create!(
   # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
-Maria = User.create!(
-  username: 'maria',
+Mariam = User.create!(
+  username: 'mariam',
   password: 'Barcelona',
   destination_id: Barcelona.id,
-  first_name: 'Maria',
+  first_name: 'Mariam',
   last_name: 'Fernandez',
-  lat: 41.4140178,
-  lng: -2.1466198
+  lat: 41.4474166,
+  lng: 2.1031037
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -550,7 +550,7 @@ Sergio = User.create!(
   first_name: 'Sergio',
   last_name: 'Polanco',
   lat: 41.3838863,
-  lng: -2.1433583
+  lng: 2.1433583
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -698,7 +698,7 @@ Drino = User.create!(
   destination_id: Sarajevo.id,
   first_name: 'Drino',
   last_name: 'Galic',
-  lat: 43.8938847,
+  lat: 43.8918847,
   lng: 18.2425638
   # isHost: true,
   # hostRating: 0,
@@ -714,8 +714,8 @@ Ahmet = User.create!(
   destination_id: Sarajevo.id,
   first_name: 'Ahmet',
   last_name: 'Zakula',
-  lat: 43.8938847,
-  lng: 18.2425638
+  lat: 43.8938256,
+  lng: 18.3129515
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -749,8 +749,8 @@ Jameela = User.create!(
   destination_id: Marrakesh.id,
   first_name: 'Jameela',
   last_name: 'Tawfiq',
-  lat: 31.6347484,
-  lng: -8.0780651
+  lat: 31.6347485,
+  lng: -8.0778935
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -765,8 +765,8 @@ Rachid = User.create!(
   destination_id: Marrakesh.id,
   first_name: 'Rachid',
   last_name: 'Tantawi',
-  lat: 31.6347484,
-  lng: -8.0780651
+  lat: 31.6583494,
+  lng: -8.0133488
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -899,8 +899,8 @@ Mario = User.create!(
   destination_id: Venice.id,
   first_name: 'Luigi',
   last_name: 'Saluggi',
-  lat: 45.445707,
-  lng: 12.3026352
+  lat: 45.414208,
+  lng: 12.3327858
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -916,8 +916,8 @@ Luigi = User.create!(
   destination_id: Venice.id,
   first_name: 'Luigi',
   last_name: 'Gelato',
-  lat: 45.4490655,
-  lng: 12.3035714
+  lat: 45.414208,
+  lng: 12.3327858
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -985,6 +985,40 @@ Miranda = User.create!(
   last_name: 'Rakhorst',
   lat: 52.3418767,
   lng: 4.8088367
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+##stockholm
+
+Oskar = User.create!(
+  username: 'oskar',
+  password: 'stockholm',
+  destination_id: Stockholm.id,
+  first_name: 'Oskar',
+  last_name: 'Ludvig',
+  lat: 59.3238774,
+  lng: 18.0326863
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
+
+Elsa = User.create!(
+  username: 'elsa',
+  password: 'stockholm',
+  destination_id: Stockholm.id,
+  first_name: 'Elsa',
+  last_name: 'Erikkson',
+  lat: 59.324797,
+  lng: 18.024704
   # isHost: true,
   # hostRating: 0,
   # imageUrl:

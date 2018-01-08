@@ -1,11 +1,15 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import MarkerManager from '../../util/marker_manager';
 
 class DestinationMap extends React.Component {
   constructor(props){
     super(props);
+    // this._handleInfoClick = this._handleInfoClick.bind(this);
   }
 
   componentDidMount() {
+
     // const lat = this.props.lat;
     // const long = this.props.long;
     // const mapOptions = {
@@ -31,8 +35,14 @@ class DestinationMap extends React.Component {
       // debugger
       // wrap the mapDOMNode in a Google Map
       this.map = new google.maps.Map(this.mapNode, mapOptions);
-      this.map.addListener('bounds_changed', this.handleMapChange);
+      this.MarkerManager = new MarkerManager(this.map);
+      this.MarkerManager.updateMarkers(newProps.hosts);
+      // this.map.addListener('bounds_changed', this.handleMapChange);
     }
+  }
+
+  componentDidUpdate() {
+      this.MarkerManager.updateMarkers(this.props.hosts);
   }
 
   render(){
