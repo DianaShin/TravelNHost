@@ -12,7 +12,6 @@ class HostsIndex extends React.Component {
   }
 
   render() {
-    debugger
     const hosts = [];
     Object.keys(this.props.hosts).forEach((key) => {
       hosts.push(<li key={key}> {this.props.hosts[key].first_name}</li>);
