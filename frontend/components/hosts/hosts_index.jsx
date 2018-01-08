@@ -7,20 +7,22 @@ class HostsIndex extends React.Component {
   }
 
   componentDidMount() {
+    // debugger
     this.props.fetchDestination(this.props.match.params.destinationId);
   }
 
   render() {
+    debugger
     const hosts = [];
     Object.keys(this.props.hosts).forEach((key) => {
-      hosts.push(<li key={key}> {this.props[key].first_name}</li>);
+      hosts.push(<li key={key}> {this.props.hosts[key].first_name}</li>);
     });
     return (
-      <div>
-        {hosts}
-      </div>
+        <ul>
+          {hosts}
+        </ul>
     );
   }
 }
 
-export default HostsIndex;
+export default withRouter(HostsIndex);

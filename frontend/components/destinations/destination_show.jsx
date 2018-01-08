@@ -1,10 +1,11 @@
 import React from 'react';
 import DestinationMap from './destination_map_container';
-// import HostsIndex from '../hosts/hosts_index_container';
+import HostsIndex from '../hosts/hosts_index_container';
 
 class DestinationShow extends React.Component {
   componentDidMount() {
     this.props.fetchDestination(this.props.match.params.destinationId);
+    window.scrollTo(0,0);
   }
 
   render() {
@@ -25,6 +26,7 @@ class DestinationShow extends React.Component {
         <DestinationMap destination={this.props.destination} lat={lat} long={long}/>
         <img src={hero_url} className="destination-cover-image"/>
         <div className="hosts-index">I'm a div
+          <HostsIndex />
         </div>
       </div>
 
@@ -33,7 +35,3 @@ class DestinationShow extends React.Component {
 }
 
 export default DestinationShow;
-
-
-
-// <p className="destination-show">{this.props.match.params.destination.name}</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 import HomeIndex from './home_index_container';
-// import SearchContainer from '../search/search_container';
+import SearchContainer from '../search/search_container';
 
 class Home extends React.Component {
   render() {
@@ -39,6 +39,7 @@ class Home extends React.Component {
          </section>
 
          <HomeIndex />
+         <SearchContainer />
       </div>
     );
   }
