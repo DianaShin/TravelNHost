@@ -18,14 +18,14 @@ class DestinationShow extends React.Component {
       country = this.props.destination.country;
       hero_url = this.props.destination.hero_url;
     }
-    
+
     return (
       <div>
         <h1 className="destination-show-name">{name}</h1>
         <h1 className="destination-show-country">{country}</h1>
         <DestinationMap destination={this.props.destination} lat={lat} long={long}/>
         <img src={hero_url} className="destination-cover-image"/>
-        <div className="hosts-index">I'm a div
+        <div className="hosts-index">
           <HostsIndex />
         </div>
       </div>

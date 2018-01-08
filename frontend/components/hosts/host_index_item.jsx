@@ -5,12 +5,12 @@ import { Link, withRouter } from 'react-router';
 class HostIndexItem extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    return this.props.history.push(`/destinations/${this.props.destinationId}/hosts/${this.props.key}`);
-  }
+  // handleClick() {
+  //   return this.props.history.push(`/destinations/${this.props.destinationId}/hosts/${this.props.key}`);
+  // }
 
   render() {
     return (
