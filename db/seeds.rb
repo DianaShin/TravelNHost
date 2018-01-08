@@ -176,7 +176,9 @@ Mehmet = User.create!(
   first_name: 'Mehmet',
   last_name: 'Akkaya',
   lat: 41.0678203,
-  lng: 29.0310582
+  lng: 29.0310582,
+  age: 28,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -192,7 +194,9 @@ Mustafa = User.create!(
   first_name: 'Mustafa',
   last_name: 'Gunsur',
   lat: 41.0557022,
-  lng: 29.0043005
+  lng: 29.0043005,
+  age: 38,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -208,7 +212,9 @@ Nilufer = User.create!(
   first_name: 'Nilufer',
   last_name: 'Karagul',
   lat: 40.9787062,
-  lng: 28.9432452
+  lng: 28.9432452,
+  age: 24,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -224,7 +230,9 @@ Nejla = User.create!(
   first_name: 'Nejla',
   last_name: 'Kahveci',
   lat: 41.0368836,
-  lng: 28.9806566
+  lng: 28.9806566,
+  age: 27,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -240,7 +248,9 @@ Burak = User.create!(
   first_name: 'Burak',
   last_name: 'Gulluoglu',
   lat: 41.0322513,
-  lng: 29.0231618
+  lng: 29.0231618,
+  age: 27,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -256,7 +266,9 @@ Aylin = User.create!(
   first_name: 'Aylin',
   last_name: 'Adalet',
   lat: 41.0001384,
-  lng: 29.0182612
+  lng: 29.0182612,
+  age: 29,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -275,7 +287,9 @@ Guney = User.create!(
   first_name: 'Guney',
   last_name: 'Gulluoglu',
   lat: 38.6418462,
-  lng: 34.691322
+  lng: 34.691322,
+  age: 29,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -288,10 +302,12 @@ Kuzey = User.create!(
   username: 'kuzey',
   password: 'Cappadocia',
   destination_id: Cappadocia.id,
-  first_name: 'Guney',
+  first_name: 'Kuzey',
   last_name: 'Simitci',
   lat: 38.6418462,
-  lng: 34.691322
+  lng: 34.691322,
+  age: 24,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -304,10 +320,12 @@ Semra = User.create!(
   username: 'semra',
   password: 'Cappadocia',
   destination_id: Cappadocia.id,
-  first_name: 'Guney',
+  first_name: 'Semra',
   last_name: 'Kestaneci',
   lat: 38.6516835,
-  lng: 34.8187001
+  lng: 34.8187001,
+  age: 31,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -324,7 +342,9 @@ Dario = User.create!(
   first_name: 'Dario',
   last_name: 'Rajcevic',
   lat: 42.6512758,
-  lng: 18.0773955
+  lng: 18.0773955,
+  age: 26,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -340,7 +360,9 @@ Vlado = User.create!(
   first_name: 'Vlado',
   last_name: 'Bozic',
   lat: 42.6512758,
-  lng: 18.0773955
+  lng: 18.0773955,
+  age: 34,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -353,10 +375,12 @@ Nina = User.create!(
   username: 'nina',
   password: 'Dubrovnik',
   destination_id: Dubrovnik.id,
-  first_name: 'Dario',
+  first_name: 'Nina',
   last_name: 'Skaro',
   lat: 42.6512758,
-  lng: 18.0773955
+  lng: 18.0773955,
+  age: 35,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -373,7 +397,9 @@ Wafa = User.create!(
   first_name: 'Wafa',
   last_name: 'AlAdwan',
   lat: 35.1710528,
-  lng: -5.3060858
+  lng: -5.3060858,
+  age: 35,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -389,7 +415,10 @@ Saafa = User.create!(
   first_name: 'Safaa',
   last_name: 'Sukkar',
   lat: 35.1707196,
-  lng: -5.3261917
+  lng: -5.3261917,
+  age: 25,
+  gender: 'female'
+
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -405,7 +434,9 @@ Abdu = User.create!(
   first_name: 'Abdu',
   last_name: 'AlMajnun',
   lat: 35.1707196,
-  lng: -5.2999275
+  lng: -5.2999275,
+  age: 42,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -422,7 +453,9 @@ Atila = User.create!(
   first_name: 'Atila',
   last_name: 'Alikalfic',
   lat: 43.3365866,
-  lng: 17.8028507
+  lng: 17.8028507,
+  age: 35,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -438,7 +471,9 @@ Adel = User.create!(
   first_name: 'Adel',
   last_name: 'Hajdarovic',
   lat: 43.3434344,
-  lng: 17.8039236
+  lng: 17.8039236,
+  age: 25,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -454,7 +489,9 @@ Emil = User.create!(
   first_name: 'Emil',
   last_name: 'Alikalfic',
   lat: 43.3578675,
-  lng: 17.7893968
+  lng: 17.7893968,
+  age: 25,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -470,7 +507,9 @@ Selma = User.create!(
   first_name: 'Selma',
   last_name: 'Sosic',
   lat: 43.3452251,
-  lng: 17.812276
+  lng: 17.812276,
+  age: 30,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -486,7 +525,9 @@ Isabelle = User.create!(
   first_name: 'Isabelle',
   last_name: 'Caballes',
   lat: 37.2015731,
-  lng: -3.615026
+  lng: -3.615026,
+  age: 22,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -502,7 +543,9 @@ Juan = User.create!(
   first_name: 'Juan',
   last_name: 'Sanchez',
   lat: 37.1985479,
-  lng: -3.639123
+  lng: -3.639123,
+  age: 27,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -518,7 +561,9 @@ Marco = User.create!(
   first_name: 'Marco',
   last_name: 'Fernandez',
   lat: 37.1810095,
-  lng: -3.6263771
+  lng: -3.6263771,
+  age: 27,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -534,7 +579,9 @@ Mariam = User.create!(
   first_name: 'Mariam',
   last_name: 'Fernandez',
   lat: 41.4474166,
-  lng: 2.1031037
+  lng: 2.1031037,
+  age: 26,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -550,7 +597,9 @@ Sergio = User.create!(
   first_name: 'Sergio',
   last_name: 'Polanco',
   lat: 41.3838863,
-  lng: 2.1433583
+  lng: 2.1433583,
+  age: 26,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -567,7 +616,9 @@ Samer = User.create!(
   first_name: 'Samer',
   last_name: 'Tantawi',
   lat: 30.0259935,
-  lng: 31.2083721
+  lng: 31.2083721,
+  age: 26,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -583,7 +634,9 @@ Layla = User.create!(
   first_name: 'Layla',
   last_name: 'Masri',
   lat: 30.068572,
-  lng: 31.2566549
+  lng: 31.2566549,
+  age: 22,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -599,7 +652,9 @@ Qais = User.create!(
  first_name: 'Qais',
  last_name: 'AbdelRazaq',
  lat: 30.0372055,
- lng: 31.2183856
+ lng: 31.2183856,
+ age: 26,
+ gender: 'male'
  # isHost: true,
  # hostRating: 0,
  # imageUrl:
@@ -615,7 +670,9 @@ Nada = User.create!(
  first_name: 'Nada',
  last_name: 'AlHussein',
  lat: 30.0287697,
- lng: 31.2347881
+ lng: 31.2347881,
+ age: 22,
+ gender: 'female'
  # isHost: true,
  # hostRating: 0,
  # imageUrl:
@@ -633,7 +690,10 @@ Ramzi = User.create!(
  first_name: 'Ramzi',
  last_name: 'AlHussein',
  lat: 30.3342374,
- lng: 35.4220409
+ lng: 35.4220409,
+ age: 22,
+ gender: 'male'
+
  # isHost: true,
  # hostRating: 0,
  # imageUrl:
@@ -649,7 +709,9 @@ Omar = User.create!(
   first_name: 'Omar',
   last_name: 'Sharif',
   lat: 30.3210225,
-  lng: 35.460611
+  lng: 35.460611,
+  age: 23,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -665,7 +727,9 @@ Mohammad = User.create!(
   first_name: 'Mohammad',
   last_name: 'Ahmad',
   lat: 30.2849946,
-  lng: 35.1650836
+  lng: 35.1650836,
+  age: 25,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -681,7 +745,9 @@ Wael = User.create!(
   first_name: 'Wael',
   last_name: 'Shaker',
   lat: 30.3015954,
-  lng: 35.4536424
+  lng: 35.4536424,
+  age: 22,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -699,7 +765,9 @@ Drino = User.create!(
   first_name: 'Drino',
   last_name: 'Galic',
   lat: 43.8918847,
-  lng: 18.2425638
+  lng: 18.2425638,
+  age: 22,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -715,7 +783,9 @@ Ahmet = User.create!(
   first_name: 'Ahmet',
   last_name: 'Zakula',
   lat: 43.8938256,
-  lng: 18.3129515
+  lng: 18.3129515,
+  age: 26,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -731,7 +801,9 @@ Gulfem = User.create!(
   first_name: 'Gulfem',
   last_name: 'Tekinoglu',
   lat: 43.8790385,
-  lng: 18.2487436
+  lng: 18.2487436,
+  age: 27,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -750,7 +822,9 @@ Jameela = User.create!(
   first_name: 'Jameela',
   last_name: 'Tawfiq',
   lat: 31.6347485,
-  lng: -8.0778935
+  lng: -8.0778935,
+  age: 26,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -766,7 +840,9 @@ Rachid = User.create!(
   first_name: 'Rachid',
   last_name: 'Tantawi',
   lat: 31.6583494,
-  lng: -8.0133488
+  lng: -8.0133488,
+  age: 22,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -782,7 +858,9 @@ Abdessadek = User.create!(
   first_name: 'Abdessadek',
   last_name: 'Elfari',
   lat: 31.6286828,
-  lng: -8.0711129
+  lng: -8.0711129,
+  age: 27,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -798,7 +876,9 @@ Faris = User.create!(
   first_name: 'Faris',
   last_name: 'AbdelKader',
   lat: 31.5879308,
-  lng: -8.0810263
+  lng: -8.0810263,
+  age: 22,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -816,7 +896,9 @@ Jirka = User.create!(
   first_name: 'Jirka',
   last_name: 'Benes',
   lat: 50.0598054,
-  lng: 14.3251971
+  lng: 14.3251971,
+  age: 26,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -832,7 +914,9 @@ Silvia = User.create!(
   first_name: 'Silvia',
   last_name: 'Fabbri',
   lat: 50.0510984,
-  lng: 14.4537714
+  lng: 14.4537714,
+  age: 26,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -848,7 +932,9 @@ Miguel = User.create!(
   first_name: 'Miguel',
   last_name: 'Doubek',
   lat: 50.0510984,
-  lng: 14.3837336
+  lng: 14.3837336,
+  age: 24,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -866,7 +952,9 @@ Oliver = User.create!(
   first_name: 'Oliver',
   last_name: 'Sullivan',
   lat: 51.4842251,
-  lng: -0.2127482
+  lng: -0.2127482,
+  age: 22,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -882,7 +970,9 @@ Emily = User.create!(
   first_name: 'Emily',
   last_name: 'Baker',
   lat: 51.5005156,
-  lng: -0.1840896
+  lng: -0.1840896,
+  age: 22,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -900,7 +990,9 @@ Mario = User.create!(
   first_name: 'Luigi',
   last_name: 'Saluggi',
   lat: 45.414208,
-  lng: 12.3327858
+  lng: 12.3327858,
+  age: 22,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -917,7 +1009,9 @@ Luigi = User.create!(
   first_name: 'Luigi',
   last_name: 'Gelato',
   lat: 45.414208,
-  lng: 12.3327858
+  lng: 12.3327858,
+  age: 24,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -936,7 +1030,9 @@ Mircea = User.create!(
   first_name: 'Mircea',
   last_name: 'Bardou',
   lat: 55.6713808,
-  lng: 12.4533979
+  lng: 12.4533979,
+  age: 22,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -952,7 +1048,9 @@ Kasper = User.create!(
   first_name: 'Kasper',
   last_name: 'Nielsen',
   lat: 55.6414078,
-  lng: 12.4933092
+  lng: 12.4933092,
+  age: 27,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -968,7 +1066,9 @@ Serge = User.create!(
   first_name: 'Serge',
   last_name: 'Groot',
   lat: 52.3547746,
-  lng: 4.7581966
+  lng: 4.7581966,
+  age: 29,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -984,7 +1084,9 @@ Miranda = User.create!(
   first_name: 'Miranda',
   last_name: 'Rakhorst',
   lat: 52.3418767,
-  lng: 4.8088367
+  lng: 4.8088367,
+  age: 28,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -1002,7 +1104,9 @@ Oskar = User.create!(
   first_name: 'Oskar',
   last_name: 'Ludvig',
   lat: 59.3238774,
-  lng: 18.0326863
+  lng: 18.0326863,
+  age: 22,
+  gender: 'male'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
@@ -1018,7 +1122,9 @@ Elsa = User.create!(
   first_name: 'Elsa',
   last_name: 'Erikkson',
   lat: 59.324797,
-  lng: 18.024704
+  lng: 18.024704,
+  age: 27,
+  gender: 'female'
   # isHost: true,
   # hostRating: 0,
   # imageUrl:
