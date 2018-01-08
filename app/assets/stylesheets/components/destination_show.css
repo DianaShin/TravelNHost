@@ -52,4 +52,6 @@ div.hosts-index {
   border: 3px solid #20b2aa;
   height: 400px;
   width: 550px;
+  overflow: scroll;
+  cursor: pointer;
 }
