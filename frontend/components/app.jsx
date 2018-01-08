@@ -18,4 +18,4 @@ const App = () => (
 
 export default App;
 
-    // <Route path='/destinations/:destinationId' component={DestinationShow}/>
+  
