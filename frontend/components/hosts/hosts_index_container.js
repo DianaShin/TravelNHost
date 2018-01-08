@@ -7,7 +7,6 @@ import { fetchDestination } from '../../actions/destination_actions';
 const mapStateToProps = (state, ownProps) => {
   return {
     hosts: state.entities.hosts
-    // destination: state.entities.destinations[ownProps.match.params.destinationId]
   };
 };
 

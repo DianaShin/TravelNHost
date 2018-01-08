@@ -1,0 +1,25 @@
+.search-input-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-list-item {
+  background-color: white;
+  color: gray;
+  font-size: 12px;
+  list-style: none;
+}
+
+.autosuggest {
+  margin-right: 25px;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.magnifying-glass {
+  height: 20px;
+  width: 20px;
+  margin-left: 7px;
+}

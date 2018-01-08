@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import SessionFormContainer from '../session/session_form_container';
 import { Link } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
-
+import SearchContainer from '../search/search_container';
 
 class Header extends React.Component {
   constructor(props) {
@@ -100,6 +100,7 @@ class Header extends React.Component {
               </Link>
               <h1 class="brand-name">TRAVEL N HOST</h1>
             </div>
+            <SearchContainer />
               <ul class="header-nav-buttons-list">
                 <li class='header-nav-buttons-list-item'>
                   <button class='header-nav-buttons-list-item dashboard'>DASHBOARD</button>

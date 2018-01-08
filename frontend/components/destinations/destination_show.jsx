@@ -18,7 +18,7 @@ class DestinationShow extends React.Component {
       country = this.props.destination.country;
       hero_url = this.props.destination.hero_url;
     }
-    // debugger
+    
     return (
       <div>
         <h1 className="destination-show-name">{name}</h1>

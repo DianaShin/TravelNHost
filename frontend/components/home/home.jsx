@@ -39,11 +39,16 @@ class Home extends React.Component {
          </section>
 
          <HomeIndex />
-         <SearchContainer />
       </div>
     );
   }
 }
 
-// <SearchContainer text="Explore Places Around the World" />
+// <div className="search-bar-background-placeholder">
+//   <h2 className="fav-destinations">FAVORITE DESTINATIONS</h2>
+// </div>
+// <div className="search-div">
+//   <SearchContainer className ="search-bar" />
+// </div>
+
 export default Home;

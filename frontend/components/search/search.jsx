@@ -1,14 +1,14 @@
 import React from 'react';
 import Autosuggest from 'react-autosuggest';
-import { hashHistory } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
 
 const getSuggestionValue = suggestion => suggestion.name;
 const getSuggestionId = suggestion => suggestion.id;
 
 const renderSuggestion = suggestion => {
-  return <div className='search-list-item'>
+  return <p className='search-list-item'>
     {suggestion.name}
-  </div>;
+  </p>;
 };
 
 class Search extends React.Component {
@@ -35,7 +35,7 @@ class Search extends React.Component {
       destination.name.toLowerCase() === this.state.value.toLowerCase()));
     if (match.length === 1) {
       const id = match[0].id;
-      return this.props.history.push(`/destinations/${id}`);
+       return this.props.history.push(`/destinations/${id}`);
     }
   }
 
@@ -77,8 +77,7 @@ class Search extends React.Component {
     return (
       <div className='search-bar'>
         <form  onSubmit={this.handleSubmit}>
-          <div className='search-input-box'>
-            <Autosuggest
+            <Autosuggest className="autosuggest"
               suggestions = {suggestions}
               onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
               onSuggestionsClearRequested={this.onSuggestionsClearRequested}
@@ -87,10 +86,11 @@ class Search extends React.Component {
               inputProps = {inputProps}
               renderInputComponent = {renderInputComponent}
             />
-          <button type="submit" title="Explore-places">
-             <i className="fa fa-search" aria-hidden="true"></i>
+          <button>
+            <img className="magnifying-glass"
+              src="https://s3.amazonaws.com/travelnhost/icons/searching-magnifying-glass.svg"
+              onClick={this.handleClick} />
           </button>
-          </div>
         </form>
       </div>
     );
