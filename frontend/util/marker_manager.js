@@ -8,12 +8,21 @@ export default class MarkerManager {
     let image = 'https://s3.amazonaws.com/travelnhost/icons/Pindrop3.png';
     Object.keys(hosts).forEach( (key) => {
       let latLng = { lat: hosts[key].lat, lng: hosts[key].lng};
-      new google.maps.Marker({
+//
+      let infowindow = new google.maps.InfoWindow({
+        content: hosts[key].first_name
+      });
+
+      let marker = new google.maps.Marker({
         position: latLng,
         map: this.map,
         animation: google.maps.Animation.DROP,
         title: hosts[key].first_name,
         icon: image
+      });
+//
+      marker.addListener('click', function() {
+        infowindow.open(marker);
       });
     });
   }
