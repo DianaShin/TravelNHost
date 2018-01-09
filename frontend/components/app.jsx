@@ -4,6 +4,7 @@ import SessionFormContainer from './session/session_form_container';
 import HeaderContainer from './header/header_container';
 import Home from './home/home';
 import DestinationShow from './destinations/destination_show_container';
+import HostShow from './hosts/host_show';
 
 
 const App = () => (
@@ -12,10 +13,11 @@ const App = () => (
       <Route exact path="/" component={Home}/>
       <Route exact path="/signup" component={Home}/>
       <Route exact path="/login" component={Home}/>
-      <Route path='/destinations/:destinationId' component={DestinationShow}/>
+      <Switch>
+        <Route path='/destinations/:destinationId/hosts/:hostId' component={HostShow}/>
+        <Route path='/destinations/:destinationId' component={DestinationShow}/>
+      </Switch>
   </div>
 );
 
 export default App;
-
-  

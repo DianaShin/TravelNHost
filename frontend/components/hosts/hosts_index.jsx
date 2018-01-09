@@ -21,6 +21,7 @@ class HostsIndex extends React.Component {
   let hosts = Object.keys(this.props.hosts).map(id => this.props.hosts[id]);
   let hostItems = hosts.map((host) => {
     return <HostIndexItem key={host.id}
+      id={host.id}
       destinationId={this.props.match.params.destinationId}
       firstname={host.first_name}
       lastname={host.last_name}
