@@ -81,7 +81,7 @@ class Search extends React.Component {
       </div>
     );
     return (
-        <form  onSubmit={this.handleSubmit}>
+        <form className="search-bar" onSubmit={this.handleSubmit}>
             <Autosuggest className="autosuggest"
               suggestions = {suggestions}
               onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
