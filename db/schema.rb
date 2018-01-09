@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180108155054) do
+ActiveRecord::Schema.define(version: 20180109184139) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,20 @@ ActiveRecord::Schema.define(version: 20180108155054) do
     t.string "hero_url"
   end
 
+  create_table "hostings", force: :cascade do |t|
+    t.integer "host_id", null: false
+    t.integer "guest_id", null: false
+    t.integer "destination_id", null: false
+    t.string "status", default: "pending", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.date "start_date", null: false
+    t.date "end_date", null: false 
+    t.index ["destination_id"], name: "index_hostings_on_destination_id"
+    t.index ["guest_id"], name: "index_hostings_on_guest_id", unique: true
+    t.index ["host_id"], name: "index_hostings_on_host_id", unique: true
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username", null: false
     t.string "password_digest", null: false
@@ -37,8 +51,8 @@ ActiveRecord::Schema.define(version: 20180108155054) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "destination_id"
-    t.string "first_name", null: false
-    t.string "last_name", null: false
+    t.string "first_name"
+    t.string "last_name"
     t.string "image_file_name"
     t.string "image_content_type"
     t.integer "image_file_size"
@@ -47,6 +61,7 @@ ActiveRecord::Schema.define(version: 20180108155054) do
     t.float "lng"
     t.string "gender"
     t.integer "age"
+    t.boolean "isHost", default: true
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
   end

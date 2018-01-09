@@ -1,4 +1,4 @@
-export const RECEIVE_DESTINATIONS = 'RECEIVE_DESTINATIONS';
+export const RECEIVE_DESTINATIONS = "RECEIVE_DESTINATIONS";
 export const RECEIVE_DESTINATION = "RECEIVE_DESTINATION";
 
 import * as DestinationApiUtil from '../util/destination_api_util';

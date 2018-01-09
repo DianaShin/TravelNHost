@@ -10,6 +10,7 @@ class User < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
   belongs_to :destination, optional: true
+  has_many :hostings 
 
   after_initialize :ensure_session_token
 

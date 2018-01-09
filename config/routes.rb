@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :destinations, only: [:index, :create, :show] do
       resources :users, only: [:create]
     end
+    resources :hostings, only: [:create, :show, :index]
   end
 
   root to: 'static_pages#root'

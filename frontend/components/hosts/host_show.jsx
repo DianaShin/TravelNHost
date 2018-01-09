@@ -1,4 +1,7 @@
 import React from 'react';
+import RequestForm from './request_form';
+// import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
+
 
 class HostShow extends React.Component {
 
@@ -20,9 +23,13 @@ class HostShow extends React.Component {
     }
 
     return (
-      <div className ="profile-box profile-details">
-        { firstName } { lastName} <br />
-        { age } { gender }
+      <div>
+        <div className ="profile-box profile-details">
+          { firstName } { lastName} <br />
+          { age } { gender }
+        </div>
+        <RequestForm />
+
       </div>
     );
   }
