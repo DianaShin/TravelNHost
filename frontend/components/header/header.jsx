@@ -100,7 +100,7 @@ class Header extends React.Component {
               </Link>
               <h1 class="brand-name">TRAVEL N HOST</h1>
             </div>
-            <SearchContainer text="Explore places around the world" style="color:white;"/>
+            <SearchContainer className="search-container" text="Explore our destinations" style="color:white !important;"/>
               <ul class="header-nav-buttons-list">
                 <li class='header-nav-buttons-list-item'>
                   <button class='header-nav-buttons-list-item dashboard'>DASHBOARD</button>

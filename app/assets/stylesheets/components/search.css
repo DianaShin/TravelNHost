@@ -14,11 +14,12 @@
 }
 
 .react-autosuggest__suggestions-list {
-  width: 275px;
+  width: 300px;
   z-index: 1;
   margin-left: 0px;
   list-style: none;
   position: relative;
+  color: white;
   right: 51px;
 }
 
@@ -40,8 +41,6 @@
 .magnifying-glass {
   height: 20px;
   width: 20px;
-  position: relative;
-  top: 15px;
 }
 
 .search-bar-align {
@@ -57,8 +56,7 @@ button.search-submit-button {
     background-color: transparent;
     cursor: pointer;
     outline: none;
-  }
-
-button.search-submit-button:hover {
-  background: none;
+    float: right;
+    position: relative;
+    bottom: 3px;
 }

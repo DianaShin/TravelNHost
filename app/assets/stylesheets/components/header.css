@@ -57,6 +57,10 @@ div.header-left {
   font-size: 38px;
 }
 
+.search-container {
+  color: white !important; 
+}
+
 ul .header-nav-buttons-list {
   float: right;
 }

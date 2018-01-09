@@ -25,6 +25,10 @@ class Search extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidMount(){
+    this.props.fetchDestinations();
+  }
+
   onChange(event, { newValue }) {
     this.setState({
       value: newValue
@@ -78,7 +82,6 @@ class Search extends React.Component {
     );
     return (
         <form  onSubmit={this.handleSubmit}>
-          <div className='search-bar-align'>
             <Autosuggest className="autosuggest"
               suggestions = {suggestions}
               onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
@@ -93,7 +96,6 @@ class Search extends React.Component {
                 src="https://s3.amazonaws.com/travelnhost/icons/searching-magnifying-glass.svg"
               />
               </button>
-          </div>
         </form>
     );
   }

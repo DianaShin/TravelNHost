@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MarkerManager from '../../util/marker_manager';
+import { Link, withRouter } from 'react-router';
 
 class DestinationMap extends React.Component {
   constructor(props){
@@ -37,7 +38,10 @@ class DestinationMap extends React.Component {
       this.map = new google.maps.Map(this.mapNode, mapOptions);
       this.MarkerManager = new MarkerManager(this.map);
       this.MarkerManager.updateMarkers(newProps.hosts);
-      // this.map.addListener('bounds_changed', this.handleMapChange);
+      this.infowindow = new google.maps.InfoWindow({
+        content: `<div> Hello </div>`
+      });
+
 
     }
   }
@@ -57,4 +61,4 @@ class DestinationMap extends React.Component {
 //
 
 
-export default DestinationMap;
+export default withRouter(DestinationMap);
