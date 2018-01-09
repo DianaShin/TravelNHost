@@ -1,5 +1,6 @@
 import React from 'react';
 import Autosuggest from 'react-autosuggest';
+import { Link, withRouter } from 'react-router';
 import { Route, Switch } from 'react-router-dom';
 
 const getSuggestionValue = suggestion => suggestion.name;
@@ -63,6 +64,7 @@ class Search extends React.Component {
   render() {
     const { value, suggestions } = this.state;
 
+    // Autosuggest will pass through all these props to the input element.
     const inputProps = {
       placeholder: this.props.text,
       value: value,
@@ -75,8 +77,8 @@ class Search extends React.Component {
       </div>
     );
     return (
-      <div className='search-bar'>
         <form  onSubmit={this.handleSubmit}>
+          <div className='search-bar-align'>
             <Autosuggest className="autosuggest"
               suggestions = {suggestions}
               onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
@@ -85,16 +87,16 @@ class Search extends React.Component {
               renderSuggestion={renderSuggestion}
               inputProps = {inputProps}
               renderInputComponent = {renderInputComponent}
-            />
-          <button>
-            <img className="magnifying-glass"
-              src="https://s3.amazonaws.com/travelnhost/icons/searching-magnifying-glass.svg"
-              onClick={this.handleClick} />
-          </button>
+              />
+            <button type="submit" className="search-submit-button">
+              <img className="magnifying-glass"
+                src="https://s3.amazonaws.com/travelnhost/icons/searching-magnifying-glass.svg"
+              />
+              </button>
+          </div>
         </form>
-      </div>
     );
   }
 }
 
-export default Search;
+export default withRouter(Search);
