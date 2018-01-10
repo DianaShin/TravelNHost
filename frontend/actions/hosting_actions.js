@@ -4,6 +4,7 @@ export const RECEIVE_HOSTING = "RECEIVE_HOSTING";
 export const RECEIVE_HOSTINGS = "RECEIVE_HOSTING";
 
 export const receiveHostings = (hostings) => {
+  // hostings here reporesents the informastion coming back from the db 
   return {
     type: RECEIVE_HOSTINGS,
     hostings
@@ -17,8 +18,8 @@ export const receiveHosting = (hosting) => {
   };
 };
 
-export const fetchHostings = () => dispatch => {
-  return HostingApiUtil.fetchHostings().then(hostings => {
+export const fetchHostings = (id) => dispatch => {
+  return HostingApiUtil.fetchHostings(id).then(hostings => {
     return dispatch(receiveHostings(hostings));
   });
 };

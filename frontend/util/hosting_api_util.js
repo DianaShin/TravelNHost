@@ -5,13 +5,20 @@ export const fetchHosting = (id) => {
   });
 };
 
-// ???? want hostings for specific host/user
-export const fetchHostings = () => {
+//  want hostings for specific host/user
+export const fetchHostings = (data) => {
+
   return $.ajax({
     url: `api/hostings`,
-    method: 'GET'
+    method: 'GET',
+    data
+      // hosting: {
+      //   host_id: userId
+      // }
   });
 };
+
+window.fetchStuff = fetchHostings;
 
 export const createHosting = hosting => {
   return $.ajax({

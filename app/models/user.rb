@@ -10,9 +10,11 @@ class User < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
   belongs_to :destination, optional: true
-  has_many :hostings 
+  has_many :hostings
 
   after_initialize :ensure_session_token
+
+  ##Write a method for getting all of my guests and write a method for getting all of my upcoming travels. 
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)

@@ -8,13 +8,23 @@ class Api::HostingsController < ApplicationController
       end
   end
 
+  def index
+    if current_user.id == hosting_params[:host_id].to_i
+      @hostings = Hosting.where('hostings.host_id = ?', hosting_params[:host_id])
+    else
+      @hostings = []
+    end
+  end
+  ### in User model instead write a method for getting all of my guests and another
+  ### all of my upcoming travels
+
   def show
     @hosting = Hosting.find_by(id: params[:id])
     if @hosting
       render :show
     else
       render json: ['Hosting not found'], status: 404
-    end 
+    end
   end
 
   private

@@ -2,10 +2,19 @@ class Hosting < ApplicationRecord
   STATUS_TYPES = %w(accepted pending declined).freeze
   validates :status, inclusion: STATUS_TYPES
   validates :host_id, :guest_id, :destination_id, :start_date, :end_date, presence: true
-  validate :start_must_come_before_end
 
-  belongs_to :host
-  belongs_to :guest
+####
+  belongs_to :host,
+    foreign_key: :host_id,
+    primary_key: :id,
+    class_name: :User,
+    optional: true
+
+  belongs_to :guest,
+    foreign_key: :guest_id,
+    primary_key: :id,
+    class_name: :User,
+    optional: true
 
   def approve!
     raise 'not pending' unless self.status == 'pending'
@@ -28,20 +37,6 @@ class Hosting < ApplicationRecord
 
   def pending?
     self.status == 'pending'
-  end
-
-  def hoster
-    hosting.host_id = @current_user.id
-  end
-
-  def hosted
-    hosting.guest_id = @current_user.id
-  end 
-
-  def start_must_come_before_end
-    return if start_date < end_date
-    errors[:start_date] << 'must come before end date'
-    errors[:end_date] << 'must come after start date'
   end
 
 end

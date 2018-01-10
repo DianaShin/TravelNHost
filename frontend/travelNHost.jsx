@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 //testing
-import {login, logout, signup } from './actions/session_actions';
-import {fetchDestination, fetchDestinations } from './actions/destination_actions';
+import { login, logout, signup } from './actions/session_actions';
+import { fetchDestination, fetchDestinations } from './actions/destination_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.fetchDestination = fetchDestination;
 
 
-  if (window.currentUser){
+  if (window.currentUser) {
     const preloadedState = { session: {currentUser: window.currentUser}};
     store = configureStore(preloadedState);
   } else {

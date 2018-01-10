@@ -5,6 +5,7 @@ const hostingsReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_HOSTINGS:
+  
      return action.hostings || {};
     case RECEIVE_HOSTING:
      return merge({}, state, { [action.hosting.id]: action.hosting });
