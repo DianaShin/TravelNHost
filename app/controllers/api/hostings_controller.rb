@@ -13,7 +13,7 @@ class Api::HostingsController < ApplicationController
       destination_id: parsed_hosting_params[:destination_id],
       status: parsed_hosting_params[:status]
       })
-    # @hosting = Hosting.new(hosting_params)
+    @hosting = Hosting.new(hosting_params)
     # # debugger
       if @hosting.save
         render :show
@@ -44,6 +44,6 @@ class Api::HostingsController < ApplicationController
   private
   def hosting_params
     params.require(:hosting).
-    permit(:host_id, :guest_id, :destination_id, :start_date, :end_date, :status)
+    permit(:host_id, :guest_id, :destination_id, :start_date, :end_date, :status, :hosting)
   end
 end

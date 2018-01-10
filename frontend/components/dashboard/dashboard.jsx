@@ -6,8 +6,8 @@ class Dashboard extends React.Component {
   }
 
   componentDidMount() {
-    // this.props.fetchHost(this.props.user);
-    // this.props.fetchHostings(this.props.user);
+    // this.props.fetchDestinations();
+    // this.props.fetchHostings(this.props.currentUser.id);
   }
 
   render() {
@@ -23,18 +23,11 @@ class Dashboard extends React.Component {
       lastName = this.props.currentUser.last_name;
       gender = this.props.currentUser.gender;
       age = this.props.currentUser.age;
-      destination = this.props.currentUser.destination_id;
+      // debugger
+      // destination = this.props.destinations[this.props.currentUser.destination_id].name;
       image_url = this.props.currentUser.image_url;
     }
     return (
-      // <div>
-      //   <h1> Hi, {firstName}!</h1>
-      //   <h1> { lastName } </h1>
-      //   <h1> { gender } </h1>
-      //   <h1> { age } </h1>
-      //   <img src={image_url} />
-      //
-      // </div>
 
       <content className="host-show-main dashboard-profile-box">
         <aside className="profile-box">
@@ -49,7 +42,7 @@ class Dashboard extends React.Component {
               </tr>
               <tr>
                 <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/pindrop-gray-01.svg"/></td>
-                <td className="right"> { destination } </td>
+                // <td className="right"> { destination } </td>
               </tr>
               <tr>
                 <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/backpack.icon-gray-01.svg"/> </td>
