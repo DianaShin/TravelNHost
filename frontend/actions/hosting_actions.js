@@ -1,7 +1,7 @@
 import * as HostingApiUtil from '../util/hosting_api_util';
 
 export const RECEIVE_HOSTING = "RECEIVE_HOSTING";
-export const RECEIVE_HOSTINGS = "RECEIVE_HOSTING";
+export const RECEIVE_HOSTINGS = "RECEIVE_HOSTINGS";
 
 export const receiveHostings = (hostings) => {
   // hostings here reporesents the informastion coming back from the db
