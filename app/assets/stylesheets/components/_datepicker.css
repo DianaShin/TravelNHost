@@ -667,7 +667,7 @@
   background: #f2f2f2
 }
 .DateRangePickerInput__withBorder {
-  border: 1px solid #cacccd
+  /*border: 1px solid #cacccd*/
 }
 .DateRangePickerInput__rtl {
   direction: rtl
@@ -768,8 +768,9 @@
   font-weight: 200;
   font-size: 18px;
   line-height: 24px;
-  color: #565a5c;
-  background-color: #fff;
+  color: white;
+  /*color: #565a5c;*/
+  background-color: #20b2aa;
   width: 100%;
   padding: 13px 12px 11px;
   border: 0;

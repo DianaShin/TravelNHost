@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180109184139) do
+ActiveRecord::Schema.define(version: 20180110155310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,11 +37,11 @@ ActiveRecord::Schema.define(version: 20180109184139) do
     t.string "status", default: "pending", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date "start_date", null: false
-    t.date "end_date", null: false 
+    t.date "start_date"
+    t.date "end_date"
     t.index ["destination_id"], name: "index_hostings_on_destination_id"
-    t.index ["guest_id"], name: "index_hostings_on_guest_id", unique: true
-    t.index ["host_id"], name: "index_hostings_on_host_id", unique: true
+    t.index ["guest_id"], name: "index_hostings_on_guest_id"
+    t.index ["host_id"], name: "index_hostings_on_host_id"
   end
 
   create_table "users", force: :cascade do |t|

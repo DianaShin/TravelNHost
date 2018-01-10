@@ -13,23 +13,23 @@ class Home extends React.Component {
             </section>
           </section>
 
-          <section class="how-it-works">
+          <section className="how-it-works">
         <h3>HOW IT WORKS</h3>
-         <ul class="how-it-works-list">
-           <li class="discover-people-box">
-             <img class="people-icon" src="http://res.cloudinary.com/ayoung0131/image/upload/v1514942941/People-icon_iwpt7o.svg" />
-             <h4 class="how-it-works-item-title">DISCOVER AMAZING PEOPLE</h4>
-             <div class="short-break-line">
+         <ul className="how-it-works-list">
+           <li className="discover-people-box">
+             <img className="people-icon" src="http://res.cloudinary.com/ayoung0131/image/upload/v1514942941/People-icon_iwpt7o.svg" />
+             <h4 className="how-it-works-item-title">DISCOVER AMAZING PEOPLE</h4>
+             <div className="short-break-line">
              </div>
              <p>Members of the TravelNHost community open their homes
                 and share their lives. Connect and be inspired. </p>
            </li>
 
-           <li class="find-a-host-box">
-             <img class="couch-icon"
+           <li className="find-a-host-box">
+             <img className="couch-icon"
              src="http://res.cloudinary.com/ayoung0131/image/upload/v1514943080/couch_d01gkl.svg" />
-             <h4 class="how-it-works-item-title">FIND A HOST</h4>
-             <div class="short-break-line">
+           <h4 className="how-it-works-item-title">FIND A HOST</h4>
+             <div className="short-break-line">
              </div>
              <p>Connect with hosts, and confirm your stay
                   through the TravelNHost platform.

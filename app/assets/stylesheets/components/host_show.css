@@ -68,11 +68,13 @@ td.right {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-size: 1.5em;
+}
 
+.host-request-content {
+  display: flex;
+  flex-direction: column;
 }
-.request-form {
-  float: right;
-}
+
 
 .profile-detail-icon {
   height: 22px;

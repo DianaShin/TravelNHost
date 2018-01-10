@@ -1,7 +1,5 @@
 import React from 'react';
-import RequestForm from './request_form';
-// import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
-
+import RequestForm from './request_form_container';
 
 class HostShow extends React.Component {
   constructor(props){
@@ -37,31 +35,35 @@ class HostShow extends React.Component {
     }
 
     return (
-      <main className="host-show-main">
-        <div className="profile-box">
+      <content className="host-show-main">
+        <aside className="profile-box">
           <img className="profile-box-pic" src={image_url} />
           <p className="profile-header" >{ firstName } { lastName}</p>
           <hr className="profile-box-underline"/>
           <table className="profile-details">
-            <tr>
-              <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/profile-gray1-01.svg"/> </td>
-              <td className="right"> {gender}, {age}</td>
-            </tr>
-            <tr>
-              <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/pindrop-gray-01.svg"/></td>
-              <td className="right"> location </td>
-            </tr>
-            <tr>
-              <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/backpack.icon-gray-01.svg"/> </td>
-              <td className="right accepting-guests">Accepting Guests</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/profile-gray1-01.svg"/> </td>
+                <td className="right"> {gender}, {age}</td>
+              </tr>
+              <tr>
+                <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/pindrop-gray-01.svg"/></td>
+                <td className="right"> location </td>
+              </tr>
+              <tr>
+                <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/backpack.icon-gray-01.svg"/> </td>
+                <td className="right accepting-guests">Accepting Guests</td>
+              </tr>
+            </tbody>
           </table>
           <p className="profile-about" >ABOUT</p>
           <hr className="profile-box-underline"/>
-        </div>
-        <RequestForm className="request-form"/>
-        <button onClick={this.handleFetch}>Click me</button>
-      </main>
+        </aside>
+        <main className="host-request-content">
+          <RequestForm />
+          <button onClick={this.handleFetch}>Click me</button>
+        </main>
+      </content>
     );
   }
 }
