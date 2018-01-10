@@ -84,6 +84,7 @@ ul .header-nav-buttons-list {
   background: white;
   color: #20b2aa;
   cursor: pointer;
+  outline: none;
 }
 
 .header-nav-demo-button:hover {

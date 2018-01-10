@@ -18,7 +18,7 @@ class Api::HostingsController < ApplicationController
       if @hosting.save
         render :show
       else
-        render json: @hosting.errors.full_messages, status: 422
+        render json: ["Start date and end date cannot be empty."], status: 422
       end
   end
 

@@ -65,11 +65,12 @@ class HostShow extends React.Component {
         </aside>
         <main className="host-request-content">
           <RequestForm />
-          <button onClick={this.handleFetch}>Click me</button>
         </main>
       </content>
     );
   }
 }
+
+// <button onClick={this.handleFetch}>Click me</button>
 
 export default HostShow;
