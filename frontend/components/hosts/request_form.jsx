@@ -16,7 +16,7 @@ class RequestForm extends React.Component {
   }
 
   handleSubmit(e) {
-    debugger
+    // debugger
     e.preventDefault();
     if (this.props.guest) {
       const hosting = {
@@ -47,6 +47,8 @@ class RequestForm extends React.Component {
             focusedInput={this.state.focused}
             onDatesChange={({startDate, endDate}) => { this.setState({ startDate, endDate }); }}
             onFocusChange={( focused ) => { this.setState({ focused }); }}
+            startDateId="dp_start_date"
+            endDateId="dp_end_date"
             />
           <button className="request-button">SEND REQUEST TO HOST</button>
         </form>

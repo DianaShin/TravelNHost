@@ -13,6 +13,7 @@
 
 Destination.destroy_all
 User.destroy_all
+Hosting.destroy_all
 
 Istanbul = Destination.create!(
   name: 'Istanbul',
