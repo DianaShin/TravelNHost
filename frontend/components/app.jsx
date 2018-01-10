@@ -6,14 +6,15 @@ import Home from './home/home';
 import DestinationShow from './destinations/destination_show_container';
 import HostShowContainer from './hosts/host_show_container';
 import DashboardContainer from './dashboard/dashboard_container';
+import { AuthRoute } from '../util/route_util';
 
 
 const App = () => (
   <div>
       <Route path="" component={HeaderContainer}/>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/signup" component={Home}/>
-      <Route exact path="/login" component={Home}/>
+      <AuthRoute exact path="/signup" component={Home}/>
+      <AuthRoute exact path="/login" component={Home}/>
       <Route exact path="/dashboard" component={DashboardContainer}/>
       <Switch>
         <Route path='/destinations/:destinationId/hosts/:hostId' component={HostShowContainer}/>

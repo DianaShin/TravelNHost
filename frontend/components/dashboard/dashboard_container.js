@@ -15,7 +15,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     fetchHostings: (hostId) => dispatch(fetchHostings(hostId)),
-    fetchDestinations: () => dispatch(fetchDestinations()),
+    // fetchDestinations: () => dispatch(fetchDestinations()),
   };
 };
 

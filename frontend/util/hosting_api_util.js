@@ -6,12 +6,12 @@ export const fetchHosting = (id) => {
 };
 
 //  want hostings for specific host/user
-export const fetchHostings = (data) => {
+export const fetchHostings = (id) => {
 
   return $.ajax({
     url: `api/hostings`,
     method: 'GET',
-    data
+    data: {id: id}
       // hosting: {
       //   host_id: userId
       // }

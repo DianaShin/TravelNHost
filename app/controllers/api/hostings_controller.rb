@@ -23,8 +23,8 @@ class Api::HostingsController < ApplicationController
   end
 
   def index
-    if current_user.id == hosting_params[:host_id].to_i
-      @hostings = Hosting.where('hostings.host_id = ?', hosting_params[:host_id])
+    if current_user.id == params[:id].to_i
+      @hostings = Hosting.where('hostings.host_id = ?', params[:id])
     else
       @hostings = []
     end

@@ -6,8 +6,7 @@ class Dashboard extends React.Component {
   }
 
   componentDidMount() {
-    // this.props.fetchDestinations();
-    // this.props.fetchHostings(this.props.currentUser.id);
+    this.props.fetchHostings(this.props.currentUser.id);
   }
 
   render() {
@@ -23,8 +22,7 @@ class Dashboard extends React.Component {
       lastName = this.props.currentUser.last_name;
       gender = this.props.currentUser.gender;
       age = this.props.currentUser.age;
-      // debugger
-      // destination = this.props.destinations[this.props.currentUser.destination_id].name;
+      destination = this.props.currentUser.destination.name;
       image_url = this.props.currentUser.image_url;
     }
     return (
@@ -42,7 +40,7 @@ class Dashboard extends React.Component {
               </tr>
               <tr>
                 <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/pindrop-gray-01.svg"/></td>
-                // <td className="right"> { destination } </td>
+                <td className="right"> { destination } </td>
               </tr>
               <tr>
                 <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/backpack.icon-gray-01.svg"/> </td>
