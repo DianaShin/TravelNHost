@@ -5,6 +5,7 @@ import HeaderContainer from './header/header_container';
 import Home from './home/home';
 import DestinationShow from './destinations/destination_show_container';
 import HostShowContainer from './hosts/host_show_container';
+import DashboardContainer from './dashboard/dashboard_container';
 
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
       <Route exact path="/" component={Home}/>
       <Route exact path="/signup" component={Home}/>
       <Route exact path="/login" component={Home}/>
+      <Route exact path="/dashboard" component={DashboardContainer}/>
       <Switch>
         <Route path='/destinations/:destinationId/hosts/:hostId' component={HostShowContainer}/>
         <Route path='/destinations/:destinationId' component={DestinationShow}/>

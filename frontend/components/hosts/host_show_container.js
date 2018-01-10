@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import HostShow from './host_show';
 import { fetchHost } from '../../actions/host_actions';
 import { fetchHostings } from '../../actions/hosting_actions';
+import { fetchDestination } from '../../actions/destination_actions';
 import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
@@ -17,7 +18,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     fetchHost: (hostId) => dispatch(fetchHost(hostId)),
-    fetchHostings: (hostId) => dispatch(fetchHostings(hostId))
+    fetchHostings: (hostId) => dispatch(fetchHostings(hostId)),
   };
 };
 

@@ -14,6 +14,7 @@ img.host-profile-pic {
   width: 25%;
   height: 25%;
   padding-bottom: 12px;
+  border-radius: 3px;
 }
 
 p.host-details {

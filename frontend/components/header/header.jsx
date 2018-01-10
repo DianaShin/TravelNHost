@@ -27,20 +27,20 @@ class Header extends React.Component {
       return (
         <div>
           <nav>
-            <div class="header-left">
+            <div className="header-left">
               <Link to="/">
               <img className="logo" src="http://res.cloudinary.com/ayoung0131/image/upload/v1514944664/backpackicon_htgwjb.svg" />
               </Link>
-              <h1 class="brand-name">TRAVEL N HOST</h1>
+              <h1 className="brand-name">TRAVEL N HOST</h1>
             </div>
-            <ul class="header-nav-buttons-list">
-              <li class='header-nav-demo-button'>
+            <ul className="header-nav-buttons-list">
+              <li className='header-nav-demo-button'>
                 <button class='header-nav-demo-button' onClick={this.demo}>DEMO</button>
               </li>
-              <li class='header-nav-buttons-list-item'>
+              <li className='header-nav-buttons-list-item'>
                 <Link to='/signup' class='header-nav-buttons-list-link'>SIGN UP</Link>
               </li>
-              <li class='header-nav-buttons-list-item'>
+              <li className='header-nav-buttons-list-item'>
                 <Link to='/login' class='header-nav-buttons-list-link'>LOG IN </Link>
                 <Switch>
                   <Route path='/signup'>
@@ -87,30 +87,32 @@ class Header extends React.Component {
               </li>
             </ul>
           </nav>
-          <div class="whitespace"> </div>
+          <div className="whitespace"> </div>
         </div>
       );
     } else {
       return (
         <div>
           <nav>
-            <div class="header-left">
+            <div className="header-left">
               <Link to="/">
               <img className="logo" src="http://res.cloudinary.com/ayoung0131/image/upload/v1514944664/backpackicon_htgwjb.svg" />
               </Link>
-              <h1 class="brand-name">TRAVEL N HOST</h1>
+              <h1 className="brand-name">TRAVEL N HOST</h1>
             </div>
             <SearchContainer className="search-container" text="Explore our destinations" style="color:white !important;"/>
-              <ul class="header-nav-buttons-list">
-                <li class='header-nav-buttons-list-item'>
-                  <button class='header-nav-buttons-list-item dashboard'>DASHBOARD</button>
+              <ul className="header-nav-buttons-list">
+                <li className='header-nav-buttons-list-item'>
+                  <Link to="/dashboard">
+                    <button className='header-nav-buttons-list-item dashboard'>DASHBOARD</button>
+                  </Link>
                 </li>
-                  <li class='header-nav-buttons-list-item'>
-                    <button class='header-nav-buttons-list-item dashboard' onClick={()=>this.props.logout()}>LOGOUT</button>
+                  <li className='header-nav-buttons-list-item'>
+                    <button className='header-nav-buttons-list-item dashboard' onClick={()=>this.props.logout()}>LOGOUT</button>
                   </li>
               </ul>
           </nav>
-          <div class="whitespace"> </div>
+          <div className="whitespace"> </div>
         </div>
       );
     }
