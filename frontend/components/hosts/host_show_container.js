@@ -7,11 +7,11 @@ import { fetchDestination } from '../../actions/destination_actions';
 import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
-  // let destination = state.entities.destinations[state.entities.hosts[ownProps.match.params.hostId].destination_id]
+  let destination = state.entities.destinations[ownProps.match.params.destinationId];
   return {
     host: state.entities.hosts[ownProps.match.params.hostId],
     currentUser: state.session.currentUser,
-    // destination: destination
+    destination: destination
   };
 };
 

@@ -118,9 +118,11 @@ ul .header-nav-buttons-list {
 
 button.header-nav-buttons-list-item {
   border: none;
+  outline: none;
 }
 .header-nav-buttons-list-item:hover {
   filter: opacity(0.75);
+  outline: none;
 }
 
 .header-nav-buttons-list-item.dashboard {

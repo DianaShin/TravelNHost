@@ -20,13 +20,12 @@ class RequestForm extends React.Component {
     e.preventDefault();
     if (this.props.guest) {
       const hosting = {
-        hosting: {
           host_id: this.props.host.id,
           guest_id: this.props.guest.id,
-          start_date: this.state.startDate,
-          end_date: this.state.endDate,
+          destination_id: this.props.host.destination_id,
+          start_date: this.state.startDate.format("DD/MM/YYYY"),
+          end_date: this.state.endDate.format("DD/MM/YYYY"),
           status: 'pending'
-        }
       };
    this.props.createHosting(hosting);
     }
@@ -47,8 +46,8 @@ class RequestForm extends React.Component {
             focusedInput={this.state.focused}
             onDatesChange={({startDate, endDate}) => { this.setState({ startDate, endDate }); }}
             onFocusChange={( focused ) => { this.setState({ focused }); }}
-            startDateId="dp_start_date"
-            endDateId="dp_end_date"
+            startDateId="start_date"
+            endDateId="end_date"
             />
           <button className="request-button">SEND REQUEST TO HOST</button>
         </form>

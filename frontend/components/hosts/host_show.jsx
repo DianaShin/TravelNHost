@@ -25,6 +25,8 @@ class HostShow extends React.Component {
     let gender;
     let age;
     let image_url;
+    let destination;
+    let country;
 
     if (this.props.host) {
       firstName = this.props.host.first_name;
@@ -32,6 +34,8 @@ class HostShow extends React.Component {
       gender = this.props.host.gender;
       age = this.props.host.age;
       image_url = this.props.host.image_url;
+      destination = this.props.destination.name;
+      country = this.props.destination.country;
     }
 
     return (
@@ -48,7 +52,7 @@ class HostShow extends React.Component {
               </tr>
               <tr>
                 <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/pindrop-gray-01.svg"/></td>
-                <td className="right"> location </td>
+                <td className="right"> { destination }, { country } </td>
               </tr>
               <tr>
                 <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/backpack.icon-gray-01.svg"/> </td>

@@ -1,10 +1,24 @@
 class Api::HostingsController < ApplicationController
   def create
-    @hosting = Hosting.new(hosting_params)
+    # debugger
+    parsed_hosting_params = hosting_params;
+
+    start_date = Time.parse(parsed_hosting_params[:start_date])
+    end_date = Time.parse(parsed_hosting_params[:end_date])
+    @hosting = Hosting.new({
+      start_date: start_date,
+      end_date: end_date,
+      host_id: parsed_hosting_params[:host_id],
+      guest_id: parsed_hosting_params[:guest_id],
+      destination_id: parsed_hosting_params[:destination_id],
+      status: parsed_hosting_params[:status]
+      })
+    # @hosting = Hosting.new(hosting_params)
+    # # debugger
       if @hosting.save
         render :show
       else
-        render json: @hosting.errors.full_messages, status: 404
+        render json: @hosting.errors.full_messages, status: 422
       end
   end
 
@@ -30,6 +44,6 @@ class Api::HostingsController < ApplicationController
   private
   def hosting_params
     params.require(:hosting).
-    permit(:host_id, :guest_id, :destination_id, :start_date, :end_date)
+    permit(:host_id, :guest_id, :destination_id, :start_date, :end_date, :status)
   end
 end

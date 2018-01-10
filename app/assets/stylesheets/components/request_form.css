@@ -21,6 +21,12 @@ button.request-button {
   margin-top: 5px;
   margin-left: 6px;
   border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+button.request-button:hover {
+  opacity: 0.8;
 }
 
 .request-form {
@@ -29,4 +35,5 @@ button.request-button {
 
 form.request-form {
   margin: 10px;
+
 }

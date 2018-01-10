@@ -12,6 +12,7 @@ export const receiveHostings = (hostings) => {
 };
 
 export const receiveHosting = (hosting) => {
+  // debugger
   return {
     type: RECEIVE_HOSTING,
     hosting
@@ -31,8 +32,9 @@ export const fetchHosting = (id) => dispatch => {
 };
 
 export const createHosting = (hosting) => dispatch => {
-  debugger
+  // debugger
   return HostingApiUtil.createHosting(hosting).then(hosting => {
+    // debugger
     return dispatch(receiveHosting(hosting));
   });
 };

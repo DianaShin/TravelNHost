@@ -22,6 +22,7 @@ window.fetchStuff = fetchHostings;
 
 export const createHosting = hosting => {
   return $.ajax({
+    method: 'POST',
     url: 'api/hostings',
     data: { hosting }
   });
@@ -29,6 +30,7 @@ export const createHosting = hosting => {
 
 export const updateHosting = hosting => {
   return $.ajax({
+    method: 'PATCH',
     url: `api/hostings/${hosting.id}`,
     data: { hosting }
   });
