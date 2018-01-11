@@ -6,4 +6,6 @@
 .my-travel-plans > p {
   color: #696969;
   text-align: left;
+  margin-bottom: 0;
+  margin-top: 2px;
 }

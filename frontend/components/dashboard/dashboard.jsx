@@ -87,7 +87,7 @@ class Dashboard extends React.Component {
               <h1 className="travel-plans"> My Upcoming Travels</h1>
               { myTravelPlanItems }
             </div>
-            <div className="my-guests-header">
+            <div className="travel-plans-header">
               <h1 className="travel-plans"> My Upcoming Guests</h1>
               { myGuestItems }
             </div>
@@ -97,6 +97,7 @@ class Dashboard extends React.Component {
     );
   }
 }
+
 
 
 export default Dashboard;

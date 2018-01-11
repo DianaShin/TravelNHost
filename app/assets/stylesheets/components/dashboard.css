@@ -23,27 +23,46 @@ main.dashboard-main-contents {
   float: right;
 }
 
-.my-travel-plans {
+/*.my-travel-plans {
   border: 3px solid #20b2aa;
   border-radius: 5px;
-}
+}*/
 
 .travel-plans {
   font-family: 'Open Sans', sans-serif;
   color: white;
   background-color: #20b2aa;
+  margin: 0;
+  border:  5px solid #20b2aa;
 }
-/*
+
+.travel-plans-header {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  /*background-color: #20b2aa;*/
+  border: 3px solid #20b2aa;
+  margin: 0;
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+}
+
+.mytravel-items-underline {
+  width: 95%;
+  color: #696969;
+  margin-top: 6px;
+}
+
 section.my-travel-plans {
   width: 80%;
   margin: 0;
   float: right;
+  display: flex;
+  flex-direction: column;
 }
 
 content.dashboard-main-contents {
   display: flex;
   flex-direction: row;
   width: 500px;
-  /*width: 70%;
-  float: right;*/
-/*}*
+}
