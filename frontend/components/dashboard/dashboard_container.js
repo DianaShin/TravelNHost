@@ -8,7 +8,8 @@ import { fetchDestinations } from '../../actions/destination_actions';
 const mapStateToProps = (state, ownProps) => {
   return({
     currentUser: state.session.currentUser,
-    destinations: state.entities.destinations
+    // destinations: state.entities.destinations
+    hostings: state.entities.hostings
   });
 };
 

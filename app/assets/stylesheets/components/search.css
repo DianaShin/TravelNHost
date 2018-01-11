@@ -11,6 +11,7 @@
   border-left: none;
   border-right: none;
   border-bottom: white 3px solid;
+  outline: none;
 }
 
 .react-autosuggest__suggestions-list {

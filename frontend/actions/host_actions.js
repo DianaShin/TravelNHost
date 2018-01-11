@@ -4,9 +4,7 @@ import * as HostApiUtil from '../util/host_api_util';
 export const receiveHost = (host) => {
   return {
     type: RECEIVE_HOST,
-    // later..
-    // add review: data.review
-    // add host: data.host
+  
     host
   };
 };

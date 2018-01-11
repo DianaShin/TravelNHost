@@ -70,7 +70,7 @@ class SessionForm extends React.Component {
     }
 
    return (
-     <form onSubmit = {this.handleSubmit}>
+     <form className="session-form" onSubmit = {this.handleSubmit}>
        <div className="modal-header">
          <div className="space-holder-for-modal-header"></div>
          <h1 className="modal-title">

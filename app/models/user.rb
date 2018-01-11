@@ -10,11 +10,16 @@ class User < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
   belongs_to :destination, optional: true
-  has_many :hostings
+  has_many :hostings,
+    foreign_key: :host_id
+
+  has_many :guested_hostings,
+    foreign_key: :guest_id,
+    class_name: :Hosting
 
   after_initialize :ensure_session_token
 
-  ##Write a method for getting all of my guests and write a method for getting all of my upcoming travels. 
+  ##Write a method for getting all of my guests and write a method for getting all of my upcoming travels.
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
@@ -36,6 +41,10 @@ class User < ApplicationRecord
     save!
     self.session_token
   end
+
+   def all_hostings
+     Hosting.where('hostings.host_id = ? or hostings.guest_id = ?', self.id, self.id)
+   end
 
   private
 

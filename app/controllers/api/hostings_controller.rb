@@ -17,6 +17,7 @@ class Api::HostingsController < ApplicationController
     # # debugger
       if @hosting.save
         render :show
+
       else
         render json: ["Start date and end date cannot be empty."], status: 422
       end
@@ -24,7 +25,10 @@ class Api::HostingsController < ApplicationController
 
   def index
     if current_user.id == params[:id].to_i
-      @hostings = Hosting.where('hostings.host_id = ?', params[:id])
+      @hostings = Hosting.where('hostings.host_id = ? or hostings.guest_id = ?', params[:id], params[:id])
+
+      # @hostings = Hosting.all.select {|hosting| hosting.host_id == params[:id] || hosting.guest_id == params[:id]}
+
     else
       @hostings = []
     end

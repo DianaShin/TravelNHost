@@ -28,7 +28,7 @@ class HostShow extends React.Component {
     let destination;
     let country;
 
-    if (this.props.host) {
+    if (this.props.host && this.props.destination) {
       firstName = this.props.host.first_name;
       lastName = this.props.host.last_name;
       gender = this.props.host.gender;

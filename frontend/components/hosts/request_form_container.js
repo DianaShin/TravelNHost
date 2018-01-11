@@ -10,6 +10,7 @@ const mapStateToProps = (state, ownProps) => {
   return {
     host: state.entities.hosts[ownProps.match.params.hostId],
     guest: state.session.currentUser,
+    hostings: state.entities.hostings
   };
 };
 
