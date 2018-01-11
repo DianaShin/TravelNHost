@@ -1,3 +1,49 @@
-.dashboard-profile-box {
-  margin-left: 25px;
+content.dashboard-main {
+  display: flex;
+  flex-direction: row;
 }
+
+.dashboard-profile-box {
+  width: 33%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: 3px solid #20b2aa;
+  border-radius: 5px;
+  z-index: auto;
+  box-shadow: 10px 10px 8px #888888;
+  height: 750px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+main.dashboard-main-contents {
+  width: 62%;
+  float: right;
+}
+
+.my-travel-plans {
+  border: 3px solid #20b2aa;
+  border-radius: 5px;
+}
+
+.travel-plans {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #20b2aa;
+}
+/*
+section.my-travel-plans {
+  width: 80%;
+  margin: 0;
+  float: right;
+}
+
+content.dashboard-main-contents {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  /*width: 70%;
+  float: right;*/
+/*}*

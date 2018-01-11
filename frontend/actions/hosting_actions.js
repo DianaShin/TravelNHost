@@ -4,11 +4,13 @@ export const RECEIVE_HOSTING = "RECEIVE_HOSTING";
 export const RECEIVE_HOSTINGS = "RECEIVE_HOSTINGS";
 export const RECEIVE_HOSTING_ERRORS = "RECEIVE_HOSTING_ERRORS";
 
-export const receiveHostings = (hostings) => {
+export const receiveHostings = ({ hostings, guests, hosts }) => {
   // hostings here reporesents the informastion coming back from the db
   return {
     type: RECEIVE_HOSTINGS,
-    hostings
+    hostings,
+    guests,
+    hosts
   };
 };
 

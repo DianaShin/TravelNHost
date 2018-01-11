@@ -57,8 +57,8 @@ class Dashboard extends React.Component {
 
     return (
 
-      <content>
-        <aside className="profile-box dashboard-profile-box">
+      <content className="dashboard-main">
+        <aside className="dashboard-profile-box">
           <img className="profile-box-pic" src={image_url} />
           <p className="profile-header" > { firstName } { lastName}</p>
           <hr className="profile-box-underline"/>
@@ -81,12 +81,14 @@ class Dashboard extends React.Component {
           <p className="profile-about" >ABOUT ME</p>
           <hr className="profile-box-underline"/>
         </aside>
-        <main>
+        <main className="dashboard-main-contents">
           <section className="my-travel-plans">
             <div className="travel-plans-header">
+              <h1 className="travel-plans"> My Upcoming Travels</h1>
               { myTravelPlanItems }
             </div>
             <div className="my-guests-header">
+              <h1 className="travel-plans"> My Upcoming Guests</h1>
               { myGuestItems }
             </div>
           </section>

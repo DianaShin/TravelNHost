@@ -1,0 +1,9 @@
+.my-travel-plans {
+  float: right;
+  width: 80%
+}
+
+.my-travel-plans > p {
+  color: #696969;
+  text-align: left;
+}
