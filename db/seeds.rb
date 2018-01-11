@@ -231,7 +231,7 @@ Nejla = User.create!(
   first_name: 'Nejla',
   last_name: 'Kahveci',
   lat: 41.0368836,
-  lng: 28.9806566,
+  lng: 28.9675821,
   age: 27,
   gender: 'female'
   # isHost: true,
@@ -519,23 +519,6 @@ Selma = User.create!(
   # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
-Isabelle = User.create!(
-  username: 'isabelle',
-  password: 'Granada',
-  destination_id: Granada.id,
-  first_name: 'Isabelle',
-  last_name: 'Caballes',
-  lat: 37.2015731,
-  lng: -3.615026,
-  age: 22,
-  gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
-)
 
 Juan = User.create!(
   username: 'juan',
@@ -573,6 +556,23 @@ Marco = User.create!(
   # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
+Isabelle = User.create!(
+  username: 'isabelle',
+  password: 'Granada',
+  destination_id: Granada.id,
+  first_name: 'Isabelle',
+  last_name: 'Caballes',
+  lat: 37.2015731,
+  lng: -3.615026,
+  age: 22,
+  gender: 'female'
+  # isHost: true,
+  # hostRating: 0,
+  # imageUrl:
+  # gender: 'male',
+  # age: 25,
+  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+)
 Mariam = User.create!(
   username: 'mariam',
   password: 'Barcelona',

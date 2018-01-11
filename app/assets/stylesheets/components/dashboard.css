@@ -5,12 +5,12 @@ content.dashboard-main {
 
 .dashboard-profile-box {
   width: 33%;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border: 3px solid #20b2aa;
   border-radius: 5px;
   z-index: auto;
   box-shadow: 10px 10px 8px #888888;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   height: 750px;
   align-content: center;
   display: flex;
@@ -43,7 +43,11 @@ main.dashboard-main-contents {
   border: 3px solid #20b2aa;
   margin: 0;
   border-radius: 5px;
+  margin-top: 12px;
   margin-bottom: 15px;
+  box-shadow: 10px 10px 8px #888888;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 
 }
 
