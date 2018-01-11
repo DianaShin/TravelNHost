@@ -37,3 +37,21 @@ form.request-form {
   margin: 10px;
 
 }
+
+.request-confirmation {
+  background-color: white;
+  border: 2px solid #20b2aa;
+  border-radius: 5px;
+  width: 60%;
+  height: 18%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  /*box-shadow: 4px 4px 3px #888888;*/
+  font-family: 'Open Sans', sans-serif;
+  color: #20b2aa;
+}
+
+main.host-request-content {
+  width: 50%;
+}

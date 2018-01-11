@@ -39,14 +39,7 @@ class RequestForm extends React.Component {
     // });
   }
 
-  // I want to render a confirmation message if hostings include a hosting where the guest id and host id are identitical to those of the made request
-  // So, if this.props.hostings.guest_id includes currentUser's id, render the confirmation
-  // else, render the form
-
-
-// add to host slice, hosting ids, and check if currentUser's id has a hosting with host
   render() {
-
 
     // debugger
     // let hostIds = Object.keys(this.props.hostings).map(id => this.props.hostings[id]);
@@ -54,8 +47,8 @@ class RequestForm extends React.Component {
     if (this.props.host) {
       // debugger
       const confirmation = (
-        <div className="request-confirmation">
-          <h4>Your request has been sent to { this.props.host.first_name }!</h4>
+        <div>
+          <h4 className="request-confirmation">Your request has been sent to { this.props.host.first_name }!</h4>
         </div>
       );
       if (this.props.host.hosting_ids.some(hosting_id => this.props.guest.hosting_ids.includes(hosting_id))) {

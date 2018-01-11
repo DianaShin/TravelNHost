@@ -33,8 +33,6 @@ class Api::HostingsController < ApplicationController
       @hostings = []
     end
   end
-  ### in User model instead write a method for getting all of my guests and another
-  ### all of my upcoming travels
 
   def show
     @hosting = Hosting.find_by(id: params[:id])
