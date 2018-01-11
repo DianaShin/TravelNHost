@@ -1,5 +1,5 @@
 import React from 'react';
-import MyTravelPlansIndex from './my_travel_plans_index';
+import DashBoardHostingItem from './dashboard_hosting_item';
 
 class Dashboard extends React.Component {
   constructor(props){
@@ -34,25 +34,23 @@ class Dashboard extends React.Component {
     );
 
     let myTravelPlans = myHostings.filter(hosting => {
-      (hosting.guest_id === this.props.currentUser.id) &&
-      (hosting.status === "accepted");
+      return (hosting.guest_id === this.props.currentUser.id);
     });
-
-    let myTravelPlanItems = myTravelPlans.map(travelPlan => {
-      return <DashboardHostingItem
-                hosting={travelPlan}
+// debugger
+    let myTravelPlanItems = myTravelPlans.map(hosting => {
+      return <DashBoardHostingItem
+                hosting={hosting}
                 type="myTravelPlan"
                 />;
       });
 
     let myGuests = myHostings.filter(hosting => {
-      (hosting.host_id === this.props.currentUser.id) &&
-      (hosting.status === "accepted");
+      return (hosting.host_id === this.props.currentUser.id);
     });
 
-    let myGuestItems = myGuests.map(myGuest => {
+    let myGuestItems = myGuests.map(hosting => {
       return <DashBoardHostingItem
-                hosting={myGuest}
+                hosting={hosting}
                 type="myGuest"
                 />;
     });
@@ -86,10 +84,10 @@ class Dashboard extends React.Component {
         <main>
           <section className="my-travel-plans">
             <div className="travel-plans-header">
-
+              { myTravelPlanItems }
             </div>
             <div className="my-guests-header">
-
+              { myGuestItems }
             </div>
           </section>
         </main>
