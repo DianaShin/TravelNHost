@@ -25,4 +25,4 @@ Given that this app was built in the short timeframe of just 10 days, there are 
 
 On the frontend, I would make the design responsive to accomodate different screen sizes and mobile devices. 
 
-On the backend, I would 
+On the backend, I plan on making reviews that allows users to rate hosts and to upload photos. I also plan to add a filters component so that users can filter hosts based on ratings. 
