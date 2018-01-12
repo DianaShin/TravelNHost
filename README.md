@@ -1,8 +1,8 @@
 # README
 
 
-# TravelNHost:  https://travelnhost.herokuapp.com/#/
-# TravelNHost live 
+## TravelNHost live:  https://travelnhost.herokuapp.com/#/
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
