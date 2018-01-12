@@ -3,6 +3,9 @@
 
 ## [TravelNHost live](https://travelnhost.herokuapp.com/#/)
 
+TravelNHost is a full-stack web application inspired by [Couchsurfing](https://www.couchsurfing.com). 
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
