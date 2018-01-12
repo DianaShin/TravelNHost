@@ -17,8 +17,6 @@ Please see [here](https://github.com/ayoung0131/TravelNHost/wiki) for design doc
 * Make Hosting Requests: Users are able to make hosting requests to hosts. Airbnb's React dates library was utilized for the calendar functionality. Users receive a confirmation message once a request has been sent. 
 * User Dashboard: The currentUser has a dashboard where s/he can see upcoming travel plans hosted by other TravelNhost members, as well as upcoming guests.  
 
-## Implementation 
-
 ## Future Direction 
 
 Given that this app was built in the short timeframe of just 10 days, there are other features that I would implement at a later date. 
