@@ -10,7 +10,8 @@ Please see [here](https://github.com/ayoung0131/TravelNHost/wiki) for design doc
 ## Features 
 
 * Authentication: Secure frontend to backend user authentication using BCrypt.
-* Search destinations and hosts: Users can search for destinations through the destination index on the frontpage as well as the autocomplete search bar in the navigation bar. 
+* Search destinations and hosts: Users can search for destinations through the destination index on the frontpage as well as the autocomplete search bar in the navigation bar. Users are also able to search for hosts on each destination's show page.
 * Google Maps Integration: Each of the 17 destinations have show pages correctly mnap its location and hosts to Google Maps using React/Redux. 
-* Make Hosting Requests: Users are able to make hosting requests to hosts. Airbnb's React dates library was utilized for the calendar functionality. 
+* Make Hosting Requests: Users are able to make hosting requests to hosts. Airbnb's React dates library was utilized for the calendar functionality. Users receive a confirmation message once a request has been sent. 
+* User Dashboard: The currentUser has a dashboard where s/he can see upcoming travel plans hosted by other TravelNhost members, as well as upcoming guests.  
 
