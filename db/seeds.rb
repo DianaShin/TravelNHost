@@ -202,11 +202,11 @@ Nilufer = User.create!(
   destination_id: Istanbul.id,
   first_name: 'Nilufer',
   last_name: 'Karagul',
-  lat: 40.9787062,
-  lng: 28.9432452,
+  lat: 41.0055005,
+  lng: 28.7319908,
   age: 24,
   gender: 'female',
-  about: "I'm a student at Bogazici University, and would love to make friends from around the world."
+  about: "I'm a student at Bogazici University, and would love to make friends from around the world.",
 )
 
 Nejla = User.create!(
@@ -219,7 +219,7 @@ Nejla = User.create!(
   lng: 28.9675821,
   age: 27,
   gender: 'female',
-  about: "I'm a student at Bogazici University, and would love to make friends from around the world."
+  about: "I'm a student at Bogazici University, and would love to make friends from around the world.",
 )
 
 Burak = User.create!(
@@ -245,7 +245,7 @@ Aylin = User.create!(
   lng: 29.0182612,
   age: 29,
   gender: 'female',
-  about: "I'm a student at Bogazici University, and would love to make friends from around the world."
+  about: "I'm a student at Bogazici University, and would love to make friends from around the world.",
 )
 
 ###
@@ -285,7 +285,7 @@ Semra = User.create!(
   lat: 38.6516835,
   lng: 34.8187001,
   age: 31,
-  gender: 'female'
+  gender: 'female',
 )
 
 ##Dubrovnik
@@ -323,7 +323,7 @@ Nina = User.create!(
   lat: 42.6512758,
   lng: 18.0773955,
   age: 35,
-  gender: 'female'
+  gender: 'female',
 )
 
 ##Chefchaouen
@@ -336,7 +336,7 @@ Wafa = User.create!(
   lat: 35.1710528,
   lng: -5.3060858,
   age: 35,
-  gender: 'female'
+  gender: 'female',
 )
 
 Saafa = User.create!(
@@ -348,7 +348,7 @@ Saafa = User.create!(
   lat: 35.1707196,
   lng: -5.3261917,
   age: 25,
-  gender: 'female'
+  gender: 'female',
 )
 
 Abdu = User.create!(
@@ -374,12 +374,6 @@ Atila = User.create!(
   lng: 17.8028507,
   age: 35,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Adel = User.create!(
@@ -415,9 +409,21 @@ Selma = User.create!(
   lat: 43.3452251,
   lng: 17.812276,
   age: 30,
-  gender: 'female'
+  gender: 'female',
 )
 
+Isabelle = User.create!(
+  username: 'isabelle',
+  password: 'Granada',
+  destination_id: Granada.id,
+  first_name: 'Isabelle',
+  last_name: 'Caballes',
+  lat: 37.2015731,
+  lng: -3.615026,
+  age: 22,
+  gender: 'female',
+  about: "I love hosting guests! Don't forget to book your tickets to the AlHambra in advance!",
+)
 
 Juan = User.create!(
   username: 'juan',
@@ -443,18 +449,6 @@ Marco = User.create!(
   gender: 'male'
 )
 
-Isabelle = User.create!(
-  username: 'isabelle',
-  password: 'Granada',
-  destination_id: Granada.id,
-  first_name: 'Isabelle',
-  last_name: 'Caballes',
-  lat: 37.2015731,
-  lng: -3.615026,
-  age: 22,
-  gender: 'female',
-  about: "I love hosting guests! Don't forget to book your tickets to the AlHambra in advance!"
-)
 
 Mariam = User.create!(
   username: 'mariam',
@@ -465,7 +459,7 @@ Mariam = User.create!(
   lat: 41.4474166,
   lng: 2.1031037,
   age: 26,
-  gender: 'female'
+  gender: 'female',
 )
 
 Sergio = User.create!(
@@ -502,7 +496,7 @@ Layla = User.create!(
   lat: 30.068572,
   lng: 31.2566549,
   age: 22,
-  gender: 'female'
+  gender: 'female',
 )
 
 Qais = User.create!(
@@ -526,7 +520,7 @@ Nada = User.create!(
  lat: 30.0287697,
  lng: 31.2347881,
  age: 22,
- gender: 'female'
+ gender: 'female',
 )
 
 ## Petra
@@ -617,7 +611,7 @@ Gulfem = User.create!(
   lat: 43.8790385,
   lng: 18.2487436,
   age: 27,
-  gender: 'female'
+  gender: 'female',
 )
 
 
@@ -645,7 +639,7 @@ Jameela = User.create!(
   lng: -8.0778935,
   age: 26,
   gender: 'female',
-  about: "Come visit. Marrakesh is a magical city. I'll show you around."
+  about: "Come visit. Marrakesh is a magical city. I'll show you around.",
 )
 
 Rachid = User.create!(
@@ -696,7 +690,7 @@ Silvia = User.create!(
   lat: 50.0510984,
   lng: 14.4537714,
   age: 26,
-  gender: 'female'
+  gender: 'female',
 )
 
 Miguel = User.create!(
@@ -734,7 +728,8 @@ Emily = User.create!(
   lat: 51.5005156,
   lng: -0.1840896,
   age: 22,
-  gender: 'female'
+  gender: 'female',
+  # image_url: "https://s3.amazonaws.com/travelnhost/profile_pictures/nur-01.png"
 )
 
 ##Venice
@@ -812,7 +807,8 @@ Miranda = User.create!(
   lat: 52.3418767,
   lng: 4.8088367,
   age: 28,
-  gender: 'female'
+  gender: 'female',
+  # image_url: "https://s3.amazonaws.com/travelnhost/profile_pictures/nur-01.png"
 )
 
 ##stockholm
@@ -838,5 +834,6 @@ Elsa = User.create!(
   lat: 59.324797,
   lng: 18.024704,
   age: 27,
-  gender: 'female'
+  gender: 'female',
+  # image_url: "https://s3.amazonaws.com/travelnhost/profile_pictures/nur-01.png"
 )

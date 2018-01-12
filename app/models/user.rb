@@ -5,7 +5,7 @@ class User < ApplicationRecord
   validates :username, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
 
-  has_attached_file :image, default_url: "profile.png"
+  has_attached_file :image, default_url: :set_profile_photo_to_gender
 
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
@@ -20,6 +20,10 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
 
   ##Write a method for getting all of my guests and write a method for getting all of my upcoming travels.
+
+  def set_profile_photo_to_gender
+    self.gender == "male" ?  "profile.png" : "nur-profile-pic.png"
+  end
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)

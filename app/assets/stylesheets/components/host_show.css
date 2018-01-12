@@ -97,3 +97,7 @@ td.right {
   position: relative;
   top: -2px;
 }
+
+.info-window-name {
+  color: gray;
+}

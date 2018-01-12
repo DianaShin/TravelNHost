@@ -11,7 +11,6 @@ const _getCoordsObj = latLng => ({
 class DestinationMap extends React.Component {
   constructor(props){
     super(props);
-    this._handleInfoClick = this._handleInfoClick.bind(this);
   }
 
   componentDidMount() {
@@ -43,10 +42,10 @@ class DestinationMap extends React.Component {
       // wrap the mapDOMNode in a Google Map
       this.map = new google.maps.Map(this.mapNode, mapOptions);
       // this.MarkerManager = new MarkerManager(this.map);
-      this.MarkerManager = new MarkerManager(this.map, this._handleMarkerClick.bind(this));
-      this.infowindow = new google.maps.InfoWindow({
-        content: `<div> Hello </div>`
-      });
+      this.MarkerManager = new MarkerManager(this.map);
+      // this.infowindow = new google.maps.InfoWindow({
+      //   content: `<div> Hello </div>`
+      // });
 
       this._registerListeners();
 
@@ -71,29 +70,6 @@ class DestinationMap extends React.Component {
     });
   }
 
-  _handleMarkerClick(host, marker) {
-    let div = document.createElement('div');
-    const content =
-      `<div className='host-info-window'>
-          <p className='host-info-window-content'>
-            ${host.first_name}
-          </p>
-          </div>
-      </div>`;
-    div.innerHTML = content;
-    div.onclick = this._handleInfoClick(host.id);
-    this.infowindow.setContent(div);
-    this.infowindow.open(this.map, marker);
-  }
-
-  _handleInfoClick(id) {
-    return this.props.history.push(`/`);
-  }
-
-  _handleClick(coords) {
-    this.infowindow.close();
-  }
-
   render(){
     return (
       <div id='map-container' ref={ map => this.mapNode = map }>
@@ -102,7 +78,6 @@ class DestinationMap extends React.Component {
   }
 }
 
-//
 
 
 export default withRouter(DestinationMap);
