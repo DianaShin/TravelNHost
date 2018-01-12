@@ -28,8 +28,7 @@ class DashBoardHostingItem extends React.Component {
     if (this.props.hosting.host_id === this.props.currentUser.id) {
       return (
         <div className="my-travel-plans">
-          <p> Guest: { host ? host.first_name : '...' }</p>
-          <p> From: { destination ? destination.name : '...' } </p>
+          <p> Guest: { guest ? guest.first_name + ' ' + guest.last_name : '...' }</p>
           <p> Arriving: { this.props.hosting.start_date }</p>
           <p> Departing: { this.props.hosting.end_date} </p>
           <hr className="mytravel-items-underline"/>
@@ -38,7 +37,7 @@ class DashBoardHostingItem extends React.Component {
     }  else {
       return (
         <div className="my-travel-plans">
-          <p> Host: { host ? host.first_name : '...' }</p>
+          <p> Host: { host ? host.first_name + ' ' + guest.last_name : '...' }</p>
           <p> Where: { destination ? destination.name : '...' } </p>
           <p> Arriving: { this.props.hosting.start_date }</p>
           <p> Departing: { this.props.hosting.end_date} </p>
