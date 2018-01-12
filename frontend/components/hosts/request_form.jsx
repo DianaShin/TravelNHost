@@ -16,9 +16,14 @@ class RequestForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  // componentWillMount() {
+  //   this.props.fetchHost(this.props.match.params.hostId);
+  // }
+
   componentDidMount() {
     this.props.fetchHost(this.props.match.params.hostId);
   }
+
   handleSubmit(e) {
     e.preventDefault();
     if (this.props.guest) {

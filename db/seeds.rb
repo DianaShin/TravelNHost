@@ -6,11 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# t.string :name, null: false
-# t.string :country, null: false
-# t.float :lat, null: false
-# t.float :long, null: false
-
 Destination.destroy_all
 User.destroy_all
 Hosting.destroy_all
@@ -168,8 +163,7 @@ Stockholm = Destination.create!(
   hero_url: "https://s3.amazonaws.com/travelnhost/DestinationShowPageHeros/stockholm_final_cover2.jpg"
 )
 
-
-## need to add image_url later
+## Users
 Mehmet = User.create!(
   username: 'mehmet',
   password: 'Istanbul',
@@ -247,8 +241,6 @@ Aylin = User.create!(
   gender: 'female',
   about: "I'm a student at Bogazici University, and would love to make friends from around the world.",
 )
-
-###
 
 ## Cappadocia
 Guney = User.create!(
@@ -614,8 +606,8 @@ Gulfem = User.create!(
   gender: 'female',
 )
 
-
 ## Marrakesh
+
 Abdessadek = User.create!(
   username: 'abdessadek',
   password: 'marrakesh',
@@ -729,7 +721,6 @@ Emily = User.create!(
   lng: -0.1840896,
   age: 22,
   gender: 'female',
-  # image_url: "https://s3.amazonaws.com/travelnhost/profile_pictures/nur-01.png"
 )
 
 ##Venice
@@ -760,7 +751,6 @@ Luigi = User.create!(
 )
 
 ##Copenhagen
-
 
 Mircea = User.create!(
   username: 'mircea',
@@ -808,7 +798,6 @@ Miranda = User.create!(
   lng: 4.8088367,
   age: 28,
   gender: 'female',
-  # image_url: "https://s3.amazonaws.com/travelnhost/profile_pictures/nur-01.png"
 )
 
 ##stockholm
@@ -835,5 +824,4 @@ Elsa = User.create!(
   lng: 18.024704,
   age: 27,
   gender: 'female',
-  # image_url: "https://s3.amazonaws.com/travelnhost/profile_pictures/nur-01.png"
 )

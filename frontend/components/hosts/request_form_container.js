@@ -6,9 +6,13 @@ import RequestForm from './request_form';
 import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
-  // debugger
+  const host = Object.assign(
+    { hosting_ids: [] },
+    state.entities.hosts[ownProps.match.params.hostId]
+  );
+
   return {
-    host: state.entities.hosts[ownProps.match.params.hostId],
+    host: host,
     guest: state.session.currentUser,
     hostings: state.entities.hostings
   };
