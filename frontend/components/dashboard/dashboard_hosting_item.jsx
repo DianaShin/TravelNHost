@@ -19,20 +19,33 @@ class DashBoardHostingItem extends React.Component {
     // let endDate;
 
     const destination = this.props.destinations[this.props.hosting.destination_id];
-    // const host = this.props.hostings[this.props.hosting.host_id];
+
 
     const host = this.props.hosts[this.props.hosting.host_id];
-    // <p> Host: {this.props.hosting.host_id} </p>
+    const guest = this.props.guests[this.props.hosting.guest_id];
 
-    return (
-      <div className="my-travel-plans">
-        <p> Host: { host ? host.first_name : '...' }</p>
-        <p> Where: { destination ? destination.name : '...' } </p>
-        <p> Arriving: { this.props.hosting.start_date }</p>
-        <p> Departing: { this.props.hosting.end_date} </p>
-        <hr className="mytravel-items-underline"/>
-      </div>
-    );
+
+    if (this.props.hosting.host_id === this.props.currentUser.id) {
+      return (
+        <div className="my-travel-plans">
+          <p> Guest: { host ? host.first_name : '...' }</p>
+          <p> From: { destination ? destination.name : '...' } </p>
+          <p> Arriving: { this.props.hosting.start_date }</p>
+          <p> Departing: { this.props.hosting.end_date} </p>
+          <hr className="mytravel-items-underline"/>
+        </div>
+      );
+    }  else {
+      return (
+        <div className="my-travel-plans">
+          <p> Host: { host ? host.first_name : '...' }</p>
+          <p> Where: { destination ? destination.name : '...' } </p>
+          <p> Arriving: { this.props.hosting.start_date }</p>
+          <p> Departing: { this.props.hosting.end_date} </p>
+          <hr className="mytravel-items-underline"/>
+        </div>
+      );
+    }
   }
 }
 
@@ -40,7 +53,9 @@ const mapStateToProps = (state) => {
   return {
     destinations: state.entities.destinations,
     hostings: state.entities.hostings,
-    hosts: state.entities.hosts
+    hosts: state.entities.hosts,
+    guests: state.entities.guests,
+    currentUser: state.session.currentUser
   };
 };
 
