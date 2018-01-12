@@ -14,9 +14,9 @@ class HostIndexItem extends React.Component {
 
   render() {
     return (
-      <li className="hosts-info-box">
+      <li className="hosts-info-box" onClick={this.handleClick}>
         <div className="host-details-align">
-          <img className="host-profile-pic" src={this.props.imageUrl} onClick={this.handleClick}/>
+          <img className="host-profile-pic" src={this.props.imageUrl}/>
           <div >
              <p className="host-details">{this.props.firstname} {this.props.lastname}</p>
              <img className="profile-icon" src="https://s3.amazonaws.com/travelnhost/icons/profile-gray1-01.svg"/>

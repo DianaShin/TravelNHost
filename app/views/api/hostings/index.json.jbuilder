@@ -9,7 +9,7 @@ end
 json.guests do
   @hostings.map(&:guest).each do |guest|
     json.set! guest.id do
-      json.extract! guest, :first_name, :last_name, :destination_id
+      json.extract! guest, :first_name, :last_name
     end
   end
 end

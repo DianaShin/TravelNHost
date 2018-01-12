@@ -9,6 +9,7 @@ json.age user.age
 json.gender user.gender
 json.destination user.destination
 json.hosting_ids user.all_hostings.ids
+json.about user.about
 
 
 ##For hosts show page, because fetchHost goes through /api/users GET, this is what is rendered on Host Show page

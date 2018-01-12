@@ -28,6 +28,20 @@ main.dashboard-main-contents {
   border-radius: 5px;
 }*/
 
+.profile-about {
+  margin-top: 5px;
+}
+
+.about {
+  text-align: justify;
+  margin: 15px;
+  align-self: center;
+  width: 77%;
+  font-size: 1.1em;
+  color: #696969;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .travel-plans {
   font-family: 'Open Sans', sans-serif;
   color: white;

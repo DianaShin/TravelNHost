@@ -148,3 +148,7 @@
 .switchModalButton:hover {
   filter: opacity(0.75);
 }
+
+form.session-form {
+  height: fit-content;
+}

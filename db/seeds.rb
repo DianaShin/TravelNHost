@@ -179,13 +179,8 @@ Mehmet = User.create!(
   lat: 41.0678203,
   lng: 29.0310582,
   age: 28,
-  gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 38,
-  # about: "Come visit! I can teach you all about Ottoman history and show you around the world's most beautiful city."
+  gender: 'male',
+  about: "I'm an engineer by day, and a musician by night. If you stay with me, we can hop around the hottest music venues in the city."
 )
 
 Mustafa = User.create!(
@@ -197,13 +192,8 @@ Mustafa = User.create!(
   lat: 41.0557022,
   lng: 29.0043005,
   age: 38,
-  gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 28,
-  # about: "I'm an engineer by day, and a musician by night. If you stay with me, we can hop around the hottest music venues in the city."
+  gender: 'male',
+  about: "Come visit! I can teach you all about Ottoman history and show you around the world's most beautiful city."
 )
 
 Nilufer = User.create!(
@@ -215,13 +205,8 @@ Nilufer = User.create!(
   lat: 40.9787062,
   lng: 28.9432452,
   age: 24,
-  gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'female',
-  # age: 26,
-  # about: "I'm a student at Bogazici University, and would love to make friends from around the world."
+  gender: 'female',
+  about: "I'm a student at Bogazici University, and would love to make friends from around the world."
 )
 
 Nejla = User.create!(
@@ -233,13 +218,8 @@ Nejla = User.create!(
   lat: 41.0368836,
   lng: 28.9675821,
   age: 27,
-  gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'female',
-  # age: 26,
-  # about: "I'm a student at Bogazici University, and would love to make friends from around the world."
+  gender: 'female',
+  about: "I'm a student at Bogazici University, and would love to make friends from around the world."
 )
 
 Burak = User.create!(
@@ -251,13 +231,8 @@ Burak = User.create!(
   lat: 41.0322513,
   lng: 29.0231618,
   age: 27,
-  gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 22,
-  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+  gender: 'male',
+  about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
 )
 
 Aylin = User.create!(
@@ -269,13 +244,8 @@ Aylin = User.create!(
   lat: 41.0001384,
   lng: 29.0182612,
   age: 29,
-  gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'female',
-  # age: 26,
-  # about: "I'm a student at Bogazici University, and would love to make friends from around the world."
+  gender: 'female',
+  about: "I'm a student at Bogazici University, and would love to make friends from around the world."
 )
 
 ###
@@ -290,13 +260,8 @@ Guney = User.create!(
   lat: 38.6418462,
   lng: 34.691322,
   age: 29,
-  gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 22,
-  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+  gender: 'male',
+  about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
 )
 
 Kuzey = User.create!(
@@ -309,12 +274,6 @@ Kuzey = User.create!(
   lng: 34.691322,
   age: 24,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 22,
-  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
 )
 
 Semra = User.create!(
@@ -327,12 +286,6 @@ Semra = User.create!(
   lng: 34.8187001,
   age: 31,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 22,
-  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
 )
 
 ##Dubrovnik
@@ -345,13 +298,8 @@ Dario = User.create!(
   lat: 42.6512758,
   lng: 18.0773955,
   age: 26,
-  gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 22,
-  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
+  gender: 'male',
+  about: "Especially if you are not a Game of Thrones fans, please feel free to make a hosting request."
 )
 
 Vlado = User.create!(
@@ -364,12 +312,6 @@ Vlado = User.create!(
   lng: 18.0773955,
   age: 34,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 22,
-  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
 )
 
 Nina = User.create!(
@@ -382,12 +324,6 @@ Nina = User.create!(
   lng: 18.0773955,
   age: 35,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 22,
-  # about: "Last year, I spent a semester in London at UCL through the ESN network, and I want to keep practicing my English."
 )
 
 ##Chefchaouen
@@ -401,12 +337,6 @@ Wafa = User.create!(
   lng: -5.3060858,
   age: 35,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Saafa = User.create!(
@@ -419,13 +349,6 @@ Saafa = User.create!(
   lng: -5.3261917,
   age: 25,
   gender: 'female'
-
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Abdu = User.create!(
@@ -438,12 +361,6 @@ Abdu = User.create!(
   lng: -5.2999275,
   age: 42,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 ##Mostar
@@ -475,12 +392,6 @@ Adel = User.create!(
   lng: 17.8039236,
   age: 25,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Emil = User.create!(
@@ -493,12 +404,6 @@ Emil = User.create!(
   lng: 17.7893968,
   age: 25,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Selma = User.create!(
@@ -511,12 +416,6 @@ Selma = User.create!(
   lng: 17.812276,
   age: 30,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 
@@ -530,12 +429,6 @@ Juan = User.create!(
   lng: -3.639123,
   age: 27,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Marco = User.create!(
@@ -548,12 +441,6 @@ Marco = User.create!(
   lng: -3.6263771,
   age: 27,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Isabelle = User.create!(
@@ -565,14 +452,10 @@ Isabelle = User.create!(
   lat: 37.2015731,
   lng: -3.615026,
   age: 22,
-  gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+  gender: 'female',
+  about: "I love hosting guests! Don't forget to book your tickets to the AlHambra in advance!"
 )
+
 Mariam = User.create!(
   username: 'mariam',
   password: 'Barcelona',
@@ -583,12 +466,6 @@ Mariam = User.create!(
   lng: 2.1031037,
   age: 26,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Sergio = User.create!(
@@ -601,12 +478,6 @@ Sergio = User.create!(
   lng: 2.1433583,
   age: 26,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 ##Cario
@@ -620,12 +491,6 @@ Samer = User.create!(
   lng: 31.2083721,
   age: 26,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Layla = User.create!(
@@ -638,12 +503,6 @@ Layla = User.create!(
   lng: 31.2566549,
   age: 22,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Qais = User.create!(
@@ -656,12 +515,6 @@ Qais = User.create!(
  lng: 31.2183856,
  age: 26,
  gender: 'male'
- # isHost: true,
- # hostRating: 0,
- # imageUrl:
- # gender: 'male',
- # age: 25,
- # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Nada = User.create!(
@@ -674,12 +527,6 @@ Nada = User.create!(
  lng: 31.2347881,
  age: 22,
  gender: 'female'
- # isHost: true,
- # hostRating: 0,
- # imageUrl:
- # gender: 'male',
- # age: 25,
- # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 ## Petra
@@ -693,14 +540,8 @@ Ramzi = User.create!(
  lat: 30.3342374,
  lng: 35.4220409,
  age: 22,
- gender: 'male'
-
- # isHost: true,
- # hostRating: 0,
- # imageUrl:
- # gender: 'male',
- # age: 25,
- # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+ gender: 'male',
+ about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Omar = User.create!(
@@ -712,13 +553,8 @@ Omar = User.create!(
   lat: 30.3210225,
   lng: 35.460611,
   age: 23,
-  gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 26,
-  # about: "Petra is Jordan's greatest treasure. Come check it out. You'll feel like Indiana Jones."
+  gender: 'male',
+  about: "Petra is Jordan's greatest treasure. Come check it out. You'll feel like Indiana Jones."
 )
 
 Mohammad = User.create!(
@@ -730,13 +566,8 @@ Mohammad = User.create!(
   lat: 30.2849946,
   lng: 35.1650836,
   age: 25,
-  gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 23,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life when you visit Petra."
+  gender: 'male',
+  about: "Ahlan wa sahlan! All are welcome to Petra!"
 )
 
 Wael = User.create!(
@@ -745,16 +576,10 @@ Wael = User.create!(
   destination_id: Petra.id,
   first_name: 'Wael',
   last_name: 'Shaker',
-  lat: 30.3015954,
-  lng: 35.4536424,
+  lat: 30.328459,
+  lng: 35.4093433,
   age: 22,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 ##Sarajevo
@@ -769,12 +594,6 @@ Drino = User.create!(
   lng: 18.2425638,
   age: 22,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Ahmet = User.create!(
@@ -787,12 +606,6 @@ Ahmet = User.create!(
   lng: 18.3129515,
   age: 26,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Gulfem = User.create!(
@@ -805,16 +618,22 @@ Gulfem = User.create!(
   lng: 18.2487436,
   age: 27,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 
 ## Marrakesh
+Abdessadek = User.create!(
+  username: 'abdessadek',
+  password: 'marrakesh',
+  destination_id: Marrakesh.id,
+  first_name: 'Abdessadek',
+  last_name: 'Elfari',
+  lat: 31.6286828,
+  lng: -8.0711129,
+  age: 27,
+  gender: 'male',
+  about: "If you come, I'll teach you how to make the best chicken tagine. "
+)
 
 Jameela = User.create!(
   username: 'jameela',
@@ -825,13 +644,8 @@ Jameela = User.create!(
   lat: 31.6347485,
   lng: -8.0778935,
   age: 26,
-  gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
+  gender: 'female',
+  about: "Come visit. Marrakesh is a magical city. I'll show you around."
 )
 
 Rachid = User.create!(
@@ -844,31 +658,8 @@ Rachid = User.create!(
   lng: -8.0133488,
   age: 22,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
-Abdessadek = User.create!(
-  username: 'abdessadek',
-  password: 'marrakesh',
-  destination_id: Marrakesh.id,
-  first_name: 'Abdessadek',
-  last_name: 'Elfari',
-  lat: 31.6286828,
-  lng: -8.0711129,
-  age: 27,
-  gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
-)
 
 Faris = User.create!(
   username: 'faris',
@@ -880,12 +671,6 @@ Faris = User.create!(
   lng: -8.0810263,
   age: 22,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 ##Prague
@@ -900,12 +685,6 @@ Jirka = User.create!(
   lng: 14.3251971,
   age: 26,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Silvia = User.create!(
@@ -918,12 +697,6 @@ Silvia = User.create!(
   lng: 14.4537714,
   age: 26,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Miguel = User.create!(
@@ -936,12 +709,6 @@ Miguel = User.create!(
   lng: 14.3837336,
   age: 24,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 ##London
@@ -956,12 +723,6 @@ Oliver = User.create!(
   lng: -0.2127482,
   age: 22,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Emily = User.create!(
@@ -974,12 +735,6 @@ Emily = User.create!(
   lng: -0.1840896,
   age: 22,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 ##Venice
@@ -994,12 +749,6 @@ Mario = User.create!(
   lng: 12.3327858,
   age: 22,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 
@@ -1013,12 +762,6 @@ Luigi = User.create!(
   lng: 12.3327858,
   age: 24,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 ##Copenhagen
@@ -1034,12 +777,6 @@ Mircea = User.create!(
   lng: 12.4533979,
   age: 22,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Kasper = User.create!(
@@ -1052,12 +789,6 @@ Kasper = User.create!(
   lng: 12.4933092,
   age: 27,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Serge = User.create!(
@@ -1070,12 +801,6 @@ Serge = User.create!(
   lng: 4.7581966,
   age: 29,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Miranda = User.create!(
@@ -1088,12 +813,6 @@ Miranda = User.create!(
   lng: 4.8088367,
   age: 28,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 ##stockholm
@@ -1108,12 +827,6 @@ Oskar = User.create!(
   lng: 18.0326863,
   age: 22,
   gender: 'male'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )
 
 Elsa = User.create!(
@@ -1126,10 +839,4 @@ Elsa = User.create!(
   lng: 18.024704,
   age: 27,
   gender: 'female'
-  # isHost: true,
-  # hostRating: 0,
-  # imageUrl:
-  # gender: 'male',
-  # age: 25,
-  # about: "Don't just come to Petra to ride a camel. Experience real Bedouin life."
 )

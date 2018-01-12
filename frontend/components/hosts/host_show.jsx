@@ -27,6 +27,7 @@ class HostShow extends React.Component {
     let image_url;
     let destination;
     let country;
+    let about;
 
     if (this.props.host && this.props.destination) {
       firstName = this.props.host.first_name;
@@ -36,6 +37,7 @@ class HostShow extends React.Component {
       image_url = this.props.host.image_url;
       destination = this.props.destination.name;
       country = this.props.destination.country;
+      about = this.props.host.about;
     }
 
     return (
@@ -47,7 +49,7 @@ class HostShow extends React.Component {
           <table className="profile-details">
             <tbody>
               <tr>
-                <td className="left"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/profile-gray1-01.svg"/> </td>
+                <td className="left" align="right"> <img className="profile-detail-icon" src="https://s3.amazonaws.com/travelnhost/icons/profile-gray1-01.svg"/> </td>
                 <td className="right"> {gender}, {age}</td>
               </tr>
               <tr>
@@ -62,6 +64,7 @@ class HostShow extends React.Component {
           </table>
           <p className="profile-about" >ABOUT</p>
           <hr className="profile-box-underline"/>
+          <p className="about"> { about }</p>
         </aside>
         <main className="host-request-content">
           <RequestForm />

@@ -18,6 +18,7 @@ class Dashboard extends React.Component {
     let destination;
     let country;
     let image_url;
+    let about;
 
     if (this.props.currentUser) {
       firstName = this.props.currentUser.first_name;
@@ -27,6 +28,7 @@ class Dashboard extends React.Component {
       destination = this.props.currentUser.destination.name;
       image_url = this.props.currentUser.image_url;
       country = this.props.currentUser.destination.country;
+      about = this.props.currentUser.about;
     }
 
     let  myHostings = Object.keys(this.props.hostings).map(
@@ -80,6 +82,7 @@ class Dashboard extends React.Component {
           </table>
           <p className="profile-about" >ABOUT ME</p>
           <hr className="profile-box-underline"/>
+          <p className="about"> { about }</p>
         </aside>
         <main className="dashboard-main-contents">
           <section className="my-travel-plans">

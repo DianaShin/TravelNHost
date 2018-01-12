@@ -20,7 +20,7 @@ class DestinationShow extends React.Component {
     }
 
     return (
-      <div>
+      <main>
         <h1 className="destination-show-name">{name}</h1>
         <h1 className="destination-show-country">{country}</h1>
         <DestinationMap destination={this.props.destination} lat={lat} long={long}/>
@@ -28,7 +28,8 @@ class DestinationShow extends React.Component {
         <div className="hosts-index">
           <HostsIndex />
         </div>
-      </div>
+      </main>
+
 
     );
   }

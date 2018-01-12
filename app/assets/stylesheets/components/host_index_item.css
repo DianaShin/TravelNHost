@@ -6,9 +6,9 @@
   position: relative;
   right: 20px;
 }
-
-/*.hosts-info-box:hover {
-  filter: brightness(60%);
+/*
+li.hosts-info-box:hover {
+  background-color: rgba(32,178,170, 0.25);
 }*/
 img.host-profile-pic {
   width: 25%;
