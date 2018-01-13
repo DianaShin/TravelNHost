@@ -17,6 +17,16 @@ class User < ApplicationRecord
     foreign_key: :guest_id,
     class_name: :Hosting
 
+  has_many :reviews,
+    foreign_key: :guest_id,
+    primary_key: :id,
+    class_name: :Review
+
+  has_many :reviews_about_me,
+    foreign_key: :host_id,
+    primary_key: :id,
+    class_name: :Review
+
   after_initialize :ensure_session_token
 
   ##Write a method for getting all of my guests and write a method for getting all of my upcoming travels.
