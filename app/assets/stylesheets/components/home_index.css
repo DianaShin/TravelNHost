@@ -14,8 +14,8 @@
   font-family: 'Raleway', sans-serif;
   height: 800px;
   display: block;
-  /*position: relative;
-  left: 75px;*/
+  position: relative;
+  left: 25px;
   align-items: center;
   /*display: flex;*/
   /*flex-direction: column;*/
@@ -30,6 +30,7 @@ ul.destinations-row {
   flex-direction: row;
   align-content: stretch;
   width: 600px;
+  /*position: absolute;*/
 }
 
 img.destination {
