@@ -8,6 +8,7 @@ class HostShow extends React.Component {
   }
 
   componentDidMount() {
+    // debugger
     this.props.fetchHost(this.props.match.params.hostId);
   }
 

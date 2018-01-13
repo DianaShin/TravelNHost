@@ -10,7 +10,7 @@ class DestinationShow extends React.Component {
 
   render() {
     let lat, long, name, country, hero_url;
-
+// debugger
     if (this.props.destination) {
       lat = this.props.destination.lat;
       long = this.props.destination.long;

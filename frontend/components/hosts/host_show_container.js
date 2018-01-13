@@ -8,6 +8,7 @@ import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
   let destination = state.entities.destinations[ownProps.match.params.destinationId];
+  // debugger
   return {
     host: state.entities.hosts[ownProps.match.params.hostId],
     currentUser: state.session.currentUser,

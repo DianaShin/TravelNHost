@@ -20,10 +20,10 @@ export const deleteReview = (id) => {
   });
 };
 
-export const editReview = (review) => {
+export const editReview = (review, id) => {
   return $.ajax({
     method: 'PATCH',
-    url: `api/reviews/${review.id}`,
+    url: `api/reviews/${id}`,
     data: { review: review }
   });
 };
