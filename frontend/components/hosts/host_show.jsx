@@ -1,6 +1,7 @@
 import React from 'react';
 import RequestForm from './request_form_container';
 import ReviewForm from '../reviews/review_form';
+import ReviewShow from '../reviews/review_show';
 
 class HostShow extends React.Component {
   constructor(props){
@@ -11,6 +12,7 @@ class HostShow extends React.Component {
   componentDidMount() {
     // debugger
     this.props.fetchHost(this.props.match.params.hostId);
+    this.props.fetchReviews(this.props.match.params.hostId);
   }
 
   handleFetch(){
@@ -19,6 +21,22 @@ class HostShow extends React.Component {
         host_id: this.props.currentUser.id
       }
     });
+  }
+
+  reviewIndex() {
+    const hostsReviews =this.props.reviews.map(review => {
+      return <ReviewShow
+              authorId={review.author_id}
+              hostId={review.host_id}
+              authorName={review.author_name}
+              authorLocation={review.author_location}
+              title={review.title}
+              body={review.body}
+              key={review.id}
+              id={review.id}
+              />;
+          });
+          return hostsReviews;
   }
 
   render(){
@@ -71,6 +89,9 @@ class HostShow extends React.Component {
         <main className="host-request-content">
           <RequestForm />
           <ReviewForm />
+          <section>
+            { this.reviewIndex() }
+          </section>
         </main>
       </content>
     );

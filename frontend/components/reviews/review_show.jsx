@@ -3,7 +3,7 @@ import { withRouter, Route, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { editReview, deleteReview } from '../../actions/review_actions';
 
-class Review extends React.Component() {
+class ReviewShow extends React.Component {
   constructor(props) {
     super(props);
     this.handleDelete = this.handleDelete.bind(this);
@@ -44,7 +44,14 @@ class Review extends React.Component() {
   }
 
   render() {
-
+    return (
+      <section className="single-review">
+        <p> {this.props.authorName} </p>
+        <p> {this.props.Location} </p>
+        <p> {this.props.title} </p>
+        <p> {this.props.body} </p>
+      </section>
+    );
   }
 }
 
@@ -62,4 +69,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Review);
+export default connect(mapStateToProps, mapDispatchToProps)(ReviewShow);
