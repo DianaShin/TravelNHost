@@ -48,7 +48,7 @@ class ReviewForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label className="leave-review">LEAVE A REVIEW</label>
           <br />
-          <label>Title</label>
+          <label className="review-form-label">Title</label>
           <br />
           <input
             className="review-form-input"
@@ -57,6 +57,7 @@ class ReviewForm extends React.Component {
             onChange={this.update("title")}
            />
           <br />
+          <p className="review-form-label">Body</p>
           <textarea className="review-form-input"
             rows="5"
             cols="30"
