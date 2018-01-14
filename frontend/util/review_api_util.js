@@ -1,7 +1,7 @@
-export const fetchReviews = ( userId ) => {
+export const fetchReviews = ( host_id ) => {
   return $.ajax({
     method: 'GET',
-    url: `api/users/${userId}/reviews`,
+    url: `api/users/${host_id}/reviews`,
   });
 };
 

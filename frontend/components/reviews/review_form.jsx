@@ -3,7 +3,6 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { createReview, editReview } from '../../actions/review_actions';
-import ReviewForm from './review_form';
 
 class ReviewForm extends React.Component {
   constructor(props) {
@@ -17,7 +16,7 @@ class ReviewForm extends React.Component {
     this.state = {
       body: body,
       title: title,
-      userId: 0
+      host_id: 0
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.redirectToHostShow = this.redirectToHostShow.bind(this);
@@ -28,8 +27,8 @@ class ReviewForm extends React.Component {
   }
 
   handleSubmit(e) {
-    const userId = parseInt(this.props.match.params.hostId);
-    const review = Object.assign({}, this.state, {userId: userId});
+    const host_id = parseInt(this.props.match.params.hostId);
+    const review = Object.assign({}, this.state, {host_id: host_id});
     if (this.props.location.state) {
       this.props.editReview(review, this.props.location.state.id);
     } else {
@@ -47,24 +46,26 @@ class ReviewForm extends React.Component {
     return (
       <section className="review-form">
         <form onSubmit={this.handleSubmit}>
-          <label>TItle</label>
+          <label className="leave-review">LEAVE A REVIEW</label>
+          <br />
+          <label>Title</label>
           <br />
           <input
-            className="review-form-title"
+            className="review-form-input"
             type="text"
             value={this.state.title}
             onChange={this.update("title")}
-          />
+           />
           <br />
-          <textarea
+          <textarea className="review-form-input"
             rows="5"
-            cols="25"
+            cols="30"
             value={this.state.body}
             onChange={this.update("body")}
           />
           <br />
           <input className="review-submit" type="submit" />
-          <button className="review-cancel" onClick={this.redirectToHostShow}/>
+          <button className="review-cancel" onClick={this.redirectToHostShow}>Cancel</button>
         </form>
       </section>
     );

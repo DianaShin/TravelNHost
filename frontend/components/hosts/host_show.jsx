@@ -1,5 +1,6 @@
 import React from 'react';
 import RequestForm from './request_form_container';
+import ReviewForm from '../reviews/review_form';
 
 class HostShow extends React.Component {
   constructor(props){
@@ -69,6 +70,7 @@ class HostShow extends React.Component {
         </aside>
         <main className="host-request-content">
           <RequestForm />
+          <ReviewForm />
         </main>
       </content>
     );
