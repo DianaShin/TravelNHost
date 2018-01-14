@@ -6,38 +6,37 @@ import ReviewShow from '../reviews/review_show';
 class HostShow extends React.Component {
   constructor(props){
     super(props);
-    this.handleFetch = this.handleFetch.bind(this);
+    // this.handleFetch = this.handleFetch.bind(this);
   }
 
   componentDidMount() {
     // debugger
     this.props.fetchHost(this.props.match.params.hostId);
     this.props.fetchReviews(this.props.match.params.hostId);
+    // .then(
+    //   () => {
+    //     this.props.fetchReviews(this.props.match.params.hostId);
+    //   }
+    // );
   }
 
-  handleFetch(){
-    this.props.fetchHostings({
-      hosting: {
-        host_id: this.props.currentUser.id
-      }
-    });
+  componentWillReceiveProps(nextProps) {
+    if (!this.props.host) {
+      this.props.fetchHost(this.props.match.params.hostId);
+    }
+    if (this.props.match.params.hostId !== nextProps.match.params.hostId) {
+      this.props.fetchReviews(this.props.match.params.hostId);
+    }
   }
 
-  reviewIndex() {
-    const hostsReviews =this.props.reviews.map(review => {
-      return <ReviewShow
-              authorId={review.author_id}
-              hostId={review.host_id}
-              authorName={review.author_name}
-              authorLocation={review.author_location}
-              title={review.title}
-              body={review.body}
-              key={review.id}
-              id={review.id}
-              />;
-          });
-          return hostsReviews;
-  }
+  // handleFetch(){
+  //   this.props.fetchHostings({
+  //     hosting: {
+  //       host_id: this.props.currentUser.id
+  //     }
+  //   });
+  // }
+
 
   render(){
     let firstName;
@@ -59,6 +58,23 @@ class HostShow extends React.Component {
       country = this.props.destination.country;
       about = this.props.host.about;
     }
+
+    let hostsReviews = this.props.reviews.map(review => {
+      if (review.host_id === parseInt(this.props.match.params.hostId)) {
+        const { host } = this.props;
+        if (!host) return null;
+        return <ReviewShow
+          authorId={review.author_id}
+          hostId={review.host_id}
+          authorName={review.author_name}
+          authorLocation={review.author_location}
+          title={review.title}
+          body={review.body}
+          key={review.id}
+          id={review.id}
+          />;
+      }
+    });
 
     return (
       <content className="host-show-main">
@@ -90,7 +106,7 @@ class HostShow extends React.Component {
           <RequestForm />
           <ReviewForm />
           <section>
-            { this.reviewIndex() }
+            { hostsReviews }
           </section>
         </main>
       </content>

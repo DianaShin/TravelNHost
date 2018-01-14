@@ -47,7 +47,7 @@ class ReviewShow extends React.Component {
     return (
       <section className="single-review">
         <p> {this.props.authorName} </p>
-        <p> {this.props.Location} </p>
+        <p> {this.props.authorLocation} </p>
         <p> {this.props.title} </p>
         <p> {this.props.body} </p>
       </section>
