@@ -34,7 +34,11 @@ class ReviewForm extends React.Component {
     } else {
       this.props.createReview(review);
     }
-    this.redirectToHostShow();
+    // this.redirectToHostShow();
+    this.setState({
+      body: '',
+      title: ''
+    });
   }
 
   redirectToHostShow() {
