@@ -11,8 +11,8 @@ class HostShow extends React.Component {
 
   componentDidMount() {
     // debugger
-    this.props.fetchHost(this.props.match.params.hostId);
     this.props.fetchReviews(this.props.match.params.hostId);
+    this.props.fetchHost(this.props.match.params.hostId);
     // .then(
     //   () => {
     //     this.props.fetchReviews(this.props.match.params.hostId);
@@ -37,7 +37,6 @@ class HostShow extends React.Component {
   //   });
   // }
 
-
   render(){
     let firstName;
     let lastName;
@@ -61,8 +60,7 @@ class HostShow extends React.Component {
 
     let hostsReviews = this.props.reviews.map(review => {
       if (review.host_id === parseInt(this.props.match.params.hostId)) {
-        const { host } = this.props;
-        if (!host) return null;
+        const { currentUser } = this.props;
         return <ReviewShow
           authorId={review.author_id}
           hostId={review.host_id}

@@ -50,6 +50,7 @@ class ReviewShow extends React.Component {
         <p> {this.props.authorLocation} </p>
         <p> {this.props.title} </p>
         <p> {this.props.body} </p>
+        <hr />
       </section>
     );
   }
