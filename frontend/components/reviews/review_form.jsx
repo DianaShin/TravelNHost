@@ -48,8 +48,8 @@ class ReviewForm extends React.Component {
 
   render() {
     return (
-      <section className="review-form">
-        <form onSubmit={this.handleSubmit}>
+      <section>
+        <form className="review-form" onSubmit={this.handleSubmit}>
           <label className="leave-review">LEAVE A REVIEW</label>
           <br />
           <label className="review-form-label">Title</label>
