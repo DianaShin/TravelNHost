@@ -43,6 +43,7 @@ img.destination-cover-image {
   display: flex;
   flex-direction: column;
 }
+
 div.hosts-index {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
