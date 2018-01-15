@@ -15,9 +15,12 @@ class ReviewShow extends React.Component {
   }
 
   editOrDeleteReview() {
+    // debugger
     if (this.props.currentUser && this.props.currentUser.id === this.props.authorId) {
       return (
         <section className="edit-delete-review">
+         <button className="guest-edit-review">  Edit Review 
+         </button>
           <button
             className="guest-delete-review"
             onClick={this.handleDelete}>
@@ -56,4 +59,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ReviewShow);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ReviewShow));
