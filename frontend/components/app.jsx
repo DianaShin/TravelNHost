@@ -7,10 +7,12 @@ import DestinationShow from './destinations/destination_show_container';
 import HostShowContainer from './hosts/host_show_container';
 import DashboardContainer from './dashboard/dashboard_container';
 import { AuthRoute } from '../util/route_util';
+import Favicon from 'react-favicon';
 
 
 const App = () => (
   <div>
+      <Favicon url="https://s3.amazonaws.com/vector-icons/backpackicon-01.png"/>
       <Route path="" component={HeaderContainer}/>
       <Route exact path="/" component={Home}/>
       <AuthRoute exact path="/signup" component={Home}/>
