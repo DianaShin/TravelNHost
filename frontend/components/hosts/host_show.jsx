@@ -59,7 +59,7 @@ class HostShow extends React.Component {
     }
 
     let hostsReviews = this.props.reviews.map(review => {
-      // if (review.host_id === parseInt(this.props.match.params.hostId)) {
+      if (review.host_id === parseInt(this.props.match.params.hostId)) {
         return <ReviewShow
           authorId={review.author_id}
           hostId={review.host_id}
@@ -70,7 +70,7 @@ class HostShow extends React.Component {
           key={review.id}
           id={review.id}
           />;
-      // }
+      }
     });
 
     return (

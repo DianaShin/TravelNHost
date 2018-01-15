@@ -11,33 +11,18 @@ class ReviewShow extends React.Component {
 
   handleDelete(e) {
     e.preventDefault();
-    //
-    this.props.deleteReview(this.props.reviews.id);
+    this.props.deleteReview(this.props.id);
   }
 
   editOrDeleteReview() {
-    if (this.props.currentUser && this.props.currentUser.id === this.props.reviews.guest_id) {
+    if (this.props.currentUser && this.props.currentUser.id === this.props.authorId) {
       return (
         <section className="edit-delete-review">
-          <Link
-            className='guest-edit-review'
-            to={{
-              pathname: `/destinations/${this.props.match.params.destinationId}/hosts/${this.props.match.params.hostId}/review`,
-              state: {
-                body: this.props.body,
-                title: this.props.title,
-                id: this.props.id
-              }
-            }}
-          >
-          Edit Review
-        </Link>
-        <button
-          className="guest-delete-review"
-          onClick={this.handleDelete}
-        >
-          Delete Review
-        </button>
+          <button
+            className="guest-delete-review"
+            onClick={this.handleDelete}>
+            Delete Review
+          </button>
         </section>
       );
     }
@@ -50,6 +35,7 @@ class ReviewShow extends React.Component {
         <p> {this.props.authorLocation} </p>
         <p> {this.props.title} </p>
         <p> {this.props.body} </p>
+        <div> { this.editOrDeleteReview() }</div>
         <hr />
       </section>
     );
