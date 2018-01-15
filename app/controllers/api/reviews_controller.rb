@@ -15,7 +15,7 @@ class Api::ReviewsController < ApplicationController
   end
 
   def index
-    @reviews = Review.where(guest_id: params[:user_id])
+    @reviews = Review.where(host_id: params[:user_id])
   end
 
   def edit

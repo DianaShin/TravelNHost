@@ -12,24 +12,25 @@ class HomeIndex extends React.Component {
     });
 
     return (
-      <div className="destinations-index">
-        <ul className="destinations-row-1 destinations-row">
-          {destinations.slice(0,3)}
-        </ul>
-        <ul className="destinations-row-2 destinations-row">
-          {destinations.slice(3, 7)}
-        </ul>
-        <ul className="destinations-row-3 destinations-row">
+      <section className="home-index">
+        <div className="destinations-index">
+          <ul className="destinations-row-1 destinations-row">
+            {destinations.slice(0,3)}
+          </ul>
+          <ul className="destinations-row-2 destinations-row">
+            {destinations.slice(3, 7)}
+          </ul>
+          <ul className="destinations-row-3 destinations-row">
             {destinations.slice(7, 10)}
-        </ul>
-        <ul className="destinations-row-4 destinations-row">
-          {destinations.slice(10, 14)}
-        </ul>
-        <ul className="destinations-row-5 destinations-row">
-          {destinations.slice(14, 17)}
-        </ul>
-
-      </div>
+          </ul>
+          <ul className="destinations-row-4 destinations-row">
+            {destinations.slice(10, 14)}
+          </ul>
+          <ul className="destinations-row-5 destinations-row">
+            {destinations.slice(14, 17)}
+          </ul>
+        </div>
+      </section>
     );
   }
 
