@@ -6,7 +6,18 @@ import { editReview, deleteReview } from '../../actions/review_actions';
 class ReviewShow extends React.Component {
   constructor(props) {
     super(props);
+    this.handleEdit = this.handleEdit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
+    this.state = {
+        title: this.props.title,
+        body: this.props.body,
+        id: this.props.id
+    };
+  }
+
+  handleEdit(e) {
+    e.preventDefault();
+    // this.props.editReview( , this.props.id)
   }
 
   handleDelete(e) {
@@ -19,7 +30,7 @@ class ReviewShow extends React.Component {
     if (this.props.currentUser && this.props.currentUser.id === this.props.authorId) {
       return (
         <section className="edit-delete-review">
-         <button className="guest-edit-review">  Edit Review 
+         <button className="guest-edit-review">  Edit Review
          </button>
           <button
             className="guest-delete-review"

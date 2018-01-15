@@ -40,7 +40,9 @@ class Search extends React.Component {
       destination.name.toLowerCase() === this.state.value.toLowerCase()));
     if (match.length === 1) {
       const id = match[0].id;
-       return this.props.history.push(`/destinations/${id}`);
+       return this.props.history.push(`/destinations/${id}`).then(() => this.setState({
+         value: ''
+       }));
     }
   }
 

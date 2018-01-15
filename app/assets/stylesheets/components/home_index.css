@@ -24,13 +24,14 @@
 ul.destinations-row {
   margin-bottom: -78px;
   padding-bottom: 5px;
+  padding-left: 3%;
   padding-top: 5px;
   list-style: none;
   display: flex;
   flex-direction: row;
   align-content: stretch;
-  width: 600px;
-  /*position: absolute;*/
+  width: 1200px;
+  position: relative;
 }
 
 img.destination {

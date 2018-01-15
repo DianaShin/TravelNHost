@@ -1,8 +1,8 @@
 
 .react-autosuggest__input {
-  width: 275px;
+  width: 250px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   position: relative;
   top: 25px;
   background: transparent;
@@ -15,7 +15,7 @@
 }
 
 .react-autosuggest__suggestions-list {
-  width: 275px;
+  width: 250px;
   z-index: 1;
   margin-left: 0px;
   list-style: none;
@@ -52,6 +52,8 @@
 }
 form.search-bar {
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 button.search-submit-button {
