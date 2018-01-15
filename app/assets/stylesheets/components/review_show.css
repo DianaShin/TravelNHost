@@ -2,3 +2,14 @@
   font-family: 'Raleway', sans-serif;
   color: #696969;
 }
+
+
+.guest-delete-review {
+  border:  2px solid #20b2aa;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 0px;
+  color: #20b2aa;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+}

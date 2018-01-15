@@ -8,8 +8,8 @@ Rails.application.routes.draw do
     resources :destinations, only: [:index, :create, :show] do
       resources :users, only: [:create]
     end
-    resources :hostings, only: [:create, :show, :index, :destroy]
-    resources :reviews, only: [:create, :show, :index, :destroy]
+    resources :hostings, only: [:create, :show, :index, :update, :destroy]
+    resources :reviews, only: [:create, :show, :index, :update, :destroy]
   end
 
   root to: 'static_pages#root'
