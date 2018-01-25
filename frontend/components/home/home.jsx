@@ -5,7 +5,7 @@ import SearchContainer from '../search/search_container';
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <main>
         <section id="home-splash-img">
             <section className="home-splash-layer">
               <h2>MEET LOCALS. TRAVEL THE WORLD.</h2>
@@ -39,16 +39,10 @@ class Home extends React.Component {
          </section>
 
          <HomeIndex />
-      </div>
+      </main>
     );
   }
 }
 
-// <div className="search-bar-background-placeholder">
-//   <h2 className="fav-destinations">FAVORITE DESTINATIONS</h2>
-// </div>
-// <div className="search-div">
-//   <SearchContainer className ="search-bar" />
-// </div>
 
 export default Home;

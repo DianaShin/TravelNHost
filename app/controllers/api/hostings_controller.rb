@@ -42,6 +42,13 @@ class Api::HostingsController < ApplicationController
     end
   end
 
+  def destroy
+    if current_user.id == params[:id].to_i
+      @hosting = Hosting.where('hostings.guest_id = ?', params[:id])
+      @hosting.destroy!
+    end
+  end
+
   private
   def hosting_params
     params.require(:hosting).

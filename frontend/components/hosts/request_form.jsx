@@ -14,6 +14,7 @@ class RequestForm extends React.Component {
       focused: null,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.cancelRequest = this.cancelRequest.bind(this);
   }
 
   // componentWillMount() {
@@ -44,6 +45,13 @@ class RequestForm extends React.Component {
     // });
   }
 
+  cancelRequest(e) {
+    e.preventDefault();
+    // if (this.props.match.params.hostId === this.props.hosts. )
+    // this.props.deleteHosting(this.props.hostings.);
+
+  }
+
   render() {
 
     // debugger
@@ -54,6 +62,7 @@ class RequestForm extends React.Component {
       const confirmation = (
         <div>
           <h4 className="request-confirmation">Your request has been sent to { this.props.host.first_name }!</h4>
+          <button className="cancel-request" onClick={this.cancelRequest}> Cancel Request </button>
         </div>
       );
       if (this.props.host.hosting_ids.some(hosting_id => this.props.guest.hosting_ids.includes(hosting_id))) {

@@ -15,10 +15,10 @@ class HomeIndex extends React.Component {
       <section className="home-index">
         <div className="destinations-index">
           <ul className="destinations-row-1 destinations-row">
-            {destinations.slice(0,3)}
+              {destinations.slice(0,3)}
           </ul>
           <ul className="destinations-row-2 destinations-row">
-            {destinations.slice(3, 7)}
+              {destinations.slice(3, 7)}
           </ul>
           <ul className="destinations-row-3 destinations-row">
             {destinations.slice(7, 10)}

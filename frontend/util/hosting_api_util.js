@@ -35,3 +35,10 @@ export const updateHosting = hosting => {
     data: { hosting }
   });
 };
+
+export const deleteHosting = (id) => {
+  return $.ajax({
+    method: 'DELETE',
+    url: `api/hostings/${id}`
+  });
+};
