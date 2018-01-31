@@ -46,7 +46,7 @@ componentDidMount() {
     if (this.props.currentUser && this.props.currentUser.id === this.props.authorId) {
       return (
         <section className="edit-delete-review">
-          <Link to={`/destinations/${this.props.destination}/hosts/${this.props.hostId}/reviews/${this.props.id}/edit`} body={this.state.body} title={this.state.title}> Edit Review
+          <Link to={`/destinations/${this.props.destination}/hosts/${this.props.hostId}/reviews/${this.props.id}/edit`} className="guest-edit-review"> Edit Review
           </Link>
           <button
             className="guest-delete-review"

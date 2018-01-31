@@ -27,6 +27,10 @@
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
   background-color: #20b2aa;
+  text-decoration: none;
+  font-size: 12px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .guest-edit-review:hover {
