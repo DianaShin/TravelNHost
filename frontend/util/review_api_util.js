@@ -1,7 +1,7 @@
 export const fetchReviews = ( host_id ) => {
   return $.ajax({
     method: 'GET',
-    url: `api/users/${host_id}/reviews`,
+    url: `api/reviews?host_id=${host_id}`,
   });
 };
 
@@ -10,6 +10,13 @@ export const createReview = (review) => {
     method: 'POST',
     url: 'api/reviews',
     data: { review: review }
+  });
+};
+
+export const fetchReview = (id) => {
+  return $.ajax({
+    method: 'GET',
+    url: `api/reviews/${id}`
   });
 };
 

@@ -25,8 +25,8 @@ export const createReview = review => dispatch => {
   });
 };
 
-export const editReview = (review, reviewId) => dispatch => {
-  return ReviewApiUtil.editReview(review, reviewId).then(review => {
+export const editReview = (reviewId) => dispatch => {
+  return ReviewApiUtil.editReview(reviewId).then(review => {
     return dispatch(receiveReview(review));
   });
 };
@@ -34,6 +34,12 @@ export const editReview = (review, reviewId) => dispatch => {
 export const deleteReview = reviewId => dispatch => {
   return ReviewApiUtil.deleteReview(reviewId).then((reviewId) => {
     return dispatch(removeReview(reviewId));
+  });
+};
+
+export const fetchReview = (reviewId) => dispatch => {
+  return ReviewApiUtil.fetchReview(reviewId).then(review => {
+    return dispatch(receiveReview(review));
   });
 };
 

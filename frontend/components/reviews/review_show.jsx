@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter, Route, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { editReview, deleteReview } from '../../actions/review_actions';
+import { editReview, deleteReview, fetchReview } from '../../actions/review_actions';
 
 class ReviewShow extends React.Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class ReviewShow extends React.Component {
 
   handleEdit(e) {
     e.preventDefault();
-    // this.props.editReview( , this.props.id)
+    this.props.editReview(this.props.id);
   }
 
   handleDelete(e) {
@@ -25,13 +25,29 @@ class ReviewShow extends React.Component {
     this.props.deleteReview(this.props.id);
   }
 
+
+componentDidMount() {
+  if (this.props.match.params.reviewId) {
+    this.props.fetchReview(this.props.match.params.reviewId);
+  }
+}
+
+  componentWillReceiveProps(newProps) {
+    if (!this.state) {
+      this.setState(
+        {title: newProps.review.title, body: newProps.review.body, id: newProps.match.params.reviewId}
+      );
+    }
+  }
+  // <button className="guest-edit-review" onClick={this.handleEdit}>  Edit Review
+  // </button>
+
   editOrDeleteReview() {
-    // debugger
     if (this.props.currentUser && this.props.currentUser.id === this.props.authorId) {
       return (
         <section className="edit-delete-review">
-         <button className="guest-edit-review">  Edit Review
-         </button>
+          <Link to={`/destinations/${this.props.destination}/hosts/${this.props.hostId}/reviews/${this.props.id}/edit`} body={this.state.body} title={this.state.title}> Edit Review
+          </Link>
           <button
             className="guest-delete-review"
             onClick={this.handleDelete}>
@@ -65,8 +81,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    editReview: (review, reviewId) => dispatch(editReview(review, reviewId)),
-    deleteReview: id => dispatch(deleteReview(id))
+    editReview: (reviewId) => dispatch(editReview(reviewId)),
+    deleteReview: id => dispatch(deleteReview(id)),
+    fetchReview: (reviewId) => dispatch(fetchReview(reviewId)),
   };
 };
 

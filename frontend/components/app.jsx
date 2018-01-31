@@ -7,6 +7,7 @@ import DestinationShow from './destinations/destination_show_container';
 import HostShowContainer from './hosts/host_show_container';
 import DashboardContainer from './dashboard/dashboard_container';
 import { AuthRoute } from '../util/route_util';
+import ReviewForm from './reviews/review_form';
 import Favicon from 'react-favicon';
 
 
@@ -19,6 +20,7 @@ const App = () => (
       <AuthRoute exact path="/login" component={Home}/>
       <Route exact path="/dashboard" component={DashboardContainer}/>
       <Switch>
+        <Route path='/destinations/:destinationId/hosts/:hostId/reviews/:reviewId/edit' component={ReviewForm}/>
         <Route path='/destinations/:destinationId/hosts/:hostId' component={HostShowContainer}/>
         <Route path='/destinations/:destinationId' component={DestinationShow}/>
       </Switch>

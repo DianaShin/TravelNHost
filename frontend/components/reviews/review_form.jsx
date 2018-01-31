@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import { createReview, editReview } from '../../actions/review_actions';
+import { createReview, editReview, fetchReview } from '../../actions/review_actions';
 
 class ReviewForm extends React.Component {
   constructor(props) {
@@ -21,6 +21,24 @@ class ReviewForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.redirectToHostShow = this.redirectToHostShow.bind(this);
   }
+
+  componentDidMount() {
+    if (this.props.match.params.reviewId) {
+      this.props.fetchReview(this.props.match.params.reviewId).then((response) => {
+        this.setState(
+        {title: response.review.title, body: response.review.body, id: response.review.id}
+      );
+    });
+    }
+  }
+
+    componentWillReceiveProps(newProps) {
+      if (!this.state) {
+        this.setState(
+          {title: newProps.review.title, body: newProps.review.body, id: newProps.match.params.reviewId}
+        );
+      }
+    }
 
   update(field) {
     return e => this.setState({[field]: e.currentTarget.value });
@@ -82,7 +100,8 @@ class ReviewForm extends React.Component {
 
 const mapDispatchToProps = dispatch => ({
   createReview: review => dispatch(createReview(review)),
-  editReview: review => dispatch(editReview(review))
+  editReview: review => dispatch(editReview(review)),
+  fetchReview: reviewId => dispatch(fetchReview(reviewId))
 });
 
 export default withRouter(connect(null, mapDispatchToProps)(ReviewForm));

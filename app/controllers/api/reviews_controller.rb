@@ -15,7 +15,7 @@ class Api::ReviewsController < ApplicationController
   end
 
   def index
-    @reviews = Review.where(host_id: params[:user_id])
+    @reviews = Review.where(host_id: params[:host_id])
   end
 
   def edit
@@ -29,6 +29,10 @@ class Api::ReviewsController < ApplicationController
     else
       render json: @review.errors.full_messages, status: 422
     end
+  end
+
+  def show
+    @review = Review.find(params[:id])
   end
 
   def destroy

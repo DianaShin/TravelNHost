@@ -14,11 +14,6 @@ class HostShow extends React.Component {
     this.props.fetchReviews(this.props.match.params.hostId);
     this.props.fetchHost(this.props.match.params.hostId);
     this.props.fetchHostings(this.props.match.params.hostId);
-    // .then(
-    //   () => {
-    //     this.props.fetchReviews(this.props.match.params.hostId);
-    //   }
-    // );
   }
 
   componentWillReceiveProps(nextProps) {
@@ -70,6 +65,7 @@ class HostShow extends React.Component {
           body={review.body}
           key={review.id}
           id={review.id}
+          destination={this.props.match.params.destinationId}
           />;
       }
     });
