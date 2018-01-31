@@ -67,6 +67,11 @@ div.header-left {
     opacity: 1;
 }
 
+.session-form input::-webkit-input-placeholder {
+    color: #696969;
+    opacity: 1;
+}
+
 ul .header-nav-buttons-list {
   float: right;
 }
