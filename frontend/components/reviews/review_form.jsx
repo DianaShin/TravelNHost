@@ -47,21 +47,22 @@ class ReviewForm extends React.Component {
   handleSubmit(e) {
     const host_id = parseInt(this.props.match.params.hostId);
     const review = Object.assign({}, this.state, {host_id: host_id});
-    if (this.props.location.state) {
-      this.props.editReview(review, this.props.location.state.id);
+    debugger
+    if (this.props.location.pathname.includes("edit")) {
+      this.props.editReview(review, review.id);
     } else {
       this.props.createReview(review);
     }
     // this.redirectToHostShow();
-    this.setState({
-      body: '',
-      title: ''
-    });
+    // this.setState({
+    //   body: '',
+    //   title: ''
+    // });
+    this.redirectToHostShow();
   }
 
   redirectToHostShow() {
-    return this.props.history.
-    push(`/destinations/${this.props.match.params.destinationId}/hosts/${this.props.match.params.hostId}`);
+    return this.props.history.push(`/destinations/${this.props.match.params.destinationId}/hosts/${this.props.match.params.hostId}`);
   }
 
   render() {
@@ -100,7 +101,7 @@ class ReviewForm extends React.Component {
 
 const mapDispatchToProps = dispatch => ({
   createReview: review => dispatch(createReview(review)),
-  editReview: review => dispatch(editReview(review)),
+  editReview: (review, reviewId) => dispatch(editReview(review, reviewId)),
   fetchReview: reviewId => dispatch(fetchReview(reviewId))
 });
 
