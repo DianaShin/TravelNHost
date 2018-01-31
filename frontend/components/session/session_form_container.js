@@ -18,7 +18,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       });
     case 'signup':
       return ({
-        processForm: (user) => dispatch(signup(user))
+        processForm: (user) => dispatch(login(user))
       });
     default:
       return ({

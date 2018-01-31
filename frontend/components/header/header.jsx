@@ -35,13 +35,13 @@ class Header extends React.Component {
             </div>
             <ul className="header-nav-buttons-list">
               <li className='header-nav-demo-button'>
-                <button class='header-nav-demo-button' onClick={this.demo}>DEMO</button>
+                <button className='header-nav-demo-button' onClick={this.demo}>DEMO</button>
               </li>
               <li className='header-nav-buttons-list-item'>
-                <Link to='/signup' class='header-nav-buttons-list-link'>SIGN UP</Link>
+                <Link to='/signup' className='header-nav-buttons-list-link'>SIGN UP</Link>
               </li>
               <li className='header-nav-buttons-list-item'>
-                <Link to='/login' class='header-nav-buttons-list-link'>LOG IN </Link>
+                <Link to='/login' className='header-nav-buttons-list-link'>LOG IN </Link>
                 <Switch>
                   <Route path='/signup'>
                     <Modal
@@ -51,6 +51,7 @@ class Header extends React.Component {
                       className="modal"
                       overlayClassName="modalOverlay"
                       shouldCloseOnOverlayClick={false}
+                      ariaHideApp={false}
                     >
                       <SessionFormContainer
                         formType={"signup"}
@@ -66,6 +67,7 @@ class Header extends React.Component {
                       className="modal"
                       overlayClassName="modalOverlay"
                       shouldCloseOnOverlayClick={false}
+                      ariaHideApp={false}
                       >
                       <SessionFormContainer
                         formType={"login"}

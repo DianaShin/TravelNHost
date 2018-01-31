@@ -52,17 +52,23 @@ class SessionForm extends React.Component {
     let linkTo;
     let switchModalMessage;
     let switchModalButton;
+    let switchClick;
     let guestLogin = "DEMO";
+    let demoButton;
     switch (this.props.formType) {
       case('login'):
         title = 'LOGIN';
         switchModalMessage = "Don't have an account?";
         switchModalButton = "Join";
+        demoButton =  <input type='submit' value={guestLogin} onClick={this.demoUserLogin} className="guest-button"/>
+        switchClick = "signup"
         break;
       case ('signup'):
         title = 'SIGNUP';
         switchModalMessage = "Already have an account?";
         switchModalButton = "Login";
+        demoButton = null;
+        switchClick = "login";
     }
     let errors = '';
     if (this.props.errors.length !== 0){
@@ -96,12 +102,14 @@ class SessionForm extends React.Component {
         <br />
       <input type='submit' value={this.props.formType} className="submit-button"/>
       <br />
-      <input type='submit' value={guestLogin} onClick={this.demoUserLogin} className="guest-button"/>
+      {demoButton}
       <p className="switchModalMessage">{switchModalMessage}</p>
-      <input type='submit' value={switchModalButton} className="switchModalButton" />
-     </form>
+      <Link to={`/${switchClick}`}><button className="switchModalButton">{switchModalButton}</button></Link>
+    </form>
+
    );
   }
 }
 
+// <input type='submit' value={switchModalButton} onClick={this.props.history.push(`/${switchClick}`)} className="switchModalButton" />
 export default withRouter(SessionForm);
