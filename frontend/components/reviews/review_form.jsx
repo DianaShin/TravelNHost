@@ -47,7 +47,6 @@ class ReviewForm extends React.Component {
   handleSubmit(e) {
     const host_id = parseInt(this.props.match.params.hostId);
     const review = Object.assign({}, this.state, {host_id: host_id});
-    debugger
     if (this.props.location.pathname.includes("edit")) {
       this.props.editReview(review, review.id);
     } else {
@@ -66,10 +65,17 @@ class ReviewForm extends React.Component {
   }
 
   render() {
+    let title;
+
+    if (this.props.location.pathname.includes("edit")) {
+      title = "EDIT REVIEW";
+    } else {
+      title = "LEAVE A REVIEW";
+    }
     return (
       <section>
         <form className="review-form" onSubmit={this.handleSubmit}>
-          <label className="leave-review">LEAVE A REVIEW</label>
+          <label className="leave-review">{title}</label>
           <br />
           <label className="review-form-label">Title</label>
           <br />
