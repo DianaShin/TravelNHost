@@ -28,9 +28,7 @@ class User < ApplicationRecord
     class_name: :Review
 
   after_initialize :ensure_session_token
-
-  ##Write a method for getting all of my guests and write a method for getting all of my upcoming travels.
-
+  
   def set_profile_photo_to_gender
     self.gender == "male" ?  "profile.png" : "nur-profile-pic.png"
   end

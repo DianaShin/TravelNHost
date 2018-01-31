@@ -7,7 +7,7 @@ import merge from 'lodash/merge';
   Object.freeze(state);
     switch(action.type) {
       case RECEIVE_ERRORS:
-        return action.errors;
+        return action.errors || {};
       case CLEAR_ERRORS:
         let newState = merge({}, state);
         newState.errors= [];

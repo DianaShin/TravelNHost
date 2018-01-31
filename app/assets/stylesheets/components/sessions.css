@@ -143,6 +143,7 @@
   border-radius: 4px;
   height: 1.7em;
   cursor: pointer;
+  outline: none;
 }
 
 .switchModalButton:hover {
