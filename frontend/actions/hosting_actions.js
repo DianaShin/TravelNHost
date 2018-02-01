@@ -23,9 +23,9 @@ export const receiveHosting = (hosting) => {
   };
 };
 
-export const removeHosting = ({ id }) => ({
+export const removeHosting = (hosting) => ({
   type: REMOVE_HOSTING,
-  hostingId: id
+  hosting
 });
 
 export const receiveHostingErrors = errors => ({
@@ -46,9 +46,7 @@ export const fetchHosting = (id) => dispatch => {
 
 
 export const createHosting = (hosting) => dispatch => {
-  // debugger
   return HostingApiUtil.createHosting(hosting).then(hosting => {
-    // debugger
     return dispatch(receiveHosting(hosting));
   });
 };
@@ -60,7 +58,8 @@ export const updateHosting = (hosting) => dispatch => {
 };
 
 export const deleteHosting = hostingId => dispatch => {
-  return HostingApiUtil.deleteHosting(hostingId).then((hostingId) => {
-    return dispatch(removeHosting(hostingId));
+  return HostingApiUtil.deleteHosting(hostingId).then((hosting) => {
+    debugger
+    return dispatch(removeHosting(hosting));
   });
 };

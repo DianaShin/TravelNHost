@@ -35,18 +35,12 @@ class RequestForm extends React.Component {
       };
    this.props.createHosting(hosting);
     }
-    // this.props.fetchHostings({
-    //   hosting: {
-    //     host_id: this.props.currentUser.id
-    //   }
-    // });
   }
 
   cancelRequest(e) {
     e.preventDefault();
-    if (this.props.match.params.hostId === this.props.host.id){
-      this.props.deleteHosting(this.props.hostings.id);
-    }
+    // if (this.props.match.params.hostId === this.props.host.id)
+    this.props.deleteHosting(parseInt(Object.keys(this.props.hostings)[0]));
   }
 
   render() {

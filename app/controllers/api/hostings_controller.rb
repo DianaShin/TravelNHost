@@ -24,13 +24,13 @@ class Api::HostingsController < ApplicationController
   end
 
   def index
-    if current_user.id == params[:id].to_i
-      @hostings = Hosting.where('hostings.host_id = ? or hostings.guest_id = ?', params[:id], params[:id])
+    # if current_user.id == params[:id].to_i
+      @hostings = Hosting.where('hostings.host_id = ? or hostings.guest_id = ?', params[:id], params[:id]).where('hostings.host_id = ? or hostings.guest_id = ?', current_user.id, current_user.id)
 
-      # @hostings = Hosting.all.select {|hosting| hosting.host_id == params[:id] || hosting.guest_id == params[:id]}
-    else
-      @hostings = []
-    end
+
+    # else
+    #   @hostings = []
+    # end
   end
 
   def show
@@ -43,10 +43,11 @@ class Api::HostingsController < ApplicationController
   end
 
   def destroy
-    if current_user.id == params[:id].to_i
-      @hosting = Hosting.where('hostings.guest_id = ?', params[:id])
+    # if current_user.id == params[:id].to_i
+      @hosting = Hosting.find(params[:id])
       @hosting.destroy!
-    end
+    # end
+    # debugger
   end
 
   private

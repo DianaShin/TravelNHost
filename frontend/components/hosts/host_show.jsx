@@ -4,14 +4,14 @@ import ReviewForm from '../reviews/review_form';
 import ReviewShow from '../reviews/review_show';
 
 class HostShow extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    // this.handleFetch = this.handleFetch.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchReviews(this.props.match.params.hostId);
     this.props.fetchHost(this.props.match.params.hostId);
+
     this.props.fetchHostings(this.props.match.params.hostId);
   }
 
@@ -24,15 +24,7 @@ class HostShow extends React.Component {
     }
   }
 
-  // handleFetch(){
-  //   this.props.fetchHostings({
-  //     hosting: {
-  //       host_id: this.props.currentUser.id
-  //     }
-  //   });
-  // }
-
-  render(){
+  render() {
     let firstName;
     let lastName;
     let gender;
@@ -108,7 +100,5 @@ class HostShow extends React.Component {
     );
   }
 }
-
-// <button onClick={this.handleFetch}>Click me</button>
 
 export default HostShow;

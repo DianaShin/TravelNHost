@@ -8,10 +8,18 @@ import { withRouter } from 'react-router-dom';
 import { fetchReviews } from '../../actions/review_actions';
 
 const mapStateToProps = (state, ownProps) => {
+  const host = Object.assign(
+    { hosting_ids: [] },
+    state.entities.hosts[ownProps.match.params.hostId]
+  );
+
   let destination = state.entities.destinations[ownProps.match.params.destinationId];
   let reviews = Object.values(state.entities.reviews);
-  // debugger
+
   return {
+    // host: host,
+    guest: state.session.currentUser,
+    hostings: state.entities.hostings,
     host: state.entities.hosts[ownProps.match.params.hostId],
     currentUser: state.session.currentUser,
     destination: destination,

@@ -13,7 +13,7 @@ const hostingsReducer = (state = {}, action) => {
      return merge({}, state, { [action.hosting.id]: action.hosting });
     case REMOVE_HOSTING:
       let newState = merge({}, state);
-      delete newState[action.hostingId];
+      delete newState[action.hosting.id];
       return newState;
     default:
       return state;
