@@ -59,7 +59,6 @@ export const updateHosting = (hosting) => dispatch => {
 
 export const deleteHosting = hostingId => dispatch => {
   return HostingApiUtil.deleteHosting(hostingId).then((hosting) => {
-    debugger
     return dispatch(removeHosting(hosting));
   });
 };
