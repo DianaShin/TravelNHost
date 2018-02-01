@@ -8,7 +8,12 @@ class HomeIndexItem extends React.Component {
   }
 
   handleClick() {
-     return this.props.history.push(`/destinations/${this.props.destination.id}`);
+    debugger
+      if (this.props.currentUser === null) {
+        return this.props.history.push('/login');
+      } else {
+        return this.props.history.push(`/destinations/${this.props.destination.id}`);
+      }
   }
 
   render() {

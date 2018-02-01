@@ -124,6 +124,10 @@
   cursor: pointer;
 }
 
+.guest-button:hover {
+  filter: opacity(0.75);
+}
+
 .submit-button:hover {
   filter: opacity(0.75);
 }

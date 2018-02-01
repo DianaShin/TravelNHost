@@ -65,6 +65,7 @@ class HostShow extends React.Component {
           body={review.body}
           key={review.id}
           id={review.id}
+          updatedAt={review.updated_at}
           destination={this.props.match.params.destinationId}
           />;
       }
@@ -99,7 +100,8 @@ class HostShow extends React.Component {
         <main className="host-request-content">
           <RequestForm />
           <ReviewForm />
-          <section>
+          <section className="guest-reviews-header">
+            <h2 className="guest-reviews">GUEST REVIEWS</h2>
             { hostsReviews }
           </section>
         </main>

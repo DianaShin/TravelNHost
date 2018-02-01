@@ -2,10 +2,11 @@ form.review-form {
   font-family: 'Open Sans', sans-serif;
   color: white;
   border: 3px solid #20b2aa;
-  margin: 0;
   /*border-radius: 5px;*/
   margin-top: 12px;
   margin-bottom: 15px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   box-shadow: 5px 5px 4px #888888;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -15,6 +16,7 @@ form.review-form {
 
 .leave-review  {
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
   color: white;
   background-color: #20b2aa;
   margin: 0;
@@ -24,6 +26,10 @@ form.review-form {
   display: block;
   text-align: center;
   width: 100%;
+}
+
+label.leave-review {
+  font-size: 18px;
 }
 
 .review-form-label {

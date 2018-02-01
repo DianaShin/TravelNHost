@@ -8,7 +8,7 @@ class HomeIndex extends React.Component {
 
   render(){
     let destinations = this.props.destinations.map(destination => {
-      return <HomeIndexItem key={destination.id} destination={destination} />;
+      return <HomeIndexItem key={destination.id} destination={destination} currentUser={this.props.currentUser} />;
     });
 
     return (

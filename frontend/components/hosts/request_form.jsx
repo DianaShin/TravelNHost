@@ -23,6 +23,7 @@ class RequestForm extends React.Component {
 
   componentDidMount() {
     this.props.fetchHost(this.props.match.params.hostId);
+    this.props.fetchHostings(this.props.match.params.hostId);
   }
 
   handleSubmit(e) {
@@ -47,9 +48,9 @@ class RequestForm extends React.Component {
 
   cancelRequest(e) {
     e.preventDefault();
-    // if (this.props.match.params.hostId === this.props.hosts. )
-    // this.props.deleteHosting(this.props.hostings.);
-
+    if (this.props.match.params.hostId === this.props.host.id){
+      this.props.deleteHosting(this.props.hostings.id);
+    }
   }
 
   render() {

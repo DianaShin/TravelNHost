@@ -1,9 +1,42 @@
 .single-review > p {
   font-family: 'Raleway', sans-serif;
   color: #696969;
+  text-align: left;
 }
 
+.reviewer-name {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
 
+.reviwer-city {
+  margin-top: 0px;
+  font-size: 12px;
+  font-style: italic;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.review-date {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.review-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.single-review {
+  border-bottom: 1px #696969 solid;
+  padding-bottom: 30px;
+}
+
+section.edit-delete-review {
+  float: left;
+}
 .guest-delete-review {
   border:  2px solid #20b2aa;
   border-radius: 5px;

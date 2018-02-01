@@ -1,4 +1,4 @@
-json.extract! review, :id, :host_id, :guest_id, :title, :body
+json.extract! review, :id, :host_id, :guest_id, :title, :body, :updated_at
 guest = review.guest
 
 json.author_name guest.first_name.concat(' ').concat(guest.last_name)
