@@ -39,8 +39,6 @@ componentDidMount() {
       );
     }
   }
-  // <button className="guest-edit-review" onClick={this.handleEdit}>  Edit Review
-  // </button>
 
   editOrDeleteReview() {
     if (this.props.currentUser && this.props.currentUser.id === this.props.authorId) {

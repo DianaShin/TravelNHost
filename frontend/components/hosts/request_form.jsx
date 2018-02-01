@@ -17,10 +17,6 @@ class RequestForm extends React.Component {
     this.cancelRequest = this.cancelRequest.bind(this);
   }
 
-  // componentWillMount() {
-  //   this.props.fetchHost(this.props.match.params.hostId);
-  // }
-
   componentDidMount() {
     this.props.fetchHost(this.props.match.params.hostId);
     this.props.fetchHostings(this.props.match.params.hostId);

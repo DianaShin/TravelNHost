@@ -10,7 +10,6 @@ class HostShow extends React.Component {
   }
 
   componentDidMount() {
-    // debugger
     this.props.fetchReviews(this.props.match.params.hostId);
     this.props.fetchHost(this.props.match.params.hostId);
     this.props.fetchHostings(this.props.match.params.hostId);

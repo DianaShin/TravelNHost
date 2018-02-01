@@ -38,7 +38,9 @@ class Dashboard extends React.Component {
     );
 
     let myTravelPlans = myHostings.filter(hosting => {
-      return (hosting.guest_id === this.props.currentUser.id);
+      if (this.props.currentUser) {
+        return (hosting.guest_id === this.props.currentUser.id);
+      }
     });
 
     let myTravelPlanItems = myTravelPlans.map(hosting => {
@@ -49,7 +51,9 @@ class Dashboard extends React.Component {
       });
 
     let myGuests = myHostings.filter(hosting => {
-      return (hosting.host_id === this.props.currentUser.id);
+      if (this.props.currentUser) { 
+        return (hosting.host_id === this.props.currentUser.id);
+      }
     });
 
     let myGuestItems = myGuests.map(hosting => {
