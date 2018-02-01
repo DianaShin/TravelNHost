@@ -110,7 +110,7 @@ class Header extends React.Component {
                   </Link>
                 </li>
                   <li className='header-nav-buttons-list-item'>
-                    <button className='header-nav-buttons-list-item dashboard' onClick={()=>this.props.logout()}>LOGOUT</button>
+                    <button className='header-nav-buttons-list-item dashboard' onClick={()=>this.props.logout().then(()=>{return this.props.history.push('/')})}>LOGOUT</button>
                   </li>
               </ul>
           </nav>

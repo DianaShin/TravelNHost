@@ -7,7 +7,9 @@ class Dashboard extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchHostings(this.props.currentUser.id);
+    if (this.props.currentUser) {
+      this.props.fetchHostings(this.props.currentUser.id);
+    }
   }
 
   render() {
@@ -38,7 +40,7 @@ class Dashboard extends React.Component {
     let myTravelPlans = myHostings.filter(hosting => {
       return (hosting.guest_id === this.props.currentUser.id);
     });
-// debugger
+
     let myTravelPlanItems = myTravelPlans.map(hosting => {
       return <DashBoardHostingItem
                 hosting={hosting}

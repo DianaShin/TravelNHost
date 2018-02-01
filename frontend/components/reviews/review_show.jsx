@@ -65,7 +65,7 @@ componentDidMount() {
         <p className="reviwer-city"> {this.props.authorLocation} </p>
         <p className="review-date"> {this.props.updatedAt.slice(0, 10)}</p>
         <p className="review-title">{this.props.title} </p>
-        <p> Review: {this.props.body} </p>
+        <p>{this.props.body} </p>
         <div className="edit-delete-buttons"> { this.editOrDeleteReview() }</div>
       </section>
     );

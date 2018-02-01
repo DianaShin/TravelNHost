@@ -8,7 +8,6 @@ class HomeIndexItem extends React.Component {
   }
 
   handleClick() {
-    debugger
       if (this.props.currentUser === null) {
         return this.props.history.push('/login');
       } else {
@@ -18,8 +17,6 @@ class HomeIndexItem extends React.Component {
 
   render() {
     let name;
-    //later add
-    // let image_url;
     if (this.props.destination) {
       name = this.props.destination.name;
     }
@@ -37,6 +34,3 @@ class HomeIndexItem extends React.Component {
 }
 
 export default withRouter(HomeIndexItem);
-
-  // <p className="destination-name">{name}</p>
-// <img className="destination" src={this.props.src} />
